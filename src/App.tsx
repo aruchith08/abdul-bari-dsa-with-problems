@@ -13,6 +13,7 @@ import { FilterBar } from './components/dashboard/FilterBar';
 import { ProblemTable } from './components/table/ProblemTable';
 import { MobileProblemCard } from './components/mobile/MobileProblemCard';
 import { AboutPage } from './components/pages/AboutPage';
+import { ProgressPage } from './components/pages/ProgressPage';
 import { NoteModal } from './components/modals/NoteModal';
 import { ConfirmDialog } from './components/modals/ConfirmDialog';
 import { AuthModal } from './components/modals/AuthModal';
@@ -64,13 +65,8 @@ export function App() {
       setActiveNavTab('about');
       window.scrollTo({ top: 0, behavior: 'instant' });
     } else if (tab === 'progress') {
-      setActiveNavTab('roadmap');
-      setTimeout(() => {
-        const statsEl = document.getElementById('progress-stats');
-        if (statsEl) {
-          statsEl.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 50);
+      setActiveNavTab('progress');
+      window.scrollTo({ top: 0, behavior: 'instant' });
     } else if (tab === 'revision') {
       setActiveNavTab('roadmap');
       setCurrentFilter('revision');
@@ -166,7 +162,7 @@ export function App() {
           activeCategory={activeCategory}
           onSelectCategory={(cat) => {
             setActiveCategory(cat);
-            if (activeNavTab === 'about') {
+            if (activeNavTab === 'about' || activeNavTab === 'progress') {
               setActiveNavTab('roadmap');
             }
           }}
@@ -177,10 +173,36 @@ export function App() {
           onSelectNavTab={handleSelectNavTab}
         />
 
-        {/* View Switch: Dedicated About Page or DSA Roadmap */}
+        {/* View Switch: Dedicated About Page, Progress Page, or DSA Roadmap */}
         {activeNavTab === 'about' ? (
           <main className="flex-1 px-3 sm:px-6 py-6 min-w-0 max-w-[1300px]">
             <AboutPage onBackToRoadmap={() => handleSelectNavTab('roadmap')} />
+            <Footer />
+          </main>
+        ) : activeNavTab === 'progress' ? (
+          <main className="flex-1 px-3 sm:px-6 py-6 min-w-0 max-w-[1300px]">
+            <ProgressPage
+              completedMap={completed}
+              revisionsMap={revisions}
+              notesMap={notes}
+              totalCount={totalCount}
+              completedCount={completedCount}
+              remainingCount={remainingCount}
+              revisionCount={revisionCount}
+              progressPercentage={progressPercentage}
+              onBackToRoadmap={() => handleSelectNavTab('roadmap')}
+              onFilterCategory={(catId) => {
+                setActiveCategory(catId);
+                setActiveNavTab('roadmap');
+                window.scrollTo({ top: 0, behavior: 'instant' });
+              }}
+              onFilterStatus={(status) => {
+                setCurrentFilter(status);
+                setActiveNavTab('roadmap');
+                window.scrollTo({ top: 0, behavior: 'instant' });
+              }}
+              onResetClick={() => setIsResetDialogOpen(true)}
+            />
             <Footer />
           </main>
         ) : (

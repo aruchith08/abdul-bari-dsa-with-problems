@@ -66,7 +66,13 @@ This platform provides the answer. Every single one of the **163 lectures** is i
 - **Matching Custom Dropdowns**: Zero default OS dropdown styling; topic and difficulty selectors feature unified Neo-Brutalist popover menus with smooth chevron rotations and keyboard accessibility.
 - **Standardized Vector Icon System**: 100% SVG line icons with `strokeWidth="2.5"` and `strokeLinecap="square"`.
 
-### 6. 📄 Dedicated Standalone About Page
+### 6. 📊 LeetCode-Style Progress Dashboard
+- **Radial Problem-Solving Gauge**: Circular SVG completion ring segmented dynamically across Easy (`#00B8A3`), Medium (`#FFA116`), and Hard (`#FF375F`) difficulty tiers.
+- **Difficulty Mastery Cards**: Real-time solved-versus-total tracking with custom Neo-Brutalist progress bars and completion percentages.
+- **Topic Breakdown**: In-depth progress bars and direct jump-to-practice buttons for all 8 algorithmic paradigms.
+- **Study Metrics Grid**: Instant visibility into Starred revision problems, personal notes count, and remaining targets.
+
+### 7. 📄 Dedicated Standalone About Page
 - Deep dive into the curriculum, verified biographical overview of Prof. Abdul Bari (with portrait), and the developer vision behind ARH.
 
 ---
