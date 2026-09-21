@@ -25,7 +25,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   syncStatus = 'synced',
   cloudError,
 }) => {
-  const { currentUser, openAuthModal, signOutUser } = useAuth();
+  const { currentUser, loading: authLoading, openAuthModal, signOutUser } = useAuth();
   const [profileMenuOpen, setProfileMenuOpen] = useState(false);
   const localRef = useRef<HTMLInputElement>(null);
   const inputRef = searchInputRef || localRef;
@@ -127,7 +127,15 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
 
-          {!currentUser ? (
+          {authLoading && !currentUser ? (
+            /* Subtle connecting pill to prevent flicker on reload */
+            <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 border-2 border-black bg-white px-2.5 py-1 text-[10px] font-mono font-bold text-black shadow-[1px_1px_0px_#000000]">
+                <span className="h-2 w-2 border border-black bg-amber-400 animate-pulse" />
+                <span>CONNECTING...</span>
+              </div>
+            </div>
+          ) : !currentUser ? (
             /* Sign In Button for Guests */
             <div className="flex items-center gap-2">
               <div className="hidden md:flex items-center gap-1.5 border-2 border-black bg-white px-2 py-1 text-[10px] font-mono font-bold text-black shadow-[1px_1px_0px_#000000]">

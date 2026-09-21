@@ -10,8 +10,51 @@ import {
 } from 'firebase/auth';
 import { auth, googleProvider } from '../lib/firebase';
 
+export interface CachedAuthUser {
+  uid: string;
+  email: string | null;
+  displayName: string | null;
+  photoURL: string | null;
+}
+
+export type CurrentUserType = User | CachedAuthUser;
+
+const AUTH_CACHE_KEY = 'arh-dsa-auth-session';
+
+function loadCachedSession(): CachedAuthUser | null {
+  try {
+    const raw = localStorage.getItem(AUTH_CACHE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (parsed && typeof parsed.uid === 'string' && parsed.uid.length > 0) {
+      return parsed;
+    }
+  } catch (e) {
+    console.warn('Error reading cached auth session:', e);
+  }
+  return null;
+}
+
+function saveCachedSession(user: User | CachedAuthUser | null) {
+  try {
+    if (user) {
+      const data: CachedAuthUser = {
+        uid: user.uid,
+        email: user.email || null,
+        displayName: user.displayName || null,
+        photoURL: user.photoURL || null,
+      };
+      localStorage.setItem(AUTH_CACHE_KEY, JSON.stringify(data));
+    } else {
+      localStorage.removeItem(AUTH_CACHE_KEY);
+    }
+  } catch (e) {
+    console.warn('Error saving cached auth session:', e);
+  }
+}
+
 interface AuthContextType {
-  currentUser: User | null;
+  currentUser: CurrentUserType | null;
   loading: boolean;
   isAuthModalOpen: boolean;
   openAuthModal: () => void;
@@ -27,14 +70,21 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | null>(null);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState<User | null>(null);
+  // Synchronously initialize from local storage session so page reloads never lose signed-in state
+  const [currentUser, setCurrentUser] = useState<CurrentUserType | null>(() => loadCachedSession());
   const [loading, setLoading] = useState(true);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [authError, setAuthError] = useState<string | null>(null);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setCurrentUser(user);
+      if (user) {
+        setCurrentUser(user);
+        saveCachedSession(user);
+      } else {
+        setCurrentUser(null);
+        saveCachedSession(null);
+      }
       setLoading(false);
     });
 
@@ -53,33 +103,37 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const clearAuthError = () => setAuthError(null);
 
-function formatAuthError(error: any): string {
-  if (!error) return 'An unexpected error occurred.';
-  const code = error.code || '';
-  switch (code) {
-    case 'auth/operation-not-allowed':
-      return 'Email/Password sign-in is not enabled in your Firebase Console yet. Please enable "Email/Password" under Firebase Console > Authentication > Sign-in method.';
-    case 'auth/email-already-in-use':
-      return 'An account already exists with this email address. Switch to "Sign In" above.';
-    case 'auth/weak-password':
-      return 'Password should be at least 6 characters.';
-    case 'auth/invalid-email':
-      return 'Please enter a valid email address.';
-    case 'auth/user-not-found':
-    case 'auth/wrong-password':
-    case 'auth/invalid-credential':
-      return 'Incorrect email or password. Please try again.';
-    case 'auth/unauthorized-domain':
-      return 'This domain is not in your Firebase Authorized Domains list.';
-    default:
-      return error.message?.replace(/^Firebase:\s*/, '') || 'Authentication failed.';
+  function formatAuthError(error: any): string {
+    if (!error) return 'An unexpected error occurred.';
+    const code = error.code || '';
+    switch (code) {
+      case 'auth/operation-not-allowed':
+        return 'Email/Password sign-in is not enabled in your Firebase Console yet. Please enable "Email/Password" under Firebase Console > Authentication > Sign-in method.';
+      case 'auth/email-already-in-use':
+        return 'An account already exists with this email address. Switch to "Sign In" above.';
+      case 'auth/weak-password':
+        return 'Password should be at least 6 characters.';
+      case 'auth/invalid-email':
+        return 'Please enter a valid email address.';
+      case 'auth/user-not-found':
+      case 'auth/wrong-password':
+      case 'auth/invalid-credential':
+        return 'Incorrect email or password. Please try again.';
+      case 'auth/unauthorized-domain':
+        return 'This domain is not in your Firebase Authorized Domains list.';
+      default:
+        return error.message?.replace(/^Firebase:\s*/, '') || 'Authentication failed.';
+    }
   }
-}
 
   const signInWithGoogle = async () => {
     try {
       setAuthError(null);
-      await signInWithPopup(auth, googleProvider);
+      const cred = await signInWithPopup(auth, googleProvider);
+      if (cred.user) {
+        setCurrentUser(cred.user);
+        saveCachedSession(cred.user);
+      }
       setIsAuthModalOpen(false);
     } catch (error: any) {
       console.error('Google Sign-In Error:', error);
@@ -92,7 +146,11 @@ function formatAuthError(error: any): string {
   const signInWithEmail = async (email: string, pass: string) => {
     try {
       setAuthError(null);
-      await signInWithEmailAndPassword(auth, email, pass);
+      const cred = await signInWithEmailAndPassword(auth, email, pass);
+      if (cred.user) {
+        setCurrentUser(cred.user);
+        saveCachedSession(cred.user);
+      }
       setIsAuthModalOpen(false);
     } catch (error: any) {
       console.error('Email Sign-In Error:', error);
@@ -108,6 +166,10 @@ function formatAuthError(error: any): string {
       if (name && cred.user) {
         await updateProfile(cred.user, { displayName: name });
       }
+      if (cred.user) {
+        setCurrentUser(cred.user);
+        saveCachedSession(cred.user);
+      }
       setIsAuthModalOpen(false);
     } catch (error: any) {
       console.error('Email Sign-Up Error:', error);
@@ -118,6 +180,8 @@ function formatAuthError(error: any): string {
 
   const signOutUser = async () => {
     try {
+      saveCachedSession(null);
+      setCurrentUser(null);
       await signOut(auth);
     } catch (error) {
       console.error('Sign Out Error:', error);

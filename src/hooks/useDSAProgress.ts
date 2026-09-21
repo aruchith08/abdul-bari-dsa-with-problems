@@ -16,7 +16,7 @@ const NOTES_KEY = 'arh-dsa-notes';
 const TIMESTAMPS_KEY = 'arh-dsa-timestamps';
 
 export function useDSAProgress() {
-  const { currentUser } = useAuth();
+  const { currentUser, loading: authLoading } = useAuth();
 
   const [completed, setCompleted] = useLocalStorage<Record<number, boolean>>(PROGRESS_KEY, {});
   const [timestamps, setTimestamps] = useLocalStorage<Record<number, string>>(TIMESTAMPS_KEY, {});
@@ -45,6 +45,11 @@ export function useDSAProgress() {
 
   // When user logs in or out, handle cloud synchronization
   useEffect(() => {
+    // If authentication is still being initialized on page reload, wait to prevent offline flicker
+    if (authLoading && !currentUser) {
+      return;
+    }
+
     if (!currentUser) {
       setSyncStatus('offline');
       setCloudError(null);
@@ -92,7 +97,7 @@ export function useDSAProgress() {
     );
 
     return () => unsubscribe();
-  }, [currentUser?.uid]);
+  }, [currentUser?.uid, authLoading]);
 
   const totalCount = ABDUL_BARI_PROBLEMS.length;
 
