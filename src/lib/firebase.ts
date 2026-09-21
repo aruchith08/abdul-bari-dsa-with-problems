@@ -1,9 +1,7 @@
 import { initializeApp, getApps, getApp } from 'firebase/app';
 import {
   getAuth,
-  initializeAuth,
   browserLocalPersistence,
-  indexedDBLocalPersistence,
   setPersistence,
   GoogleAuthProvider,
 } from 'firebase/auth';
@@ -22,32 +20,14 @@ export const firebaseConfig = {
 // Initialize or reuse Firebase App instance
 export const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
 
-// Initialize Firebase Auth with persistent storage across browser reloads
-// (IndexedDB + LocalStorage fallback)
-export const auth = (() => {
-  if (getApps().length > 1) {
-    try {
-      return getAuth(app);
-    } catch {
-      // Fall through to initializeAuth
-    }
-  }
+// Firebase Services with default browser popup resolvers
+export const auth = getAuth(app);
 
-  try {
-    return initializeAuth(app, {
-      persistence: [indexedDBLocalPersistence, browserLocalPersistence],
-    });
-  } catch {
-    return getAuth(app);
-  }
-})();
-
-// Explicitly lock persistence to browser local storage so user stays signed in indefinitely till logout
+// Explicitly lock persistence to browser local storage so user stays signed in across reloads
 setPersistence(auth, browserLocalPersistence).catch((err) => {
   console.warn('Firebase setPersistence warning:', err);
 });
 
-// Firebase Services
 export const db = getFirestore(app);
 
 // Auth Providers

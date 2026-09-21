@@ -33,14 +33,15 @@ export const AuthModal: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email || !password) return;
+    const cleanEmail = email.trim();
+    if (!cleanEmail || !password) return;
 
     setSubmitting(true);
     try {
       if (mode === 'signin') {
-        await signInWithEmail(email, password);
+        await signInWithEmail(cleanEmail, password);
       } else {
-        await signUpWithEmail(email, password, name.trim() || undefined);
+        await signUpWithEmail(cleanEmail, password, name.trim() || undefined);
       }
     } catch {
       // Error handled in AuthContext

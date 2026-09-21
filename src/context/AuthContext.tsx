@@ -119,6 +119,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       case 'auth/wrong-password':
       case 'auth/invalid-credential':
         return 'Incorrect email or password. Please try again.';
+      case 'auth/argument-error':
+        return 'Missing credentials or invalid input. Please enter a valid email and password.';
       case 'auth/unauthorized-domain':
         return `Domain "${typeof window !== 'undefined' ? window.location.hostname : ''}" is not authorized in Firebase. Use "http://localhost:5173" or add this domain in Firebase Console > Authentication > Settings > Authorized Domains.`;
       default:
@@ -146,7 +148,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const signInWithEmail = async (email: string, pass: string) => {
     try {
       setAuthError(null);
-      const cred = await signInWithEmailAndPassword(auth, email, pass);
+      const cleanEmail = (email || '').trim();
+      const cred = await signInWithEmailAndPassword(auth, cleanEmail, pass);
       if (cred.user) {
         setCurrentUser(cred.user);
         saveCachedSession(cred.user);
@@ -162,9 +165,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const signUpWithEmail = async (email: string, pass: string, name?: string) => {
     try {
       setAuthError(null);
-      const cred = await createUserWithEmailAndPassword(auth, email, pass);
-      if (name && cred.user) {
-        await updateProfile(cred.user, { displayName: name });
+      const cleanEmail = (email || '').trim();
+      const cred = await createUserWithEmailAndPassword(auth, cleanEmail, pass);
+      if (name && name.trim() && cred.user) {
+        await updateProfile(cred.user, { displayName: name.trim() });
       }
       if (cred.user) {
         setCurrentUser(cred.user);
