@@ -28,6 +28,7 @@ const DEFAULT_CLOUD_DATA: UserCloudData = {
  */
 export async function getUserData(userId: string): Promise<UserCloudData | null> {
   try {
+    if (!db) return null;
     const userDocRef = doc(db, 'users', userId);
     const docSnap = await getDoc(userDocRef);
 
@@ -62,6 +63,7 @@ export async function saveUserData(
   data: Partial<UserCloudData>
 ): Promise<boolean> {
   try {
+    if (!db) return false;
     const userDocRef = doc(db, 'users', userId);
     await setDoc(
       userDocRef,
@@ -112,6 +114,9 @@ export function subscribeToUserData(
   onUpdate: (data: UserCloudData) => void,
   onError?: (err: Error) => void
 ): Unsubscribe {
+  if (!db) {
+    return () => {};
+  }
   const userDocRef = doc(db, 'users', userId);
   return onSnapshot(
     userDocRef,

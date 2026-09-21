@@ -77,6 +77,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [authError, setAuthError] = useState<string | null>(null);
 
   useEffect(() => {
+    if (!auth) {
+      setLoading(false);
+      return;
+    }
+
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setCurrentUser(user);
@@ -130,6 +135,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const signInWithGoogle = async () => {
     try {
+      if (!auth) {
+        setAuthError('Authentication service is currently unavailable.');
+        return;
+      }
       setAuthError(null);
       const cred = await signInWithPopup(auth, googleProvider);
       if (cred.user) {
@@ -147,6 +156,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const signInWithEmail = async (email: string, pass: string) => {
     try {
+      if (!auth) {
+        setAuthError('Authentication service is currently unavailable.');
+        return;
+      }
       setAuthError(null);
       const cleanEmail = (email || '').trim();
       const cred = await signInWithEmailAndPassword(auth, cleanEmail, pass);
@@ -164,6 +177,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const signUpWithEmail = async (email: string, pass: string, name?: string) => {
     try {
+      if (!auth) {
+        setAuthError('Authentication service is currently unavailable.');
+        return;
+      }
       setAuthError(null);
       const cleanEmail = (email || '').trim();
       const cred = await createUserWithEmailAndPassword(auth, cleanEmail, pass);
@@ -186,7 +203,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       saveCachedSession(null);
       setCurrentUser(null);
-      await signOut(auth);
+      if (auth) {
+        await signOut(auth);
+      }
     } catch (error) {
       console.error('Sign Out Error:', error);
     }
