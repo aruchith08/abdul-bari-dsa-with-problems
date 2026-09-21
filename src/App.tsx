@@ -17,6 +17,7 @@ import { ProgressPage } from './components/pages/ProgressPage';
 import { NoteModal } from './components/modals/NoteModal';
 import { ConfirmDialog } from './components/modals/ConfirmDialog';
 import { AuthModal } from './components/modals/AuthModal';
+import { ShareModal } from './components/modals/ShareModal';
 import { EmptyState } from './components/common/EmptyState';
 
 export function App() {
@@ -28,6 +29,7 @@ export function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeNoteProblem, setActiveNoteProblem] = useState<DSAProblem | null>(null);
   const [isResetDialogOpen, setIsResetDialogOpen] = useState(false);
+  const [isShareModalOpen, setIsShareModalOpen] = useState(false);
 
   const searchInputRef = useRef<HTMLInputElement>(null);
 
@@ -61,6 +63,11 @@ export function App() {
   });
 
   const handleSelectNavTab = (tab: string) => {
+    if (tab === 'share') {
+      setIsShareModalOpen(true);
+      return;
+    }
+
     if (tab === 'about') {
       setActiveNavTab('about');
       window.scrollTo({ top: 0, behavior: 'instant' });
@@ -152,6 +159,7 @@ export function App() {
         searchInputRef={searchInputRef}
         syncStatus={syncStatus}
         cloudError={cloudError}
+        onOpenShare={() => setIsShareModalOpen(true)}
       />
 
       {/* Main Content Area */}
@@ -171,6 +179,7 @@ export function App() {
           onCloseMobile={() => setMobileMenuOpen(false)}
           activeNavTab={activeNavTab}
           onSelectNavTab={handleSelectNavTab}
+          onOpenShare={() => setIsShareModalOpen(true)}
         />
 
         {/* View Switch: Dedicated About Page, Progress Page, or DSA Roadmap */}
@@ -299,6 +308,12 @@ export function App() {
 
       {/* Firebase Authentication Modal */}
       <AuthModal />
+
+      {/* Share Platform Modal */}
+      <ShareModal
+        isOpen={isShareModalOpen}
+        onClose={() => setIsShareModalOpen(false)}
+      />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Search, ChevronDown, Menu, X, LogOut, Check, RoadmapIcon, ProgressIcon, RevisionIcon, NotesIcon, AboutIcon } from '../common/icons';
+import { Search, ChevronDown, Menu, X, LogOut, Check, RoadmapIcon, ProgressIcon, RevisionIcon, NotesIcon, AboutIcon, Share2 } from '../common/icons';
 import { useAuth } from '../../context/AuthContext';
 
 interface NavbarProps {
@@ -12,6 +12,7 @@ interface NavbarProps {
   searchInputRef?: React.RefObject<HTMLInputElement | null>;
   syncStatus?: 'synced' | 'saving' | 'offline';
   cloudError?: string | null;
+  onOpenShare?: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -24,6 +25,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   searchInputRef,
   syncStatus = 'synced',
   cloudError,
+  onOpenShare,
 }) => {
   const { currentUser, loading: authLoading, openAuthModal, signOutUser } = useAuth();
   const [profileMenuOpen, setProfileMenuOpen] = useState(false);
@@ -36,6 +38,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'revision', label: 'REVISION', icon: RevisionIcon },
     { id: 'notes', label: 'NOTES', icon: NotesIcon },
     { id: 'about', label: 'ABOUT', icon: AboutIcon },
+    { id: 'share', label: 'SHARE', icon: Share2 },
   ];
 
   return (
@@ -82,7 +85,13 @@ export const Navbar: React.FC<NavbarProps> = ({
               return (
                 <button
                   key={tab.id}
-                  onClick={() => onSelectNavTab(tab.id)}
+                  onClick={() => {
+                    if (tab.id === 'share') {
+                      onOpenShare?.();
+                    } else {
+                      onSelectNavTab(tab.id);
+                    }
+                  }}
                   className={`border-r-2 border-black px-3.5 py-2 text-xs font-black tracking-wide transition-colors flex items-center gap-1.5 cursor-pointer ${
                     isActive
                       ? 'bg-[#FF5E1E] text-black'
@@ -99,6 +108,17 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Right Search & Profile Section */}
         <div className="flex items-center gap-2 sm:gap-3 px-3 sm:px-4">
+          {/* Share Button (Visible on mobile and desktop) */}
+          <button
+            type="button"
+            onClick={onOpenShare}
+            className="flex items-center gap-1.5 border-2 border-black bg-white px-2.5 sm:px-3 py-1.5 text-xs font-black uppercase text-black shadow-[2px_2px_0px_#000000] hover:bg-[#FF5E1E] active:translate-x-[1px] active:translate-y-[1px] transition-all cursor-pointer shrink-0"
+            title="Share this website with friends"
+          >
+            <Share2 className="h-3.5 w-3.5 shrink-0 text-[#FF5E1E] group-hover:text-black" />
+            <span className="hidden sm:inline">SHARE</span>
+          </button>
+
           {/* Search Box */}
           <div className="relative flex items-center">
             <div className="flex items-center border-2 border-black bg-[#111111] px-3 py-1.5 text-white">
@@ -109,7 +129,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
                 placeholder="Search problems..."
-                className="w-28 sm:w-44 md:w-56 bg-transparent text-xs text-white placeholder-[#777777] outline-none font-mono"
+                className="w-24 sm:w-40 md:w-52 bg-transparent text-xs text-white placeholder-[#777777] outline-none font-mono"
               />
               {searchQuery ? (
                 <button

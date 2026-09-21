@@ -1,6 +1,6 @@
 import React from 'react';
 import { TopicCategory } from '../../types/dsa';
-import { RoadmapIcon, ProgressIcon, RevisionIcon, NotesIcon, AboutIcon } from '../common/icons';
+import { RoadmapIcon, ProgressIcon, RevisionIcon, NotesIcon, AboutIcon, Share2 } from '../common/icons';
 
 interface SidebarProps {
   categories: TopicCategory[];
@@ -11,6 +11,7 @@ interface SidebarProps {
   onCloseMobile: () => void;
   activeNavTab?: string;
   onSelectNavTab?: (tab: string) => void;
+  onOpenShare?: () => void;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
@@ -22,6 +23,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onCloseMobile,
   activeNavTab = 'roadmap',
   onSelectNavTab,
+  onOpenShare,
 }) => {
   return (
     <>
@@ -119,6 +121,17 @@ export const Sidebar: React.FC<SidebarProps> = ({
               >
                 <AboutIcon className="h-4 w-4 shrink-0" />
                 <span>ABOUT</span>
+              </button>
+
+              <button
+                onClick={() => {
+                  onOpenShare?.();
+                  onCloseMobile();
+                }}
+                className="flex w-full items-center gap-2.5 px-3 py-2 text-xs font-black uppercase transition-all duration-100 cursor-pointer bg-white border-2 border-black text-black shadow-[2px_2px_0px_#000000] hover:bg-[#FF5E1E]"
+              >
+                <Share2 className="h-4 w-4 shrink-0 text-[#FF5E1E]" />
+                <span>SHARE WITH FRIENDS</span>
               </button>
             </nav>
           </div>
