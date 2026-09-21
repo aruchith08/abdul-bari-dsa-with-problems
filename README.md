@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![ARH DSA Banner](public/arh-logo.png)
+<img src="src/assets/dashboard%20screenshot.jpg" alt="Abdul Bari DSA with Problems - Dashboard Preview" width="100%" />
 
 ### **The Ultimate Algorithms Mastery Command Center**
 *Mapping Prof. Abdul Bari's legendary 163-lecture Algorithms Masterclass to 1,000+ curated competitive programming challenges across LeetCode, HackerRank, and CodeChef.*
