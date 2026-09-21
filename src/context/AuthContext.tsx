@@ -120,7 +120,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       case 'auth/invalid-credential':
         return 'Incorrect email or password. Please try again.';
       case 'auth/unauthorized-domain':
-        return 'This domain is not in your Firebase Authorized Domains list.';
+        return `Domain "${typeof window !== 'undefined' ? window.location.hostname : ''}" is not authorized in Firebase. Use "http://localhost:5173" or add this domain in Firebase Console > Authentication > Settings > Authorized Domains.`;
       default:
         return error.message?.replace(/^Firebase:\s*/, '') || 'Authentication failed.';
     }
