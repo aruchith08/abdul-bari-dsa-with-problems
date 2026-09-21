@@ -8,13 +8,13 @@ import {
 import { getFirestore } from 'firebase/firestore';
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyDztP1Jv7m5R0uk15fOB0hIS2H30AqGQLo",
-  authDomain: "abdul-bari-dsa-with-problems.firebaseapp.com",
-  projectId: "abdul-bari-dsa-with-problems",
-  storageBucket: "abdul-bari-dsa-with-problems.firebasestorage.app",
-  messagingSenderId: "246123352133",
-  appId: "1:246123352133:web:0f0fbb56645859e15cd32c",
-  measurementId: "G-11V97PM31Q"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || '',
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || '',
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || '',
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || '',
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || '',
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || '',
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || '',
 };
 
 // Initialize or reuse Firebase App instance
