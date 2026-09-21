@@ -7,9 +7,8 @@ export const HeroSection: React.FC = () => {
         {/* Left: Main Headings and Badges */}
         <div className="flex-1 flex flex-col justify-between">
           <div>
-            <div className="text-[11px] font-mono font-bold tracking-widest text-[#999999] uppercase mb-1 flex items-center gap-1">
+            <div className="text-[11px] font-mono font-bold tracking-widest text-[#999999] uppercase mb-1">
               <span>ARH LEARNING SYSTEM</span>
-              <span className="text-[#FF5E1E]">¶</span>
             </div>
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black uppercase tracking-tight text-white leading-tight">
               ABDUL BARI DSA WITH PROBLEMS

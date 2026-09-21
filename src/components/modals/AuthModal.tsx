@@ -75,9 +75,8 @@ export const AuthModal: React.FC = () => {
               alt="ARH"
               className="h-6 w-auto object-contain brightness-200 contrast-200"
             />
-            <div className="flex items-center gap-1 text-[11px] font-mono font-bold tracking-widest text-[#CCCCCC] uppercase">
+            <div className="text-[11px] font-mono font-bold tracking-widest text-[#CCCCCC] uppercase">
               <span>ARH AUTHENTICATION</span>
-              <span className="text-[#FF5E1E]">¶</span>
             </div>
           </div>
           <button
