@@ -66,16 +66,7 @@ This platform provides the answer. Every single one of the **163 lectures** is i
 - **Matching Custom Dropdowns**: Zero default OS dropdown styling; topic and difficulty selectors feature unified Neo-Brutalist popover menus with smooth chevron rotations and keyboard accessibility.
 - **Standardized Vector Icon System**: 100% SVG line icons with `strokeWidth="2.5"` and `strokeLinecap="square"`.
 
-### 6. 📱 Responsive Mobile Slide-Out Drawer
-- Full-featured mobile experience with a dedicated **`NAVIGATION`** drawer:
-  - `[ 🗺️ DSA ROADMAP ]`
-  - `[ 📊 PROGRESS ]`
-  - `[ ⭐ REVISION ]`
-  - `[ 📝 NOTES ]`
-  - `[ ℹ️ ABOUT ]`
-  Followed by full category filtering and topic counts.
-
-### 7. 📄 Dedicated Standalone About Page
+### 6. 📄 Dedicated Standalone About Page
 - Deep dive into the curriculum, verified biographical overview of Prof. Abdul Bari (with portrait), and the developer vision behind ARH.
 
 ---
