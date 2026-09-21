@@ -38,7 +38,6 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'revision', label: 'REVISION', icon: RevisionIcon },
     { id: 'notes', label: 'NOTES', icon: NotesIcon },
     { id: 'about', label: 'ABOUT', icon: AboutIcon },
-    { id: 'share', label: 'SHARE', icon: Share2 },
   ];
 
   return (
@@ -85,13 +84,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               return (
                 <button
                   key={tab.id}
-                  onClick={() => {
-                    if (tab.id === 'share') {
-                      onOpenShare?.();
-                    } else {
-                      onSelectNavTab(tab.id);
-                    }
-                  }}
+                  onClick={() => onSelectNavTab(tab.id)}
                   className={`border-r-2 border-black px-3.5 py-2 text-xs font-black tracking-wide transition-colors flex items-center gap-1.5 cursor-pointer ${
                     isActive
                       ? 'bg-[#FF5E1E] text-black'
