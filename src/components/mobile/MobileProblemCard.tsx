@@ -105,9 +105,9 @@ export const MobileProblemCard: React.FC<MobileProblemCardProps> = ({
         </div>
 
         <div className="flex items-center gap-2">
-          <PracticeLinks urls={problem.hackerRank} platform="hackerrank" />
-          <PracticeLinks urls={problem.leetCode} platform="leetcode" />
-          <PracticeLinks urls={problem.codeChef} platform="codechef" />
+          <PracticeLinks urls={problem.hackerRank} platform="hackerrank" align="auto" />
+          <PracticeLinks urls={problem.leetCode} platform="leetcode" align="right" />
+          <PracticeLinks urls={problem.codeChef} platform="codechef" align="right" />
         </div>
       </div>
     </div>

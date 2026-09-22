@@ -6,23 +6,46 @@ import { ExternalLink, ChevronDown, ChefHat } from '../common/icons';
 interface PracticeLinksProps {
   urls: string[];
   platform: PracticePlatform;
+  align?: 'left' | 'right' | 'auto';
 }
 
-export const PracticeLinks: React.FC<PracticeLinksProps> = ({ urls, platform }) => {
+export const PracticeLinks: React.FC<PracticeLinksProps> = ({ urls, platform, align = 'auto' }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [effectiveAlign, setEffectiveAlign] = useState<'left' | 'right'>('left');
   const popoverRef = useRef<HTMLDivElement>(null);
   const items = parsePlatformLinks(urls, platform);
 
   useEffect(() => {
     if (!isOpen) return;
-    const handleClickOutside = (e: MouseEvent) => {
+
+    if (align === 'right') {
+      setEffectiveAlign('right');
+    } else if (align === 'left') {
+      setEffectiveAlign('left');
+    } else if (popoverRef.current) {
+      // Auto-detect based on remaining viewport space
+      const rect = popoverRef.current.getBoundingClientRect();
+      const dropdownWidth = 240; // 15rem / w-60
+      if (rect.left + dropdownWidth > window.innerWidth - 16) {
+        setEffectiveAlign('right');
+      } else {
+        setEffectiveAlign('left');
+      }
+    }
+
+    const handleClickOutside = (e: MouseEvent | TouchEvent) => {
       if (popoverRef.current && !popoverRef.current.contains(e.target as Node)) {
         setIsOpen(false);
       }
     };
+
     document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [isOpen]);
+    document.addEventListener('touchstart', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, [isOpen, align]);
 
   if (!items.length) {
     return <span className="text-sm font-bold text-black/30 font-mono select-none">—</span>;
@@ -88,7 +111,11 @@ export const PracticeLinks: React.FC<PracticeLinksProps> = ({ urls, platform }) 
       </button>
 
       {isOpen && (
-        <div className="absolute left-0 mt-1 z-50 w-60 border-2 border-black bg-white p-2 shadow-[4px_4px_0px_#000000]">
+        <div
+          className={`absolute mt-1 z-50 w-60 max-w-[calc(100vw-2rem)] border-2 border-black bg-white p-2 shadow-[4px_4px_0px_#000000] ${
+            effectiveAlign === 'right' ? 'right-0' : 'left-0'
+          }`}
+        >
           <div className="px-2 py-1 text-[10px] font-black uppercase tracking-wider text-black border-b-2 border-black mb-1 flex items-center justify-between">
             <span className="uppercase">{platform} Problems</span>
             <span className="font-mono">{items.length}</span>

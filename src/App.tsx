@@ -147,7 +147,7 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#ECECEC] text-black flex flex-col font-sans">
+    <div className="min-h-screen bg-[#ECECEC] text-black flex flex-col font-sans overflow-x-hidden w-full max-w-full">
       {/* Sticky Top Navbar */}
       <Navbar
         searchQuery={searchQuery}
