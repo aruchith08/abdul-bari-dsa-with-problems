@@ -171,7 +171,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
             onClick={onBackToRoadmap}
             className="border-2 border-black bg-[#ECECEC] px-3 py-1.5 text-xs font-black uppercase text-black hover:bg-black hover:text-white transition-colors cursor-pointer"
           >
-            <span>VIEW 163 PROBLEMS</span>
+            <span>VIEW {totalCount} PROBLEMS</span>
           </button>
           <button
             onClick={onResetClick}
@@ -196,7 +196,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
               ALGORITHM PROGRESS &amp; ANALYTICS
             </h1>
             <p className="mt-1 text-xs sm:text-sm text-black/70 font-sans">
-              Real-time analytics across all 163 problems, 8 core algorithm paradigms, difficulty tiers, and revision tracking.
+              Real-time analytics across all {totalCount} problems, 8 core algorithm paradigms, difficulty tiers, and revision tracking.
             </p>
           </div>
 
@@ -428,7 +428,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
               <CheckCircle2 className="h-4 w-4 text-black" />
             </div>
             <div className="mt-2 font-mono text-2xl sm:text-3xl font-black text-black">{progressPercentage}%</div>
-            <div className="mt-1 text-xs text-black/60 font-sans">{completedCount} of 163 finished</div>
+            <div className="mt-1 text-xs text-black/60 font-sans">{completedCount} of {totalCount} finished</div>
           </div>
 
           <div className="border-2 border-black bg-[#E6F9F5] p-4 shadow-[3px_3px_0px_#000000]">

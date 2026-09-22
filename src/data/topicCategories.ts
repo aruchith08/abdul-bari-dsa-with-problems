@@ -2,49 +2,29 @@ import { TopicCategory } from '../types/dsa';
 
 export const TOPIC_CATEGORIES: TopicCategory[] = [
   {
-    "id": "dynamic-programming",
-    "name": "Dynamic Programming",
-    "count": 27
-  },
-  {
     "id": "fundamentals",
     "name": "Fundamentals",
-    "count": 26
+    "count": 17
+  },
+  {
+    "id": "dynamic-programming",
+    "name": "Dynamic Programming",
+    "count": 14
   },
   {
     "id": "divide-conquer",
     "name": "Divide & Conquer",
-    "count": 26
+    "count": 13
   },
   {
     "id": "greedy",
     "name": "Greedy",
-    "count": 15
+    "count": 8
   },
   {
     "id": "sorting",
     "name": "Sorting",
-    "count": 11
-  },
-  {
-    "id": "backtracking",
-    "name": "Backtracking",
-    "count": 10
-  },
-  {
-    "id": "graphs",
-    "name": "Graphs",
-    "count": 8
-  },
-  {
-    "id": "binary-search",
-    "name": "Binary Search",
-    "count": 8
-  },
-  {
-    "id": "branch-bound",
-    "name": "Branch & Bound",
-    "count": 8
+    "count": 6
   },
   {
     "id": "java-core",
@@ -52,24 +32,44 @@ export const TOPIC_CATEGORIES: TopicCategory[] = [
     "count": 6
   },
   {
+    "id": "graphs",
+    "name": "Graphs",
+    "count": 5
+  },
+  {
+    "id": "backtracking",
+    "name": "Backtracking",
+    "count": 5
+  },
+  {
+    "id": "binary-search",
+    "name": "Binary Search",
+    "count": 4
+  },
+  {
+    "id": "branch-bound",
+    "name": "Branch & Bound",
+    "count": 4
+  },
+  {
     "id": "np-completeness",
     "name": "NP-Completeness",
-    "count": 4
+    "count": 2
   },
   {
     "id": "strings",
     "name": "Strings",
-    "count": 4
+    "count": 2
   },
   {
     "id": "trees-bst",
     "name": "Trees & BST",
-    "count": 4
+    "count": 2
   },
   {
     "id": "heaps",
     "name": "Heaps",
-    "count": 2
+    "count": 1
   },
   {
     "id": "hashing",

@@ -1,4 +1,5 @@
 import React from 'react';
+import { ABDUL_BARI_PROBLEMS } from '../../data/abdulBariData';
 
 export const HeroSection: React.FC = () => {
   return (
@@ -24,7 +25,7 @@ export const HeroSection: React.FC = () => {
           {/* Badges */}
           <div className="mt-4 flex flex-wrap gap-2">
             <span className="border border-white/60 bg-black px-2.5 py-1 text-[10px] font-mono font-semibold tracking-wider text-white uppercase">
-              163 Problems
+              {ABDUL_BARI_PROBLEMS.length} Problems
             </span>
             <span className="border border-white/60 bg-black px-2.5 py-1 text-[10px] font-mono font-semibold tracking-wider text-white uppercase">
               Structured Learning

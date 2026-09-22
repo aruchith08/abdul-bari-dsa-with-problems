@@ -200,7 +200,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "cleanTitle": "Time Complexity of While and if #3",
     "videoUrl": "https://www.youtube.com/watch?v=p1EnSvS3urU",
     "hackerRank": [
-      "https://www.hackerrank.com/challenges/30-running-time-and-complexity/problem"
+      "https://www.hackerrank.com/challenges/30-running-time-and-complexity/problem",
+      "https://www.hackerrank.com/challenges/data-structures-quiz-2/problem"
     ],
     "leetCode": [
       "https://leetcode.com/problems/binary-search/",
@@ -395,14 +396,17 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "hackerRank": [
       "https://www.hackerrank.com/challenges/30-running-time-and-complexity/problem",
       "https://www.hackerrank.com/challenges/tutorial-intro/problem",
-      "https://www.hackerrank.com/challenges/quicksort1/problem"
+      "https://www.hackerrank.com/challenges/quicksort1/problem",
+      "https://www.hackerrank.com/challenges/insertionsort1/problem"
     ],
     "leetCode": [
       "https://leetcode.com/problems/search-a-2d-matrix-ii/",
       "https://leetcode.com/problems/binary-search/",
       "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
       "https://leetcode.com/problems/search-in-rotated-sorted-array/",
-      "https://leetcode.com/problems/two-sum/"
+      "https://leetcode.com/problems/two-sum/",
+      "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+      "https://leetcode.com/problems/sort-an-array/"
     ],
     "codeChef": [
       "https://www.codechef.com/practice/course/basic-programming-concepts/DIFF500/problems/COMPLEXITY",
@@ -418,7 +422,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "cleanTitle": "Disjoint Sets Data Structure - Weighted Union and Collapsing Find",
     "videoUrl": "https://www.youtube.com/watch?v=wU6udHRIkcc",
     "hackerRank": [
-      "https://www.hackerrank.com/challenges/merging-communities/problem"
+      "https://www.hackerrank.com/challenges/merging-communities/problem",
+      "https://www.hackerrank.com/challenges/components-in-graph/problem"
     ],
     "leetCode": [
       "https://leetcode.com/problems/redundant-connection/",
@@ -429,12 +434,14 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://leetcode.com/problems/satisfiability-of-equality-equations/",
       "https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/",
       "https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/",
-      "https://leetcode.com/problems/min-cost-to-connect-all-points/"
+      "https://leetcode.com/problems/min-cost-to-connect-all-points/",
+      "https://leetcode.com/problems/regions-cut-by-slashes/"
     ],
     "codeChef": [
       "https://www.codechef.com/learn/course/dsu",
       "https://discuss.codechef.com/t/dsu05-editorial/120224",
-      "https://discuss.codechef.com/t/disjointsetunion/70303"
+      "https://discuss.codechef.com/t/disjointsetunion/70303",
+      "https://www.codechef.com/problems/CYCLIC"
     ],
     "category": "Graphs",
     "difficulty": "Medium"
@@ -457,7 +464,9 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://leetcode.com/problems/kth-largest-element-in-an-array/",
       "https://leetcode.com/problems/sort-an-array/",
       "https://leetcode.com/problems/merge-k-sorted-lists/",
-      "https://leetcode.com/problems/majority-element/"
+      "https://leetcode.com/problems/majority-element/",
+      "https://leetcode.com/problems/reverse-pairs/",
+      "https://leetcode.com/problems/count-of-smaller-numbers-after-self/"
     ],
     "codeChef": [
       "https://www.codechef.com/learn/course/college-design-analysis-algorithms"
@@ -774,13 +783,15 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://leetcode.com/problems/split-array-largest-sum/",
       "https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/",
       "https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/",
-      "https://leetcode.com/problems/magnetic-force-between-two-balls/"
+      "https://leetcode.com/problems/magnetic-force-between-two-balls/",
+      "https://leetcode.com/problems/find-peak-element/"
     ],
     "codeChef": [
       "https://www.codechef.com/practice/course/binary-search",
       "https://www.codechef.com/practice-old/topics/data-structures",
       "https://www.codechef.com/learn/course/college-design-analysis-algorithms",
-      "https://www.codechef.com/practice/course/binary-search/PJA10/problems/JADEBUG07"
+      "https://www.codechef.com/practice/course/binary-search/PJA10/problems/JADEBUG07",
+      "https://www.codechef.com/practice/tags/binary-search"
     ],
     "category": "Binary Search",
     "difficulty": "Easy"
@@ -806,11 +817,13 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://leetcode.com/problems/search-in-rotated-sorted-array/",
       "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
       "https://leetcode.com/problems/sqrtx/",
-      "https://leetcode.com/problems/koko-eating-bananas/"
+      "https://leetcode.com/problems/koko-eating-bananas/",
+      "https://leetcode.com/problems/find-peak-element/"
     ],
     "codeChef": [
       "https://www.codechef.com/practice/course/binary-search",
-      "https://www.codechef.com/learn/course/college-design-analysis-algorithms"
+      "https://www.codechef.com/learn/course/college-design-analysis-algorithms",
+      "https://www.codechef.com/practice/tags/binary-search"
     ],
     "category": "Binary Search",
     "difficulty": "Medium"
@@ -845,13 +858,16 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://leetcode.com/problems/ipo/",
       "https://leetcode.com/problems/maximum-performance-of-a-team/",
       "https://leetcode.com/problems/sort-an-array/",
-      "https://leetcode.com/problems/sort-characters-by-frequency/"
+      "https://leetcode.com/problems/sort-characters-by-frequency/",
+      "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+      "https://leetcode.com/problems/relative-ranks/"
     ],
     "codeChef": [
       "https://www.codechef.com/practice/heaps",
       "https://www.codechef.com/learn/course/priority-queues",
       "https://www.codechef.com/learn/course/heap-sort",
-      "https://www.codechef.com/practice/data-structures"
+      "https://www.codechef.com/practice/data-structures",
+      "https://www.codechef.com/problems/MAGIC"
     ],
     "category": "Heaps",
     "difficulty": "Easy"
@@ -874,11 +890,13 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://leetcode.com/problems/merge-k-sorted-lists/",
       "https://leetcode.com/problems/sort-list/",
       "https://leetcode.com/problems/maximum-gap/",
-      "https://leetcode.com/problems/count-of-smaller-numbers-after-self/"
+      "https://leetcode.com/problems/count-of-smaller-numbers-after-self/",
+      "https://leetcode.com/problems/reverse-pairs/"
     ],
     "codeChef": [
       "https://www.codechef.com/learn/course/merge-sort",
-      "https://www.codechef.com/learn/course/college-design-analysis-algorithms"
+      "https://www.codechef.com/learn/course/college-design-analysis-algorithms",
+      "https://www.codechef.com/problems/MRGSRT"
     ],
     "category": "Sorting",
     "difficulty": "Medium"
@@ -907,7 +925,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     ],
     "codeChef": [
       "https://www.codechef.com/learn/course/merge-sort",
-      "https://www.codechef.com/learn/course/college-design-analysis-algorithms"
+      "https://www.codechef.com/learn/course/college-design-analysis-algorithms",
+      "https://www.codechef.com/problems/MRGSRT"
     ],
     "category": "Sorting",
     "difficulty": "Medium"
@@ -934,7 +953,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     ],
     "codeChef": [
       "https://www.codechef.com/learn/course/merge-sort",
-      "https://www.codechef.com/practice/course/basic-programming-concepts/DIFF500/problems/COMPLEXITY"
+      "https://www.codechef.com/practice/course/basic-programming-concepts/DIFF500/problems/COMPLEXITY",
+      "https://www.codechef.com/problems/MRGSRT"
     ],
     "category": "Sorting",
     "difficulty": "Medium"
@@ -949,7 +969,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://www.hackerrank.com/challenges/quicksort1/problem",
       "https://www.hackerrank.com/challenges/quicksort2/problem",
       "https://www.hackerrank.com/challenges/quicksort3/problem",
-      "https://www.hackerrank.com/challenges/quicksort4/problem"
+      "https://www.hackerrank.com/challenges/quicksort4/problem",
+      "https://www.hackerrank.com/challenges/quick-sort-2/problem"
     ],
     "leetCode": [
       "https://leetcode.com/problems/sort-an-array/",
@@ -963,7 +984,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     ],
     "codeChef": [
       "https://www.codechef.com/learn/course/quick-sort",
-      "https://www.codechef.com/learn/course/college-design-analysis-algorithms"
+      "https://www.codechef.com/learn/course/college-design-analysis-algorithms",
+      "https://www.codechef.com/problems/TSORT"
     ],
     "category": "Sorting",
     "difficulty": "Medium"
@@ -979,7 +1001,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://www.hackerrank.com/challenges/quicksort2/problem",
       "https://www.hackerrank.com/challenges/quicksort3/problem",
       "https://www.hackerrank.com/challenges/quicksort4/problem",
-      "https://www.hackerrank.com/challenges/countingsort1/problem"
+      "https://www.hackerrank.com/challenges/countingsort1/problem",
+      "https://www.hackerrank.com/challenges/quick-sort-2/problem"
     ],
     "leetCode": [
       "https://leetcode.com/problems/sort-an-array/",
@@ -993,7 +1016,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "codeChef": [
       "https://www.codechef.com/learn/course/quick-sort",
       "https://www.codechef.com/practice/course/basic-programming-concepts/DIFF500/problems/COMPLEXITY",
-      "https://www.codechef.com/learn/course/college-design-analysis-algorithms"
+      "https://www.codechef.com/learn/course/college-design-analysis-algorithms",
+      "https://www.codechef.com/problems/TSORT"
     ],
     "category": "Sorting",
     "difficulty": "Medium"
@@ -1038,7 +1062,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://www.hackerrank.com/challenges/luck-balance/problem",
       "https://www.hackerrank.com/challenges/angry-children/problem",
       "https://www.hackerrank.com/challenges/cloudy-day/problem",
-      "https://www.hackerrank.com/challenges/priyanka-and-toys/problem"
+      "https://www.hackerrank.com/challenges/priyanka-and-toys/problem",
+      "https://www.hackerrank.com/challenges/maximum-perimeter-triangle/problem"
     ],
     "leetCode": [
       "https://leetcode.com/problems/assign-cookies/",
@@ -1054,7 +1079,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://leetcode.com/problems/boats-to-save-people/",
       "https://leetcode.com/problems/candy/",
       "https://leetcode.com/problems/wiggle-subsequence/",
-      "https://leetcode.com/problems/remove-k-digits/"
+      "https://leetcode.com/problems/remove-k-digits/",
+      "https://leetcode.com/problems/maximum-units-on-a-truck/"
     ],
     "codeChef": [
       "https://www.codechef.com/learn/course/greedy-algorithms",
@@ -1088,7 +1114,9 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "codeChef": [
       "https://www.codechef.com/learn/course/greedy-algorithms",
       "https://www.codechef.com/practice/greedy-algorithms",
-      "https://www.codechef.com/learn/course/college-design-analysis-algorithms"
+      "https://www.codechef.com/learn/course/college-design-analysis-algorithms",
+      "https://www.codechef.com/practice/tags/fractional-knapsack",
+      "https://discuss.codechef.com/t/cflos-editorial/80514"
     ],
     "category": "Greedy",
     "difficulty": "Medium"
@@ -1157,7 +1185,9 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://leetcode.com/problems/min-cost-to-connect-all-points/",
       "https://leetcode.com/problems/connecting-cities-with-minimum-cost/"
     ],
-    "codeChef": [],
+    "codeChef": [
+      "https://www.codechef.com/learn/course/college-design-analysis-algorithms/CPDAA26/problems/DAA140"
+    ],
     "category": "Greedy",
     "difficulty": "Medium"
   },
@@ -1175,7 +1205,9 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://leetcode.com/problems/path-with-maximum-probability/",
       "https://leetcode.com/problems/path-with-minimum-effort/",
       "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/",
-      "https://leetcode.com/problems/minimum-time-to-visit-disappearing-nodes/"
+      "https://leetcode.com/problems/minimum-time-to-visit-disappearing-nodes/",
+      "https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/",
+      "https://leetcode.com/problems/find-edges-in-shortest-paths/"
     ],
     "codeChef": [],
     "category": "Greedy",
@@ -1198,7 +1230,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://leetcode.com/problems/min-cost-climbing-stairs/",
       "https://leetcode.com/problems/house-robber/",
       "https://leetcode.com/problems/coin-change/",
-      "https://leetcode.com/problems/unique-paths/"
+      "https://leetcode.com/problems/unique-paths/",
+      "https://leetcode.com/problems/longest-increasing-subsequence/"
     ],
     "codeChef": [
       "https://www.codechef.com/problems/MIXTURES"
@@ -1213,7 +1246,10 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "cleanTitle": "MultiStage Graph - Dynamic Programming",
     "videoUrl": "https://www.youtube.com/watch?v=9iE9Mj4m8jk",
     "hackerRank": [],
-    "leetCode": [],
+    "leetCode": [
+      "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
+      "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/"
+    ],
     "codeChef": [],
     "category": "Dynamic Programming",
     "difficulty": "Medium"
@@ -1225,7 +1261,10 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "cleanTitle": "MultiStage Graph (Program) - Dynamic Programming",
     "videoUrl": "https://www.youtube.com/watch?v=FcScLYJI42E",
     "hackerRank": [],
-    "leetCode": [],
+    "leetCode": [
+      "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
+      "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/"
+    ],
     "codeChef": [],
     "category": "Dynamic Programming",
     "difficulty": "Medium"
@@ -1241,7 +1280,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     ],
     "leetCode": [
       "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/",
-      "https://leetcode.com/problems/course-schedule-iv/"
+      "https://leetcode.com/problems/course-schedule-iv/",
+      "https://leetcode.com/problems/design-graph-with-shortest-path-calculator/"
     ],
     "codeChef": [
       "https://www.codechef.com/problems/HOMDEL",
@@ -1400,7 +1440,9 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "hackerRank": [],
     "leetCode": [
       "https://leetcode.com/problems/unique-binary-search-trees/",
-      "https://leetcode.com/problems/unique-binary-search-trees-ii/"
+      "https://leetcode.com/problems/unique-binary-search-trees-ii/",
+      "https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/",
+      "https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/"
     ],
     "codeChef": [],
     "category": "Binary Search",
@@ -1412,10 +1454,13 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "title": "4.7 [New] Traveling Salesman Problem - Dynamic Programming using Formula",
     "cleanTitle": "[New] Traveling Salesman Problem - Dynamic Programming using Formula",
     "videoUrl": "https://www.youtube.com/watch?v=Q4zHb-Swzro",
-    "hackerRank": [],
+    "hackerRank": [
+      "https://www.hackerrank.com/challenges/tsp/problem"
+    ],
     "leetCode": [
       "https://leetcode.com/problems/shortest-path-visiting-all-nodes/",
-      "https://leetcode.com/problems/find-the-shortest-superstring/"
+      "https://leetcode.com/problems/find-the-shortest-superstring/",
+      "https://leetcode.com/problems/min-cost-to-connect-all-points/"
     ],
     "codeChef": [
       "https://www.codechef.com/problems/TRAVEL"
@@ -1430,12 +1475,18 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "cleanTitle": "Reliability Design - Dynamic Programming",
     "videoUrl": "https://www.youtube.com/watch?v=uJOmqBwENB8",
     "hackerRank": [
-      "https://www.hackerrank.com/challenges/max-array-sum/problem"
+      "https://www.hackerrank.com/challenges/max-array-sum/problem",
+      "https://www.hackerrank.com/challenges/maximize-it/problem",
+      "https://www.hackerrank.com/challenges/candies/problem"
     ],
     "leetCode": [
       "https://leetcode.com/problems/house-robber/",
       "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
-      "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/"
+      "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/",
+      "https://leetcode.com/problems/integer-break/",
+      "https://leetcode.com/problems/partition-equal-subset-sum/",
+      "https://leetcode.com/problems/coin-change/",
+      "https://leetcode.com/problems/coin-change-ii/"
     ],
     "codeChef": [],
     "category": "Dynamic Programming",
@@ -1457,7 +1508,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://leetcode.com/problems/delete-operation-for-two-strings/",
       "https://leetcode.com/problems/shortest-common-supersequence/",
       "https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/",
-      "https://leetcode.com/problems/distinct-subsequences/"
+      "https://leetcode.com/problems/distinct-subsequences/",
+      "https://leetcode.com/problems/uncrossed-lines/"
     ],
     "codeChef": [
       "https://www.codechef.com/problems/LCS"
@@ -1475,7 +1527,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://www.hackerrank.com/challenges/ctci-bfs-shortest-reach/problem",
       "https://www.hackerrank.com/challenges/dfs-edges/problem",
       "https://www.hackerrank.com/challenges/connected-cell-in-a-grid/problem",
-      "https://www.hackerrank.com/challenges/components-in-graph/problem"
+      "https://www.hackerrank.com/challenges/components-in-graph/problem",
+      "https://www.hackerrank.com/challenges/bfsshortreach/problem"
     ],
     "leetCode": [
       "https://leetcode.com/problems/number-of-islands/",
@@ -1489,7 +1542,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://leetcode.com/problems/open-the-lock/",
       "https://leetcode.com/problems/is-graph-bipartite/",
       "https://leetcode.com/problems/surrounded-regions/",
-      "https://leetcode.com/problems/shortest-path-in-binary-matrix/"
+      "https://leetcode.com/problems/shortest-path-in-binary-matrix/",
+      "https://leetcode.com/problems/binary-tree-level-order-traversal/"
     ],
     "codeChef": [
       "https://www.codechef.com/problems/FARASA"
@@ -1522,7 +1576,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "videoUrl": "https://www.youtube.com/watch?v=DKCbsiDBN6c",
     "hackerRank": [
       "https://www.hackerrank.com/challenges/password-cracker/problem",
-      "https://www.hackerrank.com/challenges/recursive-digit-sum/problem"
+      "https://www.hackerrank.com/challenges/recursive-digit-sum/problem",
+      "https://www.hackerrank.com/challenges/the-power-sum/problem"
     ],
     "leetCode": [
       "https://leetcode.com/problems/combination-sum/",
@@ -1531,7 +1586,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://leetcode.com/problems/combinations/",
       "https://leetcode.com/problems/subsets/",
       "https://leetcode.com/problems/subsets-ii/",
-      "https://leetcode.com/problems/letter-combinations-of-a-phone-number/"
+      "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+      "https://leetcode.com/problems/combination-sum-ii/"
     ],
     "codeChef": [
       "https://www.codechef.com/problems/CANDY123"
@@ -1611,7 +1667,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "leetCode": [
       "https://leetcode.com/problems/unique-paths-iii/",
       "https://leetcode.com/problems/shortest-path-visiting-all-nodes/",
-      "https://leetcode.com/problems/path-with-maximum-gold/"
+      "https://leetcode.com/problems/path-with-maximum-gold/",
+      "https://leetcode.com/problems/all-paths-from-source-to-target/"
     ],
     "codeChef": [],
     "category": "Backtracking",
@@ -1683,10 +1740,13 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "title": "7.3 Traveling Salesman Problem - Branch and Bound",
     "cleanTitle": "Traveling Salesman Problem - Branch and Bound",
     "videoUrl": "https://www.youtube.com/watch?v=1FEP_sNb62k",
-    "hackerRank": [],
+    "hackerRank": [
+      "https://www.hackerrank.com/challenges/tsp/problem"
+    ],
     "leetCode": [
       "https://leetcode.com/problems/shortest-path-visiting-all-nodes/",
-      "https://leetcode.com/problems/find-the-shortest-superstring/"
+      "https://leetcode.com/problems/find-the-shortest-superstring/",
+      "https://leetcode.com/problems/min-cost-to-connect-all-points/"
     ],
     "codeChef": [
       "https://www.codechef.com/problems/TRAVEL"
@@ -1708,7 +1768,9 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/",
       "https://leetcode.com/problems/sudoku-solver/",
       "https://leetcode.com/problems/n-queens/",
-      "https://leetcode.com/problems/unique-paths-iii/"
+      "https://leetcode.com/problems/unique-paths-iii/",
+      "https://leetcode.com/problems/n-queens-ii/",
+      "https://leetcode.com/problems/smallest-sufficient-team/"
     ],
     "codeChef": [],
     "category": "NP-Completeness",
@@ -1739,16 +1801,19 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "videoUrl": "https://www.youtube.com/watch?v=V5-7GzOfADQ",
     "hackerRank": [
       "https://www.hackerrank.com/challenges/string-similarity/problem",
-      "https://www.hackerrank.com/challenges/string-construction/problem"
+      "https://www.hackerrank.com/challenges/string-construction/problem",
+      "https://www.hackerrank.com/challenges/build-a-string/problem"
     ],
     "leetCode": [
       "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
       "https://leetcode.com/problems/repeated-substring-pattern/",
       "https://leetcode.com/problems/shortest-palindrome/",
-      "https://leetcode.com/problems/longest-happy-prefix/"
+      "https://leetcode.com/problems/longest-happy-prefix/",
+      "https://leetcode.com/problems/repeated-string-match/"
     ],
     "codeChef": [
-      "https://www.codechef.com/problems/TAPALIN"
+      "https://www.codechef.com/problems/TAPALIN",
+      "https://www.codechef.com/problems/NHAY"
     ],
     "category": "Strings",
     "difficulty": "Hard"
@@ -1760,16 +1825,20 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "cleanTitle": "Rabin-Karp String Matching Algorithm",
     "videoUrl": "https://www.youtube.com/watch?v=qQ8vS2btsxI",
     "hackerRank": [
-      "https://www.hackerrank.com/challenges/string-similarity/problem"
+      "https://www.hackerrank.com/challenges/string-similarity/problem",
+      "https://www.hackerrank.com/challenges/string-construction/problem"
     ],
     "leetCode": [
       "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
       "https://leetcode.com/problems/repeated-dna-sequences/",
       "https://leetcode.com/problems/longest-duplicate-substring/",
-      "https://leetcode.com/problems/maximum-length-of-repeated-subarray/"
+      "https://leetcode.com/problems/maximum-length-of-repeated-subarray/",
+      "https://leetcode.com/problems/repeated-string-match/",
+      "https://leetcode.com/problems/longest-happy-prefix/"
     ],
     "codeChef": [
-      "https://www.codechef.com/problems/TAPALIN"
+      "https://www.codechef.com/problems/TAPALIN",
+      "https://www.codechef.com/problems/TALAZY"
     ],
     "category": "Strings",
     "difficulty": "Hard"
@@ -1968,39 +2037,6 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
   {
     "id": 85,
     "originalIndex": "",
-    "title": "[New] Matrix Chain Multiplication using Dynamic Programming Formula",
-    "cleanTitle": "[New] Matrix Chain Multiplication using Dynamic Programming Formula",
-    "videoUrl": "https://www.youtube.com/watch?v=_WncuhSJZyA",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/burst-balloons/",
-      "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/",
-      "https://leetcode.com/problems/minimum-score-triangulation-of-polygon/"
-    ],
-    "codeChef": [],
-    "category": "Dynamic Programming",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 86,
-    "originalIndex": "4.6.2",
-    "title": "4.6.2 [New] Optimal Binary Search Tree Successful and Unsuccessful Probability - Dynamic Programming",
-    "cleanTitle": "[New] Optimal Binary Search Tree Successful and Unsuccessful Probability - Dynamic Programming",
-    "videoUrl": "https://www.youtube.com/watch?v=wAy6nDMPYAE",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/unique-binary-search-trees/",
-      "https://leetcode.com/problems/unique-binary-search-trees-ii/",
-      "https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/",
-      "https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/"
-    ],
-    "codeChef": [],
-    "category": "Binary Search",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 87,
-    "originalIndex": "",
     "title": "Bresenham's Line Drawing Algorithm",
     "cleanTitle": "Bresenham's Line Drawing Algorithm",
     "videoUrl": "https://www.youtube.com/watch?v=RGB-wlatStc",
@@ -2011,73 +2047,7 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "difficulty": "Medium"
   },
   {
-    "id": 88,
-    "originalIndex": "2.6.3",
-    "title": "2.6.3 Heap - Heap Sort - Heapify - Priority Queues",
-    "cleanTitle": "Heap - Heap Sort - Heapify - Priority Queues",
-    "videoUrl": "https://www.youtube.com/watch?v=HqPJF2L5h9U",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/qheap1/problem",
-      "https://www.hackerrank.com/challenges/jesse-and-cookies/problem",
-      "https://www.hackerrank.com/challenges/find-the-running-median/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/sort-an-array/",
-      "https://leetcode.com/problems/kth-largest-element-in-an-array/",
-      "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
-      "https://leetcode.com/problems/last-stone-weight/",
-      "https://leetcode.com/problems/top-k-frequent-elements/",
-      "https://leetcode.com/problems/merge-k-sorted-lists/",
-      "https://leetcode.com/problems/find-median-from-data-stream/",
-      "https://leetcode.com/problems/relative-ranks/"
-    ],
-    "codeChef": [
-      "https://www.codechef.com/problems/MAGIC"
-    ],
-    "category": "Heaps",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 89,
-    "originalIndex": "4.9",
-    "title": "4.9 Longest Common Subsequence (LCS)  - Recursion and Dynamic Programming",
-    "cleanTitle": "Longest Common Subsequence (LCS)  - Recursion and Dynamic Programming",
-    "videoUrl": "https://www.youtube.com/watch?v=sSno9rV8Rhg",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/common-child/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/longest-common-subsequence/",
-      "https://leetcode.com/problems/shortest-common-supersequence/",
-      "https://leetcode.com/problems/uncrossed-lines/",
-      "https://leetcode.com/problems/delete-operation-for-two-strings/",
-      "https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/"
-    ],
-    "codeChef": [
-      "https://www.codechef.com/problems/LCS"
-    ],
-    "category": "Dynamic Programming",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 90,
-    "originalIndex": "7.3",
-    "title": "7.3 Traveling Salesman Problem - Branch and Bound",
-    "cleanTitle": "Traveling Salesman Problem - Branch and Bound",
-    "videoUrl": "https://www.youtube.com/watch?v=1FEP_sNb62k",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/tsp/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/shortest-path-visiting-all-nodes/",
-      "https://leetcode.com/problems/min-cost-to-connect-all-points/"
-    ],
-    "codeChef": [],
-    "category": "Branch & Bound",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 91,
+    "id": 86,
     "originalIndex": "",
     "title": "DDA Line Drawing Algorithm - Computer Graphics",
     "cleanTitle": "DDA Line Drawing Algorithm - Computer Graphics",
@@ -2089,95 +2059,7 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "difficulty": "Medium"
   },
   {
-    "id": 92,
-    "originalIndex": "4.8",
-    "title": "4.8 Reliability Design - Dynamic Programming",
-    "cleanTitle": "Reliability Design - Dynamic Programming",
-    "videoUrl": "https://www.youtube.com/watch?v=uJOmqBwENB8",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/maximize-it/problem",
-      "https://www.hackerrank.com/challenges/candies/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/integer-break/",
-      "https://leetcode.com/problems/partition-equal-subset-sum/",
-      "https://leetcode.com/problems/coin-change/",
-      "https://leetcode.com/problems/coin-change-ii/"
-    ],
-    "codeChef": [],
-    "category": "Dynamic Programming",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 93,
-    "originalIndex": "8.1",
-    "title": "8.1 NP-Hard Graph Problem - Clique Decision Problem",
-    "cleanTitle": "NP-Hard Graph Problem - Clique Decision Problem",
-    "videoUrl": "https://www.youtube.com/watch?v=qZs767KQcvE",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "NP-Completeness",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 94,
-    "originalIndex": "6.4",
-    "title": "6.4 Hamiltonian Cycle - Backtracking",
-    "cleanTitle": "Hamiltonian Cycle - Backtracking",
-    "videoUrl": "https://www.youtube.com/watch?v=dQr4wZCiJJ4",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/shortest-path-visiting-all-nodes/",
-      "https://leetcode.com/problems/all-paths-from-source-to-target/"
-    ],
-    "codeChef": [],
-    "category": "Backtracking",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 95,
-    "originalIndex": "1.12",
-    "title": "1.12 Disjoint Sets Data Structure - Weighted Union and Collapsing Find",
-    "cleanTitle": "Disjoint Sets Data Structure - Weighted Union and Collapsing Find",
-    "videoUrl": "https://www.youtube.com/watch?v=wU6udHRIkcc",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/merging-communities/problem",
-      "https://www.hackerrank.com/challenges/components-in-graph/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/number-of-provinces/",
-      "https://leetcode.com/problems/redundant-connection/",
-      "https://leetcode.com/problems/accounts-merge/",
-      "https://leetcode.com/problems/number-of-operations-to-make-network-connected/",
-      "https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/",
-      "https://leetcode.com/problems/regions-cut-by-slashes/"
-    ],
-    "codeChef": [
-      "https://www.codechef.com/problems/CYCLIC"
-    ],
-    "category": "Graphs",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 96,
-    "originalIndex": "4.7",
-    "title": "4.7 [New] Traveling Salesman Problem - Dynamic Programming using Formula",
-    "cleanTitle": "[New] Traveling Salesman Problem - Dynamic Programming using Formula",
-    "videoUrl": "https://www.youtube.com/watch?v=Q4zHb-Swzro",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/tsp/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/shortest-path-visiting-all-nodes/",
-      "https://leetcode.com/problems/min-cost-to-connect-all-points/"
-    ],
-    "codeChef": [],
-    "category": "Dynamic Programming",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 97,
+    "id": 87,
     "originalIndex": "6",
     "title": "6. Everything about Variables in JAVA",
     "cleanTitle": "Everything about Variables in JAVA",
@@ -2201,45 +2083,7 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "difficulty": "Easy"
   },
   {
-    "id": 98,
-    "originalIndex": "9.2",
-    "title": "9.2 Rabin-Karp String Matching Algorithm",
-    "cleanTitle": "Rabin-Karp String Matching Algorithm",
-    "videoUrl": "https://www.youtube.com/watch?v=qQ8vS2btsxI",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/string-similarity/problem",
-      "https://www.hackerrank.com/challenges/string-construction/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/repeated-string-match/",
-      "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
-      "https://leetcode.com/problems/longest-duplicate-substring/",
-      "https://leetcode.com/problems/longest-happy-prefix/"
-    ],
-    "codeChef": [
-      "https://www.codechef.com/problems/TALAZY"
-    ],
-    "category": "Strings",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 99,
-    "originalIndex": "10.2",
-    "title": "10.2  B Trees and B+ Trees. How they are useful in Databases",
-    "cleanTitle": "B Trees and B+ Trees. How they are useful in Databases",
-    "videoUrl": "https://www.youtube.com/watch?v=aZjYr87r1b8",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/design-hashmap/",
-      "https://leetcode.com/problems/design-hashset/",
-      "https://leetcode.com/problems/lru-cache/"
-    ],
-    "codeChef": [],
-    "category": "Trees & BST",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 100,
+    "id": 88,
     "originalIndex": "5",
     "title": "5. Everything about JAVA Data Types",
     "cleanTitle": "Everything about JAVA Data Types",
@@ -2263,7 +2107,7 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "difficulty": "Easy"
   },
   {
-    "id": 101,
+    "id": 89,
     "originalIndex": "4",
     "title": "4. Why public static void main(String args[ ]) ? JAVA",
     "cleanTitle": "Why public static void main(String args[ ]) ? JAVA",
@@ -2278,7 +2122,7 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "difficulty": "Easy"
   },
   {
-    "id": 102,
+    "id": 90,
     "originalIndex": "3",
     "title": "3. Why to Set Path ? JAVA",
     "cleanTitle": "Why to Set Path ? JAVA",
@@ -2290,29 +2134,7 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "difficulty": "Easy"
   },
   {
-    "id": 103,
-    "originalIndex": "9.1",
-    "title": "9.1 Knuth-Morris-Pratt KMP String Matching Algorithm",
-    "cleanTitle": "Knuth-Morris-Pratt KMP String Matching Algorithm",
-    "videoUrl": "https://www.youtube.com/watch?v=V5-7GzOfADQ",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/string-similarity/problem",
-      "https://www.hackerrank.com/challenges/build-a-string/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
-      "https://leetcode.com/problems/repeated-string-match/",
-      "https://leetcode.com/problems/shortest-palindrome/",
-      "https://leetcode.com/problems/longest-happy-prefix/"
-    ],
-    "codeChef": [
-      "https://www.codechef.com/problems/NHAY"
-    ],
-    "category": "Strings",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 104,
+    "id": 91,
     "originalIndex": "2",
     "title": "2. Why and How Java is platform independent",
     "cleanTitle": "Why and How Java is platform independent",
@@ -2327,7 +2149,7 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "difficulty": "Easy"
   },
   {
-    "id": 105,
+    "id": 92,
     "originalIndex": "1",
     "title": "1. Why One should Learn Java - Introduction to Java",
     "cleanTitle": "Why One should Learn Java - Introduction to Java",
@@ -2345,275 +2167,7 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "difficulty": "Easy"
   },
   {
-    "id": 106,
-    "originalIndex": "10.1",
-    "title": "10.1 AVL Tree - Insertion and Rotations",
-    "cleanTitle": "AVL Tree - Insertion and Rotations",
-    "videoUrl": "https://www.youtube.com/watch?v=jDM6_TnYIqE",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/self-balancing-tree/problem",
-      "https://www.hackerrank.com/challenges/binary-search-tree-insertion/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/insert-into-a-binary-search-tree/",
-      "https://leetcode.com/problems/delete-node-in-a-bst/",
-      "https://leetcode.com/problems/validate-binary-search-tree/",
-      "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
-      "https://leetcode.com/problems/balance-a-binary-search-tree/"
-    ],
-    "codeChef": [],
-    "category": "Trees & BST",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 107,
-    "originalIndex": "4.3.1",
-    "title": "4.3.1 Matrix Chain Multiplication (Program) - Dynamic Programming",
-    "cleanTitle": "Matrix Chain Multiplication (Program) - Dynamic Programming",
-    "videoUrl": "https://www.youtube.com/watch?v=eKkXU3uu2zk",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Dynamic Programming",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 108,
-    "originalIndex": "4.5.1",
-    "title": "4.5.1 0/1 Knapsack Problem (Program) - Dynamic Programming",
-    "cleanTitle": "0/1 Knapsack Problem (Program) - Dynamic Programming",
-    "videoUrl": "https://www.youtube.com/watch?v=zRza99HPvkQ",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/unbounded-knapsack/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/partition-equal-subset-sum/",
-      "https://leetcode.com/problems/target-sum/",
-      "https://leetcode.com/problems/ones-and-zeroes/",
-      "https://leetcode.com/problems/last-stone-weight-ii/"
-    ],
-    "codeChef": [],
-    "category": "Dynamic Programming",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 109,
-    "originalIndex": "1.1",
-    "title": "1.1 Priori Analysis and Posteriori Testing",
-    "cleanTitle": "Priori Analysis and Posteriori Testing",
-    "videoUrl": "https://www.youtube.com/watch?v=-JTq1BFBwmo",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Fundamentals",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 110,
-    "originalIndex": "4.1.1",
-    "title": "4.1.1 MultiStage Graph (Program) - Dynamic Programming",
-    "cleanTitle": "MultiStage Graph (Program) - Dynamic Programming",
-    "videoUrl": "https://www.youtube.com/watch?v=FcScLYJI42E",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
-      "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/"
-    ],
-    "codeChef": [],
-    "category": "Dynamic Programming",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 111,
-    "originalIndex": "8",
-    "title": "8. NP-Hard and NP-Complete Problems",
-    "cleanTitle": "NP-Hard and NP-Complete Problems",
-    "videoUrl": "https://www.youtube.com/watch?v=e2cF8a5aAhE",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/n-queens/",
-      "https://leetcode.com/problems/n-queens-ii/",
-      "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/",
-      "https://leetcode.com/problems/unique-paths-iii/",
-      "https://leetcode.com/problems/smallest-sufficient-team/"
-    ],
-    "codeChef": [],
-    "category": "NP-Completeness",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 112,
-    "originalIndex": "7.2",
-    "title": "7.2 0/1 Knapsack using Branch and Bound",
-    "cleanTitle": "0/1 Knapsack using Branch and Bound",
-    "videoUrl": "https://www.youtube.com/watch?v=yV1d-b_NeK8",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/unbounded-knapsack/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/partition-equal-subset-sum/",
-      "https://leetcode.com/problems/ones-and-zeroes/",
-      "https://leetcode.com/problems/target-sum/",
-      "https://leetcode.com/problems/last-stone-weight-ii/"
-    ],
-    "codeChef": [],
-    "category": "Branch & Bound",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 113,
-    "originalIndex": "7.1",
-    "title": "7.1 Job Sequencing with Deadline - Branch and Bound",
-    "cleanTitle": "Job Sequencing with Deadline - Branch and Bound",
-    "videoUrl": "https://www.youtube.com/watch?v=M7Fl_z7_J2k",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/maximum-profit-in-job-scheduling/",
-      "https://leetcode.com/problems/course-schedule-iii/"
-    ],
-    "codeChef": [],
-    "category": "Branch & Bound",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 114,
-    "originalIndex": "6.3",
-    "title": "6.3 Graph Coloring Problem - Backtracking",
-    "cleanTitle": "Graph Coloring Problem - Backtracking",
-    "videoUrl": "https://www.youtube.com/watch?v=052VkKhIaQ4",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/flower-planting-with-no-adjacent/",
-      "https://leetcode.com/problems/possible-bipartition/",
-      "https://leetcode.com/problems/is-graph-bipartite/"
-    ],
-    "codeChef": [],
-    "category": "Backtracking",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 115,
-    "originalIndex": "7",
-    "title": "7 Branch and Bound Introduction",
-    "cleanTitle": "Branch and Bound Introduction",
-    "videoUrl": "https://www.youtube.com/watch?v=3RBNPc0_Q6g",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/n-queens/",
-      "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/"
-    ],
-    "codeChef": [],
-    "category": "Branch & Bound",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 116,
-    "originalIndex": "6.2",
-    "title": "6.2 Sum Of Subsets Problem - Backtracking",
-    "cleanTitle": "Sum Of Subsets Problem - Backtracking",
-    "videoUrl": "https://www.youtube.com/watch?v=kyLxTdsT8ws",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/target-sum/",
-      "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/",
-      "https://leetcode.com/problems/combination-sum-ii/",
-      "https://leetcode.com/problems/combination-sum-iii/",
-      "https://leetcode.com/problems/combination-sum/"
-    ],
-    "codeChef": [],
-    "category": "Backtracking",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 117,
-    "originalIndex": "6.1",
-    "title": "6.1 N Queens Problem using Backtracking",
-    "cleanTitle": "N Queens Problem using Backtracking",
-    "videoUrl": "https://www.youtube.com/watch?v=xFv_Hl4B83A",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/n-queens/",
-      "https://leetcode.com/problems/n-queens-ii/"
-    ],
-    "codeChef": [],
-    "category": "Backtracking",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 118,
-    "originalIndex": "6",
-    "title": "6 Introduction to Backtracking - Brute Force Approach",
-    "cleanTitle": "Introduction to Backtracking - Brute Force Approach",
-    "videoUrl": "https://www.youtube.com/watch?v=DKCbsiDBN6c",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/the-power-sum/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/combination-sum/",
-      "https://leetcode.com/problems/combination-sum-ii/",
-      "https://leetcode.com/problems/permutations/",
-      "https://leetcode.com/problems/permutations-ii/",
-      "https://leetcode.com/problems/combinations/",
-      "https://leetcode.com/problems/subsets/",
-      "https://leetcode.com/problems/subsets-ii/"
-    ],
-    "codeChef": [],
-    "category": "Backtracking",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 119,
-    "originalIndex": "5.2",
-    "title": "5.2 Articulation Point and Biconnected Components",
-    "cleanTitle": "Articulation Point and Biconnected Components",
-    "videoUrl": "https://www.youtube.com/watch?v=jFZsDDB0-vo",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/critical-connections-in-a-network/",
-      "https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/"
-    ],
-    "codeChef": [],
-    "category": "Graphs",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 120,
-    "originalIndex": "5.1",
-    "title": "5.1 Graph Traversals - BFS & DFS -Breadth First Search and Depth First Search",
-    "cleanTitle": "Graph Traversals - BFS & DFS -Breadth First Search and Depth First Search",
-    "videoUrl": "https://www.youtube.com/watch?v=pcKY4hjDrxk",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/bfsshortreach/problem",
-      "https://www.hackerrank.com/challenges/connected-cell-in-a-grid/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/number-of-islands/",
-      "https://leetcode.com/problems/clone-graph/",
-      "https://leetcode.com/problems/flood-fill/",
-      "https://leetcode.com/problems/rotting-oranges/",
-      "https://leetcode.com/problems/word-ladder/",
-      "https://leetcode.com/problems/binary-tree-level-order-traversal/",
-      "https://leetcode.com/problems/keys-and-rooms/",
-      "https://leetcode.com/problems/is-graph-bipartite/"
-    ],
-    "codeChef": [],
-    "category": "Graphs",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 121,
-    "originalIndex": "4.6",
-    "title": "4.6 Optimal Binary Search Tree (Successful Search Only) - Dynamic Programming",
-    "cleanTitle": "Optimal Binary Search Tree (Successful Search Only) - Dynamic Programming",
-    "videoUrl": "https://www.youtube.com/watch?v=vLS-zRCHo-Y",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Binary Search",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 122,
+    "id": 93,
     "originalIndex": "4.7",
     "title": "4.7 Traveling Salesperson Problem - Dynamic Programming",
     "cleanTitle": "Traveling Salesperson Problem - Dynamic Programming",
@@ -2626,659 +2180,5 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "codeChef": [],
     "category": "Dynamic Programming",
     "difficulty": "Hard"
-  },
-  {
-    "id": 123,
-    "originalIndex": "4.5",
-    "title": "4.5 0/1 Knapsack - Two Methods - Dynamic Programming",
-    "cleanTitle": "0/1 Knapsack - Two Methods - Dynamic Programming",
-    "videoUrl": "https://www.youtube.com/watch?v=nLmhmB6NzcM",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/unbounded-knapsack/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/partition-equal-subset-sum/",
-      "https://leetcode.com/problems/ones-and-zeroes/",
-      "https://leetcode.com/problems/target-sum/",
-      "https://leetcode.com/problems/last-stone-weight-ii/"
-    ],
-    "codeChef": [],
-    "category": "Dynamic Programming",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 124,
-    "originalIndex": "4.4",
-    "title": "4.4 Bellman Ford Algorithm - Single Source Shortest Path - Dynamic Programming",
-    "cleanTitle": "Bellman Ford Algorithm - Single Source Shortest Path - Dynamic Programming",
-    "videoUrl": "https://www.youtube.com/watch?v=FtN3BYH2Zes",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/dijkstrashortreach/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/cheapest-flights-within-k-stops/"
-    ],
-    "codeChef": [],
-    "category": "Dynamic Programming",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 125,
-    "originalIndex": "4.3",
-    "title": "4.3 Matrix Chain Multiplication - Dynamic Programming",
-    "cleanTitle": "Matrix Chain Multiplication - Dynamic Programming",
-    "videoUrl": "https://www.youtube.com/watch?v=prx1psByp7U",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Dynamic Programming",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 126,
-    "originalIndex": "4.1",
-    "title": "4.1 MultiStage Graph - Dynamic Programming",
-    "cleanTitle": "MultiStage Graph - Dynamic Programming",
-    "videoUrl": "https://www.youtube.com/watch?v=9iE9Mj4m8jk",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
-      "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/"
-    ],
-    "codeChef": [],
-    "category": "Dynamic Programming",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 127,
-    "originalIndex": "4.2",
-    "title": "4.2 All Pairs Shortest Path (Floyd-Warshall) - Dynamic Programming",
-    "cleanTitle": "All Pairs Shortest Path (Floyd-Warshall) - Dynamic Programming",
-    "videoUrl": "https://www.youtube.com/watch?v=oNI0rf2P9gE",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/floyd-city-of-blinding-lights/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/",
-      "https://leetcode.com/problems/design-graph-with-shortest-path-calculator/"
-    ],
-    "codeChef": [],
-    "category": "Dynamic Programming",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 128,
-    "originalIndex": "4",
-    "title": "4 Principle  of Optimality  - Dynamic Programming introduction",
-    "cleanTitle": "Principle  of Optimality  - Dynamic Programming introduction",
-    "videoUrl": "https://www.youtube.com/watch?v=5dRGRueKU3M",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/max-array-sum/problem",
-      "https://www.hackerrank.com/challenges/coin-change/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/house-robber/",
-      "https://leetcode.com/problems/coin-change/",
-      "https://leetcode.com/problems/longest-increasing-subsequence/",
-      "https://leetcode.com/problems/climbing-stairs/"
-    ],
-    "codeChef": [],
-    "category": "Dynamic Programming",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 129,
-    "originalIndex": "3.6",
-    "title": "3.6 Dijkstra Algorithm - Single Source Shortest Path - Greedy Method",
-    "cleanTitle": "Dijkstra Algorithm - Single Source Shortest Path - Greedy Method",
-    "videoUrl": "https://www.youtube.com/watch?v=XB4MIexjvY0",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/dijkstrashortreach/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/network-delay-time/",
-      "https://leetcode.com/problems/path-with-maximum-probability/",
-      "https://leetcode.com/problems/path-with-minimum-effort/",
-      "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/",
-      "https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/",
-      "https://leetcode.com/problems/find-edges-in-shortest-paths/"
-    ],
-    "codeChef": [],
-    "category": "Greedy",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 130,
-    "originalIndex": "3.5",
-    "title": "3.5 Prims and Kruskals Algorithms - Greedy Method",
-    "cleanTitle": "Prims and Kruskals Algorithms - Greedy Method",
-    "videoUrl": "https://www.youtube.com/watch?v=4ZlRH0eK-qQ",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/primsmstsub/problem",
-      "https://www.hackerrank.com/challenges/kruskalmstrsub/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/min-cost-to-connect-all-points/"
-    ],
-    "codeChef": [
-      "https://www.codechef.com/learn/course/college-design-analysis-algorithms/CPDAA26/problems/DAA140"
-    ],
-    "category": "Greedy",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 131,
-    "originalIndex": "3.4",
-    "title": "3.4 Huffman Coding - Greedy Method",
-    "cleanTitle": "Huffman Coding - Greedy Method",
-    "videoUrl": "https://www.youtube.com/watch?v=co4_ahEDCho",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/one-week-preparation-kit-tree-huffman-decoding/problem"
-    ],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Greedy",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 132,
-    "originalIndex": "3.2",
-    "title": "3.2 Job Sequencing with Deadlines - Greedy Method",
-    "cleanTitle": "Job Sequencing with Deadlines - Greedy Method",
-    "videoUrl": "https://www.youtube.com/watch?v=zPtI8q9gvX8",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/maximum-profit-in-job-scheduling/"
-    ],
-    "codeChef": [],
-    "category": "Greedy",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 133,
-    "originalIndex": "3.3",
-    "title": "3.3 Optimal Merge Pattern - Greedy Method",
-    "cleanTitle": "Optimal Merge Pattern - Greedy Method",
-    "videoUrl": "https://www.youtube.com/watch?v=HHIc5JZyenI",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/minimum-cost-to-connect-sticks/",
-      "https://leetcode.com/problems/minimum-cost-to-merge-stones/"
-    ],
-    "codeChef": [],
-    "category": "Greedy",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 134,
-    "originalIndex": "3.1",
-    "title": "3.1 Knapsack Problem - Greedy Method",
-    "cleanTitle": "Knapsack Problem - Greedy Method",
-    "videoUrl": "https://www.youtube.com/watch?v=oTTzNMHM05I",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/greedy-florist/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/maximum-units-on-a-truck/"
-    ],
-    "codeChef": [
-      "https://www.codechef.com/practice/tags/fractional-knapsack",
-      "https://discuss.codechef.com/t/cflos-editorial/80514"
-    ],
-    "category": "Greedy",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 135,
-    "originalIndex": "3",
-    "title": "3. Greedy Method -  Introduction",
-    "cleanTitle": "Greedy Method -  Introduction",
-    "videoUrl": "https://www.youtube.com/watch?v=ARvQcqJ_-NY",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/maximum-perimeter-triangle/problem",
-      "https://www.hackerrank.com/challenges/greedy-florist/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/assign-cookies/",
-      "https://leetcode.com/problems/jump-game/",
-      "https://leetcode.com/problems/jump-game-ii/",
-      "https://leetcode.com/problems/non-overlapping-intervals/",
-      "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/",
-      "https://leetcode.com/problems/maximum-units-on-a-truck/"
-    ],
-    "codeChef": [],
-    "category": "Greedy",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 136,
-    "originalIndex": "2.9",
-    "title": "2.9 Strassens Matrix Multiplication",
-    "cleanTitle": "Strassens Matrix Multiplication",
-    "videoUrl": "https://www.youtube.com/watch?v=0oJyNmEbS4w",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Divide & Conquer",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 137,
-    "originalIndex": "2.8.2",
-    "title": "2.8.2 QuickSort Analysis",
-    "cleanTitle": "QuickSort Analysis",
-    "videoUrl": "https://www.youtube.com/watch?v=-qOVVRIZzao",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/quick-sort-2/problem",
-      "https://www.hackerrank.com/challenges/quicksort3/problem",
-      "https://www.hackerrank.com/challenges/quicksort1/problem",
-      "https://www.hackerrank.com/challenges/quicksort4/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/sort-an-array/",
-      "https://leetcode.com/problems/sort-colors/"
-    ],
-    "codeChef": [
-      "https://www.codechef.com/problems/TSORT"
-    ],
-    "category": "Sorting",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 138,
-    "originalIndex": "2.8.1",
-    "title": "2.8.1  QuickSort Algorithm",
-    "cleanTitle": "QuickSort Algorithm",
-    "videoUrl": "https://www.youtube.com/watch?v=7h1s2SojIRw",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/quicksort1/problem",
-      "https://www.hackerrank.com/challenges/quick-sort-2/problem",
-      "https://www.hackerrank.com/challenges/quicksort3/problem",
-      "https://www.hackerrank.com/challenges/quicksort4/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/sort-an-array/",
-      "https://leetcode.com/problems/sort-colors/"
-    ],
-    "codeChef": [
-      "https://www.codechef.com/problems/TSORT"
-    ],
-    "category": "Sorting",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 139,
-    "originalIndex": "2.7.3",
-    "title": "2.7.3 MergeSort in-depth Analysis",
-    "cleanTitle": "MergeSort in-depth Analysis",
-    "videoUrl": "https://www.youtube.com/watch?v=ak-pz7tS5DE",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/ctci-merge-sort/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/sort-an-array/",
-      "https://leetcode.com/problems/count-of-smaller-numbers-after-self/",
-      "https://leetcode.com/problems/reverse-pairs/",
-      "https://leetcode.com/problems/count-of-range-sum/"
-    ],
-    "codeChef": [
-      "https://www.codechef.com/problems/MRGSRT"
-    ],
-    "category": "Sorting",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 140,
-    "originalIndex": "1.5.3",
-    "title": "1.5.3 Time Complexity of While and if #3",
-    "cleanTitle": "Time Complexity of While and if #3",
-    "videoUrl": "https://www.youtube.com/watch?v=p1EnSvS3urU",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/data-structures-quiz-2/problem"
-    ],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Fundamentals",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 141,
-    "originalIndex": "2.7.2",
-    "title": "2.7.2.  Merge Sort Algorithm",
-    "cleanTitle": "Merge Sort Algorithm",
-    "videoUrl": "https://www.youtube.com/watch?v=mB5HXBb_HY8",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/ctci-merge-sort/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/sort-an-array/",
-      "https://leetcode.com/problems/count-of-smaller-numbers-after-self/",
-      "https://leetcode.com/problems/reverse-pairs/",
-      "https://leetcode.com/problems/count-of-range-sum/"
-    ],
-    "codeChef": [
-      "https://www.codechef.com/problems/MRGSRT"
-    ],
-    "category": "Sorting",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 142,
-    "originalIndex": "2.7.1",
-    "title": "2.7.1  Two Way MergeSort - Iterative method",
-    "cleanTitle": "Two Way MergeSort - Iterative method",
-    "videoUrl": "https://www.youtube.com/watch?v=6pV2IF0fgKY",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/ctci-merge-sort/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/sort-an-array/",
-      "https://leetcode.com/problems/count-of-smaller-numbers-after-self/",
-      "https://leetcode.com/problems/reverse-pairs/"
-    ],
-    "codeChef": [
-      "https://www.codechef.com/problems/MRGSRT"
-    ],
-    "category": "Sorting",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 143,
-    "originalIndex": "2.6.1",
-    "title": "2.6.1 Binary Search Iterative Method",
-    "cleanTitle": "Binary Search Iterative Method",
-    "videoUrl": "https://www.youtube.com/watch?v=C2apEw9pgtw",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/tutorial-intro/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/binary-search/",
-      "https://leetcode.com/problems/search-insert-position/",
-      "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
-      "https://leetcode.com/problems/search-in-rotated-sorted-array/",
-      "https://leetcode.com/problems/search-a-2d-matrix/",
-      "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
-      "https://leetcode.com/problems/find-peak-element/"
-    ],
-    "codeChef": [
-      "https://www.codechef.com/practice/tags/binary-search"
-    ],
-    "category": "Binary Search",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 144,
-    "originalIndex": "2.6.2",
-    "title": "2.6.2 Binary Search Recursive Method",
-    "cleanTitle": "Binary Search Recursive Method",
-    "videoUrl": "https://www.youtube.com/watch?v=uEUXGcc2VXM",
-    "hackerRank": [],
-    "leetCode": [
-      "https://leetcode.com/problems/binary-search/",
-      "https://leetcode.com/problems/search-insert-position/",
-      "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
-      "https://leetcode.com/problems/search-in-rotated-sorted-array/",
-      "https://leetcode.com/problems/search-a-2d-matrix/",
-      "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
-      "https://leetcode.com/problems/find-peak-element/"
-    ],
-    "codeChef": [
-      "https://www.codechef.com/practice/tags/binary-search"
-    ],
-    "category": "Binary Search",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 145,
-    "originalIndex": "2.4.2",
-    "title": "2.4.2 Examples for Master Theorem #2",
-    "cleanTitle": "Examples for Master Theorem #2",
-    "videoUrl": "https://www.youtube.com/watch?v=kGcO-nAm9Vc",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Divide & Conquer",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 146,
-    "originalIndex": "2.4.1",
-    "title": "2.4.1 Masters Theorem in Algorithms for Dividing Function #1",
-    "cleanTitle": "Masters Theorem in Algorithms for Dividing Function #1",
-    "videoUrl": "https://www.youtube.com/watch?v=OynWkEj0S-s",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Divide & Conquer",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 147,
-    "originalIndex": "2.5",
-    "title": "2.5 Root function (Recurrence Relation)",
-    "cleanTitle": "Root function (Recurrence Relation)",
-    "videoUrl": "https://www.youtube.com/watch?v=9rVuyjxzwgM",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/recursion-in-c/problem",
-      "https://www.hackerrank.com/challenges/30-recursion/problem"
-    ],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Divide & Conquer",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 148,
-    "originalIndex": "2.3.3",
-    "title": "2.3.3 Recurrence Relation [ T(n)= 2T(n/2) +n]  #3",
-    "cleanTitle": "Recurrence Relation [ T(n)= 2T(n/2) +n]  #3",
-    "videoUrl": "https://www.youtube.com/watch?v=1K9ebQJosvo",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Divide & Conquer",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 149,
-    "originalIndex": "2.3.2",
-    "title": "2.3.2 Recurrence Relation Dividing [ T(n)=T(n/2)+ n].   #2",
-    "cleanTitle": "Recurrence Relation Dividing [ T(n)=T(n/2)+ n].   #2",
-    "videoUrl": "https://www.youtube.com/watch?v=XcZw01FuH18",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Divide & Conquer",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 150,
-    "originalIndex": "2.3.1",
-    "title": "2.3.1 Recurrence Relation Dividing Function T(n)=T(n/2)+1 #1",
-    "cleanTitle": "Recurrence Relation Dividing Function T(n)=T(n/2)+1 #1",
-    "videoUrl": "https://www.youtube.com/watch?v=8gt0D0IqU5w",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Divide & Conquer",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 151,
-    "originalIndex": "2.2",
-    "title": "2.2 Masters Theorem Decreasing Function",
-    "cleanTitle": "Masters Theorem Decreasing Function",
-    "videoUrl": "https://www.youtube.com/watch?v=CyknhZbfMqc",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Divide & Conquer",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 152,
-    "originalIndex": "2.1.4",
-    "title": "2.1.4 Recurrence Relation T(n)=2 T(n-1)+1  #4",
-    "cleanTitle": "Recurrence Relation T(n)=2 T(n-1)+1  #4",
-    "videoUrl": "https://www.youtube.com/watch?v=JvcqtZk2mng",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/30-recursion/problem",
-      "https://www.hackerrank.com/challenges/recursion-in-c/problem"
-    ],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Divide & Conquer",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 153,
-    "originalIndex": "2.1.3",
-    "title": "2.1.3 Recurrence Relation (T(n)= T(n-1) + log n) #3",
-    "cleanTitle": "Recurrence Relation (T(n)= T(n-1) + log n) #3",
-    "videoUrl": "https://www.youtube.com/watch?v=MhT7XmxhaCE",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Divide & Conquer",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 154,
-    "originalIndex": "2.1.2",
-    "title": "2.1.2 Recurrence Relation (T(n)= T(n-1) + n) #2",
-    "cleanTitle": "Recurrence Relation (T(n)= T(n-1) + n) #2",
-    "videoUrl": "https://www.youtube.com/watch?v=IawM82BQ4II",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Divide & Conquer",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 155,
-    "originalIndex": "2.1.1",
-    "title": "2.1.1 Recurrence Relation (T(n)= T(n-1) + 1) #1",
-    "cleanTitle": "Recurrence Relation (T(n)= T(n-1) + 1) #1",
-    "videoUrl": "https://www.youtube.com/watch?v=4V30R3I1vLI",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/30-recursion/problem",
-      "https://www.hackerrank.com/challenges/recursion-in-c/problem"
-    ],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Divide & Conquer",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 156,
-    "originalIndex": "2",
-    "title": "2 Divide And Conquer",
-    "cleanTitle": "Divide And Conquer",
-    "videoUrl": "https://www.youtube.com/watch?v=2Rr2tW9zvRg",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/366/problem",
-      "https://www.hackerrank.com/challenges/quicksort1/problem",
-      "https://www.hackerrank.com/challenges/ctci-merge-sort/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/sort-an-array/",
-      "https://leetcode.com/problems/maximum-subarray/",
-      "https://leetcode.com/problems/merge-k-sorted-lists/",
-      "https://leetcode.com/problems/kth-largest-element-in-an-array/",
-      "https://leetcode.com/problems/reverse-pairs/",
-      "https://leetcode.com/problems/count-of-smaller-numbers-after-self/"
-    ],
-    "codeChef": [],
-    "category": "Divide & Conquer",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 157,
-    "originalIndex": "1.11",
-    "title": "1.11 Best Worst and Average Case Analysis",
-    "cleanTitle": "Best Worst and Average Case Analysis",
-    "videoUrl": "https://www.youtube.com/watch?v=lj3E24nnPjI",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/insertionsort1/problem"
-    ],
-    "leetCode": [
-      "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
-      "https://leetcode.com/problems/sort-an-array/"
-    ],
-    "codeChef": [],
-    "category": "Fundamentals",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 158,
-    "originalIndex": "1.10.2",
-    "title": "1.10.2 Comparison of Functions #2",
-    "cleanTitle": "Comparison of Functions #2",
-    "videoUrl": "https://www.youtube.com/watch?v=WlBBTSL0ZRc",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Fundamentals",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 159,
-    "originalIndex": "1.10.1",
-    "title": "1.10.1 Comparison of Functions #1",
-    "cleanTitle": "Comparison of Functions #1",
-    "videoUrl": "https://www.youtube.com/watch?v=mwN18xfwNhk",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Fundamentals",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 160,
-    "originalIndex": "1.9",
-    "title": "1.9 Properties of Asymptotic Notations",
-    "cleanTitle": "Properties of Asymptotic Notations",
-    "videoUrl": "https://www.youtube.com/watch?v=NI4OKSvGAgM",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Fundamentals",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 161,
-    "originalIndex": "1.8.2",
-    "title": "1.8.2 Asymptotic Notations - Big Oh - Omega - Theta #2",
-    "cleanTitle": "Asymptotic Notations - Big Oh - Omega - Theta #2",
-    "videoUrl": "https://www.youtube.com/watch?v=Nd0XDY-jVHs",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Fundamentals",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 162,
-    "originalIndex": "1.8.1",
-    "title": "1.8.1 Asymptotic Notations Big Oh - Omega - Theta #1",
-    "cleanTitle": "Asymptotic Notations Big Oh - Omega - Theta #1",
-    "videoUrl": "https://www.youtube.com/watch?v=A03oI0znAoc",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Fundamentals",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 163,
-    "originalIndex": "1.7",
-    "title": "1.7 Compare Class of Functions",
-    "cleanTitle": "Compare Class of Functions",
-    "videoUrl": "https://www.youtube.com/watch?v=5v-tKX2uRAk",
-    "hackerRank": [],
-    "leetCode": [],
-    "codeChef": [],
-    "category": "Fundamentals",
-    "difficulty": "Medium"
   }
 ];

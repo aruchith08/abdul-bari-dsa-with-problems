@@ -98,7 +98,7 @@ export const AuthModal: React.FC = () => {
               {mode === 'signin' ? 'Sign In to Your Account' : 'Create New ARH Account'}
             </h3>
             <p className="text-xs font-medium text-[#555555] mt-1">
-              Synchronize your 163 solved problems, revision bookmarks, and notes to Cloud Firestore in real-time.
+              Synchronize your solved problems, revision bookmarks, and notes to Cloud Firestore in real-time.
             </p>
           </div>
 

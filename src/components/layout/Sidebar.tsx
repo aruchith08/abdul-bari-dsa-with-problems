@@ -139,7 +139,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           {/* Roadmap Topic Continuation */}
           <div className="px-2 py-1 mb-2 text-xs font-black tracking-wider text-black uppercase flex items-center justify-between">
             <span>Roadmap Topics</span>
-            <span className="font-mono text-[10px] text-black/60 font-bold">163 TOTAL</span>
+            <span className="font-mono text-[10px] text-black/60 font-bold">{totalProblemsCount} TOTAL</span>
           </div>
 
           <nav className="space-y-0.5 font-sans">

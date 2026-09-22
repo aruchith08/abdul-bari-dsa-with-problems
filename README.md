@@ -5,7 +5,7 @@
 <img src="src/assets/dashboard%20screenshot.jpg" alt="Abdul Bari DSA with Problems - Dashboard Preview" width="100%" />
 
 ### **The Ultimate Algorithms Mastery Command Center**
-*Mapping Prof. Abdul Bari's legendary 163-lecture Algorithms Masterclass to 1,000+ curated competitive programming challenges across LeetCode, HackerRank, and CodeChef.*
+*Mapping Prof. Abdul Bari's legendary 93 unique Algorithms Masterclass lectures to 800+ curated competitive programming challenges across LeetCode, HackerRank, and CodeChef.*
 
 [![Vercel](https://img.shields.io/badge/Vercel-Deploy-black?style=for-the-badge&logo=vercel)](https://vercel.com)
 [![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
@@ -28,13 +28,13 @@
 While **Prof. Abdul Bari's** whiteboard lectures are universally acclaimed as the most lucid computer science explanations in existence, students frequently get stuck wondering:
 > *"What problems should I solve right now to reinforce what I just watched?"*
 
-This platform provides the answer. Every single one of the **163 lectures** is indexed, structured into topical modules, and augmented with **over 1,000 hand-picked practice challenges** across **LeetCode**, **HackerRank**, and **CodeChef**. Combined with **Firebase Cloud Sync**, local offline persistence, revision bookmarking, and markdown note-taking, it serves as a daily roadmap for technical interview preparation.
+This platform provides the answer. Every single one of the **93 unique lectures** (deduplicated from the YouTube series) is indexed, structured into topical modules, and augmented with **over 800 hand-picked practice challenges** across **LeetCode**, **HackerRank**, and **CodeChef**. Combined with **Firebase Cloud Sync**, local offline persistence, revision bookmarking, and markdown note-taking, it serves as a daily roadmap for technical interview preparation.
 
 ---
 
 ## ⚡ Key Features
 
-### 1. 🗺️ 163-Lecture Structured Curriculum
+### 1. 🗺️ 93-Lecture Structured Curriculum
 - Complete catalog of Abdul Bari's Algorithms course, organized by topic:
   - **Fundamentals & Asymptotic Analysis** (Growth of functions, Master Theorem, recurrence trees)
   - **Divide & Conquer** (Merge Sort, Quick Sort, Strassen's matrix multiplication)
@@ -81,15 +81,18 @@ This platform provides the answer. Every single one of the **163 lectures** is i
 
 | Category | Lectures | Sample Topics Covered | Practice Target |
 | :--- | :---: | :--- | :--- |
-| **Fundamentals** | 22 | Asymptotic Notations, Recurrences, Master Theorem | Array manipulation, time complexity analysis |
-| **Divide & Conquer** | 16 | Merge Sort, Quick Sort, Strassen's Matrix Mult. | Inversion count, median finding |
-| **Greedy Method** | 18 | Knapsack, Huffman Coding, Kruskal, Prim, Dijkstra | Interval scheduling, minimum spanning trees |
-| **Dynamic Programming**| 28 | 0/1 Knapsack, Floyd-Warshall, Matrix Chain, TSP | State memoization, coin change, edit distance |
-| **Trees & Graphs** | 24 | BFS, DFS, Topological Sort, Biconnectivity | Connected components, shortest paths |
-| **Backtracking** | 15 | N-Queens, Graph Coloring, Hamiltonian Cycle | Constraint satisfaction, subsets, permutations |
-| **Branch & Bound** | 12 | 15-Puzzle, 0/1 Knapsack LC-BB, Traveling Salesperson | State-space tree search, pruning |
-| **NP-Completeness** | 28 | P vs NP, Reduction Proofs, Cook's Theorem | Vertex cover, clique problem, set cover |
-| **Total** | **163** | **End-to-End Masterclass** | **1,000+ Curated Problems** |
+| **Fundamentals** | 17 | Asymptotic Notations, Recurrences, Master Theorem | Array manipulation, time complexity analysis |
+| **Dynamic Programming**| 14 | 0/1 Knapsack, Floyd-Warshall, Matrix Chain, TSP | State memoization, coin change, edit distance |
+| **Divide & Conquer** | 13 | Merge Sort, Quick Sort, Strassen's Matrix Mult. | Inversion count, median finding |
+| **Greedy Method** | 8 | Knapsack, Huffman Coding, Kruskal, Prim, Dijkstra | Interval scheduling, minimum spanning trees |
+| **Sorting** | 6 | MergeSort, QuickSort, In-depth Analysis | Array sorting, partitioning |
+| **Java Core** | 6 | Java Architecture, Data Types, Variables, Setup | Language fundamentals |
+| **Graphs** | 5 | BFS, DFS, Articulation Points, Shortest Paths | Connected components, traversals |
+| **Backtracking** | 5 | N-Queens, Graph Coloring, Hamiltonian Cycle | Constraint satisfaction, subsets |
+| **Branch & Bound** | 4 | 0/1 Knapsack, Job Sequencing, Traveling Salesman | State-space tree pruning |
+| **Binary Search** | 4 | Iterative & Recursive Binary Search | Search algorithms |
+| **Other Core Paradigms** | 11 | Trees, Strings (KMP/Rabin-Karp), NP-Completeness, Graphics | Specialized problem categories |
+| **Total** | **93** | **End-to-End Masterclass** | **800+ Curated Problems** |
 
 ---
 
@@ -211,7 +214,7 @@ abdul-bari-dsa-with-problems/
 │   ├── context/
 │   │   └── AuthContext.tsx    # Firebase authentication provider
 │   ├── data/
-│   │   ├── abdulBariData.ts   # 163 problems with 1,000+ practice links
+│   │   ├── abdulBariData.ts   # 93 problems with 800+ practice links
 │   │   └── topicCategories.ts # Categories and lecture distributions
 │   ├── hooks/
 │   │   ├── useDSAProgress.ts     # Cloud Firestore sync & local state

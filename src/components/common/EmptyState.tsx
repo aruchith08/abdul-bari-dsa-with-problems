@@ -37,7 +37,7 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
     icon = <SearchX className="h-8 w-8 text-arh-submuted" />;
   } else if (activeCategory !== 'all') {
     title = `No problems in ${activeCategory}`;
-    description = 'Select "All Problems" from the roadmap sidebar to browse all 163 lessons.';
+    description = 'Select "All Problems" from the roadmap sidebar to browse all lessons.';
     icon = <FolderOpen className="h-8 w-8 text-arh-submuted" />;
   }
 

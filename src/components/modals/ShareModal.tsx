@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { ABDUL_BARI_PROBLEMS } from '../../data/abdulBariData';
 import { X, Copy, Check, Share2, Sparkles, CheckCircle2 } from '../common/icons';
 
 interface ShareModalProps {
@@ -23,9 +24,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   // Use current website URL, or fallback to default
-  const shareUrl = typeof window !== 'undefined' && window.location.origin
-    ? window.location.origin
-    : 'https://abdul-bari-dsa-with-problems.vercel.app';
+  const shareUrl = typeof window !== 'undefined' ? window.location.origin : 'https://arh-dsa.vercel.app';
 
   const shareTitle = 'Abdul Bari DSA with Problems — By ARH';
   const shareSummary = 'Learn from the best mentor (Prof. Abdul Bari) and practice 1,000+ curated LeetCode, HackerRank & CodeChef problems alongside every lecture!';
@@ -35,7 +34,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
 Stop just passively watching lectures—learn from the world's best algorithm mentor (Prof. Abdul Bari) and practice 1,000+ curated LeetCode, HackerRank, and CodeChef problems alongside every single lecture!
 
 ✨ Why this platform:
-• 163 lecture-by-lecture structured curriculum
+• ${ABDUL_BARI_PROBLEMS.length} lecture-by-lecture structured curriculum
 • 1,000+ hand-picked practice challenges
 • LeetCode-style progress analytics & revision bookmarks
 • Multi-device cloud sync with Firebase
@@ -159,7 +158,7 @@ KEEP SOLVING. KEEP BUILDING. — ARH`;
           <div className="grid grid-cols-2 gap-2 text-[11px] font-mono">
             <div className="border border-black bg-[#FAFAFA] p-2 flex items-center gap-2">
               <span className="text-[#FF5E1E] font-black">▶</span>
-              <span className="font-bold">163 Full Lectures</span>
+              <span className="font-bold">{ABDUL_BARI_PROBLEMS.length} Full Lectures</span>
             </div>
             <div className="border border-black bg-[#FAFAFA] p-2 flex items-center gap-2">
               <span className="text-emerald-600 font-black">✓</span>

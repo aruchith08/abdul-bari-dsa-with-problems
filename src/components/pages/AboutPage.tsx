@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { ABDUL_BARI_PROBLEMS } from '../../data/abdulBariData';
 import { ExternalLink, Play, Sparkles } from '../common/icons';
 
 interface AboutPageProps {
@@ -34,7 +35,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
             onClick={onBackToRoadmap}
             className="border-2 border-black bg-[#ECECEC] px-3 py-1.5 text-xs font-black uppercase text-black hover:bg-black hover:text-white transition-colors cursor-pointer"
           >
-            <span>VIEW 163 PROBLEMS</span>
+            <span>VIEW {ABDUL_BARI_PROBLEMS.length} PROBLEMS</span>
           </button>
         </div>
       </div>
@@ -81,7 +82,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
                 className="inline-flex items-center gap-1.5 border-2 border-black bg-[#FF0000] px-3 py-1.5 text-xs font-black uppercase text-white shadow-[2px_2px_0px_#000000] hover:bg-black hover:text-white transition-colors cursor-pointer w-fit"
               >
                 <Play className="h-3.5 w-3.5 fill-current" />
-                <span>Watch 163-Lecture Playlist</span>
+                <span>Watch YouTube Playlist</span>
                 <ExternalLink className="h-3 w-3" />
               </a>
             </div>
@@ -89,7 +90,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               <div className="lg:col-span-2 space-y-3.5 text-xs sm:text-sm text-black/85 leading-relaxed font-sans">
                 <p>
-                  <strong>Abdul Bari&apos;s Algorithms Masterclass</strong> is globally revered as the gold-standard educational series for mastering algorithmic thinking, data structures, and computational complexity analysis. Spanning <strong>163 comprehensive lectures</strong>, the course deconstructs every cornerstone concept needed for university examinations and technical software engineering interviews:
+                  <strong>Abdul Bari&apos;s Algorithms Masterclass</strong> is globally revered as the gold-standard educational series for mastering algorithmic thinking, data structures, and computational complexity analysis. Spanning <strong>{ABDUL_BARI_PROBLEMS.length} comprehensive lectures</strong>, the course deconstructs every cornerstone concept needed for university examinations and technical software engineering interviews:
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-bold font-mono">
                   <li className="border border-black/30 bg-white p-2 flex items-center gap-2">
@@ -125,7 +126,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
               {/* Quick Metrics Cards */}
               <div className="flex flex-col gap-2.5 justify-center">
                 <div className="border-2 border-black bg-white p-3 shadow-[2px_2px_0px_#000000]">
-                  <div className="text-2xl font-black font-mono text-[#FF5E1E]">163</div>
+                  <div className="text-2xl font-black font-mono text-[#FF5E1E]">{ABDUL_BARI_PROBLEMS.length}</div>
                   <div className="text-[11px] font-black uppercase text-black">Meticulous Video Lectures</div>
                   <div className="text-[10px] font-mono text-black/60">From foundations to NP-completeness</div>
                 </div>
@@ -308,7 +309,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
                 </div>
 
                 <p>
-                  <strong>Welcome to ARH DSA!</strong> I built this platform because, like hundreds of thousands of engineers, I experienced the life-changing clarity of Prof. Abdul Bari&apos;s lectures. Yet, while learning, I noticed a recurring friction point among students: <em>how to methodically track 163 lectures, practice matching coding challenges without distraction, and maintain relentless consistency.</em>
+                  <strong>Welcome to ARH DSA!</strong> I built this platform because, like hundreds of thousands of engineers, I experienced the life-changing clarity of Prof. Abdul Bari&apos;s lectures. Yet, while learning, I noticed a recurring friction point among students: <em>how to methodically track all lectures, practice matching coding challenges without distraction, and maintain relentless consistency.</em>
                 </p>
                 <p>
                   <strong>The Vision:</strong> I created this high-performance learning command center to turn every lesson into an actionable, trackable milestone. The platform delivers zero-latency local caching, seamless multi-device <strong>Firebase Cloud Sync</strong>, rapid keyboard navigation, integrated problem notes, and one-click launches for 1,000+ curated problems across LeetCode, HackerRank, and CodeChef.
@@ -335,7 +336,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-2 border-black bg-white p-4 shadow-[3px_3px_0px_#000000]">
         <div>
           <h3 className="text-sm font-black uppercase text-black">Ready to solve problems?</h3>
-          <p className="text-xs font-mono text-black/70">Hop right back into the 163-problem curriculum.</p>
+          <p className="text-xs font-mono text-black/70">Hop right back into the {ABDUL_BARI_PROBLEMS.length}-problem curriculum.</p>
         </div>
         <button
           onClick={onBackToRoadmap}

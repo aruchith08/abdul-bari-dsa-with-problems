@@ -1,4 +1,5 @@
 import React from 'react';
+import { ABDUL_BARI_PROBLEMS } from '../../data/abdulBariData';
 
 export const Footer: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ export const Footer: React.FC = () => {
         <div className="flex items-center gap-2 flex-wrap text-center sm:text-left">
           <span>ARH DSA v1.0.0</span>
           <span>|</span>
-          <span>163 problems</span>
+          <span>{ABDUL_BARI_PROBLEMS.length} problems</span>
           <span>|</span>
           <span>Stay consistent</span>
           <span>|</span>

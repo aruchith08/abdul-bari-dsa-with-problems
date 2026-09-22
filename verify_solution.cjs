@@ -30,7 +30,7 @@ assert(fs.existsSync('Links_DSA___Abdul_Bari.csv'), 'Original CSV preserved in r
 // 3. Inspect abdulBariData.ts
 const dataFile = fs.readFileSync('src/data/abdulBariData.ts', 'utf8');
 const problemsMatch = dataFile.match(/"id":\s*(\d+)/g);
-assert(problemsMatch && problemsMatch.length === 163, `Exactly 163 problems found in abdulBariData.ts (found ${problemsMatch ? problemsMatch.length : 0})`);
+assert(problemsMatch && problemsMatch.length === 93, `Exactly 93 problems found in abdulBariData.ts (found ${problemsMatch ? problemsMatch.length : 0})`);
 
 // 4. Verify topic categories
 const categoriesFile = fs.readFileSync('src/data/topicCategories.ts', 'utf8');
@@ -42,8 +42,12 @@ assert(categoriesFile.includes('Sorting'), 'Sorting category present');
 assert(categoriesFile.includes('Graphs'), 'Graphs category present');
 assert(categoriesFile.includes('Binary Search'), 'Binary Search category present');
 
-// 5. Test parsing sample rows
-const sampleCheck = require('C:/Users/aruch/.gemini/antigravity/brain/374c28e8-1023-4c27-ab51-0b192092fa41/scratch/check_csv.cjs');
+// 5. Test data integrity
+const dataArray = JSON.parse(dataFile.match(/export const ABDUL_BARI_PROBLEMS: DSAProblem\[\] = (\[[\s\S]*?\]);/)[1]);
+assert(dataArray.length === 93, 'Data array length matches 93');
+assert(dataArray.every((p, idx) => p.id === idx + 1), 'Problem IDs are strictly contiguous from 1 to 93');
+const uniqueUrls = new Set(dataArray.map(p => p.videoUrl));
+assert(uniqueUrls.size === 93, 'All 93 video URLs are unique with 0 duplicate videos');
 
 console.log(`\nVerification complete: ${passed} passed, ${failed} failed.`);
 if (failed > 0) {
