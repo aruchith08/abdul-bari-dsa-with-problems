@@ -326,6 +326,32 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
                     — ARH
                   </span>
                 </div>
+
+                {/* Suggestions / Issues Contact */}
+                <div className="border-t-2 border-dashed border-white/20 pt-4 mt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                  <div>
+                    <p className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#888888]">
+                      Any Suggestions or Any Issues?
+                    </p>
+                    <p className="text-[10px] font-mono text-white/50 mt-0.5">
+                      Drop me a mail — I read every message.
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      window.location.href = `mailto:aruchith32@gmail.com?subject=${encodeURIComponent('Regarding Abdul Bari - by ARH')}`;
+                    }}
+                    className="inline-flex items-center gap-2 border-2 border-[#FF5E1E] bg-transparent px-4 py-2 text-xs font-black uppercase text-[#FF5E1E] shadow-[2px_2px_0px_#FF5E1E] hover:bg-[#FF5E1E] hover:text-black transition-colors cursor-pointer shrink-0"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <rect width="20" height="16" x="2" y="4" rx="2"/>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                    <span>Mail ARH</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
