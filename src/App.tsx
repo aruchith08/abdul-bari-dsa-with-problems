@@ -210,6 +210,7 @@ export function App() {
                 setActiveNavTab('roadmap');
                 window.scrollTo({ top: 0, behavior: 'instant' });
               }}
+              onSelectNotes={() => handleSelectNavTab('notes')}
               onResetClick={() => setIsResetDialogOpen(true)}
             />
             <Footer />

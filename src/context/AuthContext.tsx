@@ -78,6 +78,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   useEffect(() => {
     if (!auth) {
+      setCurrentUser(null);
+      saveCachedSession(null);
       setLoading(false);
       return;
     }

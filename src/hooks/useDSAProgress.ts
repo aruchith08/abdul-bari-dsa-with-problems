@@ -67,14 +67,20 @@ export function useDSAProgress() {
       notes,
     };
 
-    mergeLocalWithCloud(currentUser.uid, localSnapshot).then((merged) => {
-      isCloudUpdateRef.current = true;
-      setCompleted(merged.completed);
-      setTimestamps(merged.timestamps);
-      setRevisions(merged.revisions);
-      setNotes(merged.notes);
-      setSyncStatus('synced');
-    });
+    mergeLocalWithCloud(currentUser.uid, localSnapshot)
+      .then((merged) => {
+        isCloudUpdateRef.current = true;
+        setCompleted(merged.completed);
+        setTimestamps(merged.timestamps);
+        setRevisions(merged.revisions);
+        setNotes(merged.notes);
+        setSyncStatus('synced');
+      })
+      .catch((err) => {
+        console.error('Failed to merge local data with cloud:', err);
+        setSyncStatus('offline');
+        setCloudError(err?.message || 'Could not sync guest progress with cloud.');
+      });
 
     // 2. Real-time subscription to cloud document
     const unsubscribe = subscribeToUserData(
@@ -92,6 +98,8 @@ export function useDSAProgress() {
         setSyncStatus('offline');
         if (err?.code === 'permission-denied') {
           setCloudError('Firestore rules blocked sync. Update Security Rules in Firebase Console.');
+        } else {
+          setCloudError(err?.message || 'Firestore connection error.');
         }
       }
     );

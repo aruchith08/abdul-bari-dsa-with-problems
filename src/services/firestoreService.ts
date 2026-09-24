@@ -81,6 +81,29 @@ export async function saveUserData(
   }
 }
 
+function sanitizeRecord<T>(val: any, validateFn: (v: any) => boolean): Record<number, T> {
+  if (!val || typeof val !== 'object' || Array.isArray(val)) return {};
+  const result: Record<number, T> = {};
+  for (const [k, v] of Object.entries(val)) {
+    const numKey = Number(k);
+    if (!isNaN(numKey) && validateFn(v)) {
+      result[numKey] = v as T;
+    }
+  }
+  return result;
+}
+
+export function sanitizeCloudData(data: any): UserCloudData {
+  if (!data || typeof data !== 'object') return DEFAULT_CLOUD_DATA;
+  return {
+    completed: sanitizeRecord<boolean>(data.completed, (v) => typeof v === 'boolean'),
+    timestamps: sanitizeRecord<string>(data.timestamps, (v) => typeof v === 'string'),
+    revisions: sanitizeRecord<boolean>(data.revisions, (v) => typeof v === 'boolean'),
+    notes: sanitizeRecord<string>(data.notes, (v) => typeof v === 'string'),
+    updatedAt: data.updatedAt,
+  };
+}
+
 /**
  * Merge local guest progress with existing cloud progress upon login
  */
@@ -88,22 +111,39 @@ export async function mergeLocalWithCloud(
   userId: string,
   localData: UserCloudData
 ): Promise<UserCloudData> {
-  try {
-    const existing = await getUserData(userId);
+  const existing = await getUserData(userId);
+  const cloud = existing ? sanitizeCloudData(existing) : DEFAULT_CLOUD_DATA;
+  const local = sanitizeCloudData(localData);
 
-    const merged: UserCloudData = {
-      completed: { ...(existing?.completed || {}), ...localData.completed },
-      timestamps: { ...(existing?.timestamps || {}), ...localData.timestamps },
-      revisions: { ...(existing?.revisions || {}), ...localData.revisions },
-      notes: { ...(existing?.notes || {}), ...localData.notes },
-    };
+  // Merge completed and timestamps intelligently:
+  // If both exist, keep the earlier/valid timestamp or latest note
+  const mergedTimestamps: Record<number, string> = { ...cloud.timestamps, ...local.timestamps };
+  const mergedCompleted: Record<number, boolean> = { ...cloud.completed, ...local.completed };
 
-    await saveUserData(userId, merged);
-    return merged;
-  } catch (error) {
-    console.error('Error merging local with cloud:', error);
-    return localData;
+  // For notes, if local note is non-empty and cloud is empty (or vice versa), keep the non-empty one
+  const mergedNotes: Record<number, string> = { ...cloud.notes };
+  for (const [idStr, note] of Object.entries(local.notes)) {
+    const id = Number(idStr);
+    if (note && note.trim().length > 0) {
+      mergedNotes[id] = note;
+    }
   }
+
+  const mergedRevisions: Record<number, boolean> = { ...cloud.revisions, ...local.revisions };
+
+  const merged: UserCloudData = {
+    completed: mergedCompleted,
+    timestamps: mergedTimestamps,
+    revisions: mergedRevisions,
+    notes: mergedNotes,
+  };
+
+  const saved = await saveUserData(userId, merged);
+  if (!saved) {
+    throw new Error('Failed to save merged data to Firestore.');
+  }
+
+  return merged;
 }
 
 /**
@@ -123,13 +163,7 @@ export function subscribeToUserData(
     (docSnap) => {
       if (docSnap.exists()) {
         const data = docSnap.data();
-        onUpdate({
-          completed: data.completed || {},
-          timestamps: data.timestamps || {},
-          revisions: data.revisions || {},
-          notes: data.notes || {},
-          updatedAt: data.updatedAt,
-        });
+        onUpdate(sanitizeCloudData(data));
       } else {
         onUpdate(DEFAULT_CLOUD_DATA);
       }

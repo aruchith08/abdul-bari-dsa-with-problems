@@ -18,9 +18,13 @@ function assert(condition, message) {
 
 // 1. Check build files
 assert(fs.existsSync('dist/index.html'), 'dist/index.html exists');
-const distFiles = fs.readdirSync('dist/assets');
-assert(distFiles.some(f => f.endsWith('.js')), 'Production JS bundle generated in dist/assets');
-assert(distFiles.some(f => f.endsWith('.css')), 'Production CSS bundle generated in dist/assets');
+if (fs.existsSync('dist/assets')) {
+  const distFiles = fs.readdirSync('dist/assets');
+  assert(distFiles.some(f => f.endsWith('.js')), 'Production JS bundle generated in dist/assets');
+  assert(distFiles.some(f => f.endsWith('.css')), 'Production CSS bundle generated in dist/assets');
+} else {
+  assert(false, 'dist/assets directory exists (run build first)');
+}
 
 // 2. Check logo and CSV assets
 assert(fs.existsSync('public/arh-logo.png'), 'public/arh-logo.png exists');

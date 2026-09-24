@@ -26,6 +26,7 @@ interface ProgressPageProps {
   onBackToRoadmap: () => void;
   onFilterCategory: (categoryId: string) => void;
   onFilterStatus: (status: FilterStatus) => void;
+  onSelectNotes?: () => void;
   onResetClick: () => void;
 }
 
@@ -41,6 +42,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
   onBackToRoadmap,
   onFilterCategory,
   onFilterStatus,
+  onSelectNotes,
   onResetClick,
 }) => {
   useEffect(() => {
@@ -97,7 +99,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
   // Compute Category mastery breakdown
   const categoryStats = useMemo(() => {
     return TOPIC_CATEGORIES.map((cat) => {
-      const categoryProblems = ABDUL_BARI_PROBLEMS.filter((p) => p.category === cat.id);
+      const categoryProblems = ABDUL_BARI_PROBLEMS.filter((p) => p.category === cat.name);
       const catTotal = categoryProblems.length;
       let catSolved = 0;
       let easySolved = 0;
@@ -196,7 +198,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
               ALGORITHM PROGRESS &amp; ANALYTICS
             </h1>
             <p className="mt-1 text-xs sm:text-sm text-black/70 font-sans">
-              Real-time analytics across all {totalCount} problems, 8 core algorithm paradigms, difficulty tiers, and revision tracking.
+              Real-time analytics across all {totalCount} problems, {TOPIC_CATEGORIES.length} core algorithm paradigms, difficulty tiers, and revision tracking.
             </p>
           </div>
 
@@ -461,7 +463,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
             </div>
             <div className="mt-2 font-mono text-2xl sm:text-3xl font-black text-black">{notesCount}</div>
             <button
-              onClick={() => onFilterStatus('notes')}
+              onClick={() => (onSelectNotes ? onSelectNotes() : onBackToRoadmap())}
               className="mt-2 inline-flex items-center gap-1 text-[11px] font-black uppercase text-black hover:underline cursor-pointer"
             >
               <span>View Problems With Notes →</span>
@@ -470,7 +472,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
         </div>
 
         {/* ========================================================================= */}
-        {/* TOPIC MASTERY BREAKDOWN (8 Algorithmic Paradigms) */}
+        {/* TOPIC MASTERY BREAKDOWN (All Algorithmic Paradigms) */}
         {/* ========================================================================= */}
         <div className="mt-10 border-t-2 border-black pt-8">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
@@ -480,7 +482,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
                 <span>TOPIC MASTERY BREAKDOWN</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-black uppercase tracking-tight text-black mt-1">
-                8 CORE ALGORITHM CATEGORIES
+                {TOPIC_CATEGORIES.length} CORE ALGORITHM CATEGORIES
               </h2>
             </div>
             <span className="text-xs font-mono font-bold text-black/60">
@@ -531,7 +533,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
 
                 <div className="mt-4 pt-3 border-t border-black/10 flex items-center justify-between">
                   <button
-                    onClick={() => onFilterCategory(category.id)}
+                    onClick={() => onFilterCategory(category.name)}
                     className="inline-flex items-center gap-1 text-xs font-black uppercase text-black hover:text-[#FF5E1E] transition-colors cursor-pointer"
                   >
                     <span>Practice Category</span>

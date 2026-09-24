@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "local:dev": "node run-vite.js",
-    "local:build": "node run-vite.js build"
+    "local:build": "node run-vite.js build",
+    "verify": "node verify_solution.cjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",
