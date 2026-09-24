@@ -31,8 +31,8 @@ export const ProblemTable: React.FC<ProblemTableProps> = ({
           <span className="inline-block h-4 w-4 border-2 border-white/80 bg-transparent" title="Checklist" />
         </div>
         <div className="text-center border-l border-white/20 py-2.5 font-mono">#</div>
-        <div className="border-l border-white/20 px-3 py-2.5">Problem</div>
-        <div className="text-center border-l border-white/20 py-2.5">Video</div>
+        <div className="border-l border-white/20 px-3 py-2.5">Title</div>
+        <div className="text-center border-l border-white/20 py-2.5">Link</div>
         <div className="text-center border-l border-white/20 py-2.5">HackerRank</div>
         <div className="text-center border-l border-white/20 py-2.5">LeetCode</div>
         <div className="text-center border-l border-white/20 py-2.5">CodeChef</div>
