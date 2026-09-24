@@ -37,7 +37,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
       {/* Sidebar Container */}
       <aside
-        className={`fixed top-14 bottom-0 left-0 z-40 w-64 shrink-0 border-r-2 border-black bg-[#ECECEC] p-3 overflow-y-auto transition-transform duration-200 lg:sticky lg:top-14 lg:z-20 lg:h-[calc(100vh-3.5rem)] lg:translate-x-0 flex flex-col justify-between ${
+        className={`fixed top-14 bottom-0 left-0 z-40 w-64 shrink-0 border-r-2 border-black bg-[#ECECEC] p-3 pb-8 overflow-y-auto transition-transform duration-200 lg:sticky lg:top-14 lg:z-20 lg:h-[calc(100vh-3.5rem)] lg:translate-x-0 flex flex-col justify-between ${
           isOpenMobile ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
