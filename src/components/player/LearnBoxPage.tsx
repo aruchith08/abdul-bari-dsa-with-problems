@@ -58,9 +58,9 @@ export const LearnBoxPage: React.FC<LearnBoxPageProps> = ({
   const nextProblem =
     currentIndex < ABDUL_BARI_PROBLEMS.length - 1 ? ABDUL_BARI_PROBLEMS[currentIndex + 1] : null;
 
-  const leetcodeLinks = parsePlatformLinks(problem.leetcodeUrls, 'leetcode');
-  const hackerrankLinks = parsePlatformLinks(problem.hackerrankUrls, 'hackerrank');
-  const codechefLinks = parsePlatformLinks(problem.codechefUrls, 'codechef');
+  const leetcodeLinks = parsePlatformLinks(problem.leetCode, 'leetcode');
+  const hackerrankLinks = parsePlatformLinks(problem.hackerRank, 'hackerrank');
+  const codechefLinks = parsePlatformLinks(problem.codeChef, 'codechef');
   const totalPracticeCount = leetcodeLinks.length + hackerrankLinks.length + codechefLinks.length;
 
   const handleSaveNote = () => {

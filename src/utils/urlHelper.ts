@@ -45,7 +45,8 @@ function slugToTitle(slug: string): string {
     .trim();
 }
 
-export function parsePlatformLinks(urls: string[], platform: PracticePlatform): PracticeLinkItem[] {
+export function parsePlatformLinks(urls: string[] | undefined | null, platform: PracticePlatform): PracticeLinkItem[] {
+  if (!Array.isArray(urls)) return [];
   return urls
     .map((u) => u.trim())
     .filter((u) => u.length > 0 && /^https?:\/\//i.test(u))
