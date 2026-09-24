@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ABDUL_BARI_PROBLEMS } from '../../data/abdulBariData';
 import { ExternalLink, Play, Sparkles } from '../common/icons';
 
@@ -7,9 +7,29 @@ interface AboutPageProps {
 }
 
 export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
+  const [copied, setCopied] = useState(false);
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, []);
+
+  const handleEmailAction = (type: 'gmail' | 'copy') => {
+    const email = 'aruchith32@gmail.com';
+    const subject = 'Regarding Abdul Bari - by ARH';
+
+    if (type === 'gmail') {
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}`;
+      window.open(gmailUrl, '_blank', 'noopener,noreferrer');
+    } else {
+      navigator.clipboard.writeText(email).then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2500);
+      }).catch(() => {
+        // Fallback for older browsers
+        window.prompt('Copy email address:', email);
+      });
+    }
+  };
 
   return (
     <div className="w-full space-y-6">
@@ -328,27 +348,47 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
                 </div>
 
                 {/* Suggestions / Issues Contact */}
-                <div className="border-t-2 border-dashed border-white/20 pt-4 mt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div className="border-t-2 border-dashed border-white/20 pt-4 mt-2 flex flex-col md:flex-row md:items-center justify-between gap-3">
                   <div>
                     <p className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#888888]">
                       Any Suggestions or Any Issues?
                     </p>
                     <p className="text-[10px] font-mono text-white/50 mt-0.5">
-                      Drop me a mail — I read every message.
+                      Send to <strong className="text-white/80 font-mono">aruchith32@gmail.com</strong> — I read every message.
                     </p>
                   </div>
-                  <a
-                    href="mailto:aruchith32@gmail.com?subject=Regarding%20Abdul%20Bari%20-%20by%20ARH"
-                    rel="external noopener"
-                    onClick={(e) => e.stopPropagation()}
-                    className="inline-flex items-center gap-2 border-2 border-[#FF5E1E] bg-transparent px-4 py-2 text-xs font-black uppercase text-[#FF5E1E] shadow-[2px_2px_0px_#FF5E1E] hover:bg-[#FF5E1E] hover:text-black transition-colors cursor-pointer shrink-0"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <rect width="20" height="16" x="2" y="4" rx="2"/>
-                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-                    </svg>
-                    <span>Mail ARH</span>
-                  </a>
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <button
+                      type="button"
+                      onClick={() => handleEmailAction('gmail')}
+                      className="inline-flex items-center gap-1.5 border-2 border-[#FF5E1E] bg-[#FF5E1E] px-3.5 py-1.5 text-xs font-black uppercase text-black shadow-[2px_2px_0px_#000000] hover:bg-white hover:text-black transition-colors cursor-pointer shrink-0"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2"/>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                      </svg>
+                      <span>Open in Gmail</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => handleEmailAction('copy')}
+                      className={`inline-flex items-center gap-1.5 border-2 border-white/40 bg-black px-3 py-1.5 text-xs font-mono font-bold uppercase transition-colors cursor-pointer shrink-0 ${
+                        copied ? 'text-[#00EA64] border-[#00EA64]' : 'text-white/80 hover:text-white hover:border-white'
+                      }`}
+                    >
+                      {copied ? (
+                        <>
+                          <span>✓</span>
+                          <span>Copied Email!</span>
+                        </>
+                      ) : (
+                        <>
+                          <span>📋</span>
+                          <span>Copy Email</span>
+                        </>
+                      )}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
