@@ -59,3 +59,21 @@ export function parsePlatformLinks(urls: string[], platform: PracticePlatform): 
       };
     });
 }
+
+/**
+ * Extracts standard 11-char YouTube Video ID from any watch or short URL
+ */
+export function extractYouTubeId(url: string): string | null {
+  if (!url) return null;
+  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/);
+  return match ? match[1] : null;
+}
+
+/**
+ * Generates distraction-free embed URL (no recommendations, no external branding)
+ */
+export function getYouTubeEmbedUrl(url: string): string | null {
+  const id = extractYouTubeId(url);
+  if (!id) return null;
+  return `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
+}

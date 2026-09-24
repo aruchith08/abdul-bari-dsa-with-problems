@@ -14,6 +14,7 @@ import { ProblemTable } from './components/table/ProblemTable';
 import { MobileProblemCard } from './components/mobile/MobileProblemCard';
 import { AboutPage } from './components/pages/AboutPage';
 import { ProgressPage } from './components/pages/ProgressPage';
+import { LearnBoxPage } from './components/player/LearnBoxPage';
 import { NoteModal } from './components/modals/NoteModal';
 import { ConfirmDialog } from './components/modals/ConfirmDialog';
 import { AuthModal } from './components/modals/AuthModal';
@@ -28,6 +29,7 @@ export function App() {
   const [activeNavTab, setActiveNavTab] = useState<string>('roadmap');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeNoteProblem, setActiveNoteProblem] = useState<DSAProblem | null>(null);
+  const [activeLearnProblem, setActiveLearnProblem] = useState<DSAProblem | null>(null);
   const [isResetDialogOpen, setIsResetDialogOpen] = useState(false);
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
 
@@ -63,6 +65,8 @@ export function App() {
   });
 
   const handleSelectNavTab = (tab: string) => {
+    setActiveLearnProblem(null);
+
     if (tab === 'share') {
       setIsShareModalOpen(true);
       return;
@@ -182,8 +186,23 @@ export function App() {
           onOpenShare={() => setIsShareModalOpen(true)}
         />
 
-        {/* View Switch: Dedicated About Page, Progress Page, or DSA Roadmap */}
-        {activeNavTab === 'about' ? (
+        {/* View Switch: Dedicated Learn Box Page, About Page, Progress Page, or DSA Roadmap */}
+        {activeLearnProblem ? (
+          <main className="flex-1 px-3 sm:px-6 py-6 min-w-0 max-w-[1300px]">
+            <LearnBoxPage
+              problem={activeLearnProblem}
+              isCompleted={Boolean(completed[activeLearnProblem.id])}
+              isRevision={Boolean(revisions[activeLearnProblem.id])}
+              currentNote={notes[activeLearnProblem.id] || ''}
+              onToggleCompleted={toggleCompleted}
+              onToggleRevision={toggleRevision}
+              onSaveNote={saveNote}
+              onSelectProblem={(prob) => setActiveLearnProblem(prob)}
+              onBackToRoadmap={() => setActiveLearnProblem(null)}
+            />
+            <Footer />
+          </main>
+        ) : activeNavTab === 'about' ? (
           <main className="flex-1 px-3 sm:px-6 py-6 min-w-0 max-w-[1300px]">
             <AboutPage onBackToRoadmap={() => handleSelectNavTab('roadmap')} />
             <Footer />
@@ -264,6 +283,7 @@ export function App() {
                     onToggleCompleted={toggleCompleted}
                     onToggleRevision={toggleRevision}
                     onOpenNote={(problem) => setActiveNoteProblem(problem)}
+                    onOpenLearnBox={(problem) => setActiveLearnProblem(problem)}
                   />
                 </div>
 
@@ -279,6 +299,7 @@ export function App() {
                       onToggleCompleted={toggleCompleted}
                       onToggleRevision={toggleRevision}
                       onOpenNote={(prob) => setActiveNoteProblem(prob)}
+                      onOpenLearnBox={(prob) => setActiveLearnProblem(prob)}
                     />
                   ))}
                 </div>

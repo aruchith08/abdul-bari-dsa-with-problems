@@ -13,6 +13,7 @@ interface MobileProblemCardProps {
   onToggleCompleted: (id: number) => void;
   onToggleRevision: (id: number) => void;
   onOpenNote: (problem: DSAProblem) => void;
+  onOpenLearnBox?: (problem: DSAProblem) => void;
 }
 
 export const MobileProblemCard: React.FC<MobileProblemCardProps> = ({
@@ -23,6 +24,7 @@ export const MobileProblemCard: React.FC<MobileProblemCardProps> = ({
   onToggleCompleted,
   onToggleRevision,
   onOpenNote,
+  onOpenLearnBox,
 }) => {
   return (
     <div
@@ -57,13 +59,16 @@ export const MobileProblemCard: React.FC<MobileProblemCardProps> = ({
                 {problem.category}
               </span>
             </div>
-            <h4
-              className={`text-xs sm:text-sm font-bold leading-snug ${
+            <button
+              type="button"
+              onClick={() => onOpenLearnBox?.(problem)}
+              className={`text-left text-xs sm:text-sm font-bold leading-snug hover:text-[#FF5E1E] hover:underline cursor-pointer transition-colors block ${
                 isCompleted ? 'text-black/60 line-through decoration-black/40' : 'text-black'
               }`}
+              title={`Open Learn Box: ${problem.title}`}
             >
               {problem.cleanTitle}
-            </h4>
+            </button>
           </div>
         </div>
 

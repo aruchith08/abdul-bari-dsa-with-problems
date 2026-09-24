@@ -287,4 +287,23 @@ export const CheckCheck: React.FC<IconProps> = ({ className = 'h-4 w-4', ...prop
   </svg>
 );
 
+export const ChevronLeft: React.FC<IconProps> = ({ className = 'h-4 w-4', ...props }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" className={className} {...props}>
+    <path d="m15 18-6-6 6-6" />
+  </svg>
+);
+
+export const ChevronRight: React.FC<IconProps> = ({ className = 'h-4 w-4', ...props }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" className={className} {...props}>
+    <path d="m9 18 6-6-6-6" />
+  </svg>
+);
+
+export const BookOpen: React.FC<IconProps> = ({ className = 'h-4 w-4', ...props }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" className={className} {...props}>
+    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+  </svg>
+);
+
 

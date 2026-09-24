@@ -10,6 +10,7 @@ interface ProblemTableProps {
   onToggleCompleted: (id: number) => void;
   onToggleRevision: (id: number) => void;
   onOpenNote: (problem: DSAProblem) => void;
+  onOpenLearnBox?: (problem: DSAProblem) => void;
 }
 
 export const ProblemTable: React.FC<ProblemTableProps> = ({
@@ -20,6 +21,7 @@ export const ProblemTable: React.FC<ProblemTableProps> = ({
   onToggleCompleted,
   onToggleRevision,
   onOpenNote,
+  onOpenLearnBox,
 }) => {
   return (
     <div className="border-2 border-black bg-white shadow-[3px_3px_0px_#000000] overflow-x-auto">
@@ -51,6 +53,7 @@ export const ProblemTable: React.FC<ProblemTableProps> = ({
             onToggleCompleted={onToggleCompleted}
             onToggleRevision={onToggleRevision}
             onOpenNote={onOpenNote}
+            onOpenLearnBox={onOpenLearnBox}
           />
         ))}
       </div>

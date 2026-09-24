@@ -13,6 +13,7 @@ interface ProblemRowProps {
   onToggleCompleted: (id: number) => void;
   onToggleRevision: (id: number) => void;
   onOpenNote: (problem: DSAProblem) => void;
+  onOpenLearnBox?: (problem: DSAProblem) => void;
 }
 
 export const ProblemRow: React.FC<ProblemRowProps> = ({
@@ -23,6 +24,7 @@ export const ProblemRow: React.FC<ProblemRowProps> = ({
   onToggleCompleted,
   onToggleRevision,
   onOpenNote,
+  onOpenLearnBox,
 }) => {
   return (
     <div
@@ -52,17 +54,19 @@ export const ProblemRow: React.FC<ProblemRowProps> = ({
         {problem.id}
       </div>
 
-      {/* 3. Problem Title */}
+      {/* 3. Problem Title (Click opens in-app Learn Box) */}
       <div className="border-l border-black/20 px-3 py-2.5 min-w-0">
         <div className="flex items-center gap-2">
-          <span
-            className={`text-xs font-bold truncate leading-tight ${
+          <button
+            type="button"
+            onClick={() => onOpenLearnBox?.(problem)}
+            className={`text-xs font-bold truncate leading-tight text-left hover:text-[#FF5E1E] hover:underline cursor-pointer transition-colors ${
               isCompleted ? 'text-black/60 line-through decoration-black/40' : 'text-black'
             }`}
-            title={problem.title}
+            title={`Open Learn Box: ${problem.title}`}
           >
             {problem.cleanTitle}
-          </span>
+          </button>
         </div>
         <div className="flex items-center gap-1.5 mt-0.5">
           <span className="text-[10px] font-mono font-medium text-black/50 uppercase">
