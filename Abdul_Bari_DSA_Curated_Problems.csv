@@ -1,0 +1,141 @@
+﻿ID,Title,Video URL,HackerRank,LeetCode,CodeChef
+1,1. Introduction to Algorithms,https://www.youtube.com/watch?v=0IAPZzGSbME,None,None,None
+2,1.1 Priori Analysis and Posteriori Testing,https://www.youtube.com/watch?v=-JTq1BFBwmo,None,None,None
+3,1.2 Characteristics of Algorithm,https://www.youtube.com/watch?v=FbYzBWdhMb0,None,None,None
+4,1.3 How Write and Analyze Algorithm,https://www.youtube.com/watch?v=xGYsEqe9Vl0,https://www.hackerrank.com/challenges/simple-array-sum/problem,https://leetcode.com/problems/running-sum-of-1d-array/,https://www.codechef.com/problems/FLOW001
+5,1.4 Frequency Count Method,https://www.youtube.com/watch?v=1U3Uwct45IY,https://www.hackerrank.com/challenges/2d-array/problem,https://leetcode.com/problems/matrix-diagonal-sum/,None
+6,1.5.1 Time Complexity #1,https://www.youtube.com/watch?v=9TlHvipP5yA,https://www.hackerrank.com/challenges/30-running-time-and-complexity/problem,None,None
+7,1.5.2 Time Complexity Example #2,https://www.youtube.com/watch?v=9SgLBjXqwd4,https://www.hackerrank.com/challenges/30-running-time-and-complexity/problem,https://leetcode.com/problems/sqrtx/,None
+8,1.5.3 Time Complexity of While and if #3,https://www.youtube.com/watch?v=p1EnSvS3urU,None,None,None
+9,1.6 Classes of functions,https://www.youtube.com/watch?v=w7t4_JUUTeg,None,None,None
+10,1.7 Compare Class of Functions,https://www.youtube.com/watch?v=5v-tKX2uRAk,None,None,None
+11,1.8.1 Asymptotic Notations Big Oh - Omega - Theta #1,https://www.youtube.com/watch?v=A03oI0znAoc,None,None,None
+12,1.8.2 Asymptotic Notations - Big Oh - Omega - Theta #2,https://www.youtube.com/watch?v=Nd0XDY-jVHs,None,None,None
+13,1.9 Properties of Asymptotic Notations,https://www.youtube.com/watch?v=NI4OKSvGAgM,None,None,None
+14,1.10.1 Comparison of Functions #1,https://www.youtube.com/watch?v=mwN18xfwNhk,None,None,None
+15,1.10.2 Comparison of Functions #2,https://www.youtube.com/watch?v=WlBBTSL0ZRc,None,None,None
+16,1.11 Best Worst and Average Case Analysis,https://www.youtube.com/watch?v=lj3E24nnPjI,https://www.hackerrank.com/challenges/tutorial-intro/problem,https://leetcode.com/problems/find-target-indices-after-sorting-array/,https://www.codechef.com/problems/SEARCHINARRAY
+17,1.12 Disjoint Sets Data Structure - Weighted Union and Collapsing Find,https://www.youtube.com/watch?v=wU6udHRIkcc,"https://www.hackerrank.com/challenges/merging-communities/problem
+https://www.hackerrank.com/challenges/components-in-graph/problem","https://leetcode.com/problems/number-of-provinces/
+https://leetcode.com/problems/redundant-connection/",https://www.codechef.com/problems/DISHOWN
+18,2 Divide And Conquer,https://www.youtube.com/watch?v=2Rr2tW9zvRg,None,None,None
+19,2.1.1 Recurrence Relation (T(n)= T(n-1) + 1) #1,https://www.youtube.com/watch?v=4V30R3I1vLI,None,None,None
+20,2.1.2 Recurrence Relation (T(n)= T(n-1) + n) #2,https://www.youtube.com/watch?v=IawM82BQ4II,None,None,None
+21,2.1.3 Recurrence Relation (T(n)= T(n-1) + log n) #3,https://www.youtube.com/watch?v=MhT7XmxhaCE,None,None,None
+22,2.1.4 Recurrence Relation T(n)=2 T(n-1)+1  #4,https://www.youtube.com/watch?v=JvcqtZk2mng,None,None,None
+23,2.2 Masters Theorem Decreasing Function,https://www.youtube.com/watch?v=CyknhZbfMqc,None,None,None
+24,2.3.1 Recurrence Relation Dividing Function T(n)=T(n/2)+1 #1,https://www.youtube.com/watch?v=8gt0D0IqU5w,None,None,None
+25,2.3.2 Recurrence Relation Dividing [ T(n)=T(n/2)+ n].   #2,https://www.youtube.com/watch?v=XcZw01FuH18,None,None,None
+26,2.3.3 Recurrence Relation [ T(n)= 2T(n/2) +n]  #3,https://www.youtube.com/watch?v=1K9ebQJosvo,None,None,None
+27,2.4.1 Masters Theorem in Algorithms for Dividing Function #1,https://www.youtube.com/watch?v=OynWkEj0S-s,None,None,None
+28,2.4.2 Examples for Master Theorem #2,https://www.youtube.com/watch?v=kGcO-nAm9Vc,None,None,None
+29,2.5 Root function (Recurrence Relation),https://www.youtube.com/watch?v=9rVuyjxzwgM,None,None,None
+30,2.6.1 Binary Search Iterative Method,https://www.youtube.com/watch?v=C2apEw9pgtw,"https://www.hackerrank.com/challenges/tutorial-intro/problem
+https://www.hackerrank.com/challenges/icecream-parlor/problem","https://leetcode.com/problems/binary-search/
+https://leetcode.com/problems/search-insert-position/
+https://leetcode.com/problems/guess-number-higher-or-lower/","https://www.codechef.com/problems/BSEARCH1
+https://www.codechef.com/problems/TRICOIN"
+31,2.6.2 Binary Search Recursive Method,https://www.youtube.com/watch?v=uEUXGcc2VXM,https://www.hackerrank.com/challenges/tutorial-intro/problem,"https://leetcode.com/problems/binary-search/
+https://leetcode.com/problems/first-bad-version/",https://www.codechef.com/problems/BSEARCH1
+32,2.6.3 Heap - Heap Sort - Heapify - Priority Queues,https://www.youtube.com/watch?v=HqPJF2L5h9U,"https://www.hackerrank.com/challenges/qheap1/problem
+https://www.hackerrank.com/challenges/jesse-and-cookies/problem","https://leetcode.com/problems/kth-largest-element-in-an-array/
+https://leetcode.com/problems/last-stone-weight/
+https://leetcode.com/problems/sort-an-array/",https://www.codechef.com/problems/IPCTRAIN
+33,2.7.1  Two Way MergeSort - Iterative method,https://www.youtube.com/watch?v=6pV2IF0fgKY,https://www.hackerrank.com/challenges/correctness-invariant/problem,https://leetcode.com/problems/merge-sorted-array/,https://www.codechef.com/problems/MRGSRT
+34,2.7.2.  Merge Sort Algorithm,https://www.youtube.com/watch?v=mB5HXBb_HY8,https://www.hackerrank.com/challenges/countingsort2/problem,"https://leetcode.com/problems/sort-an-array/
+https://leetcode.com/problems/sort-list/",https://www.codechef.com/problems/MRGSRT
+35,2.7.3 MergeSort in-depth Analysis,https://www.youtube.com/watch?v=ak-pz7tS5DE,https://www.hackerrank.com/challenges/ctci-merge-sort/problem,https://leetcode.com/problems/reverse-pairs/,https://www.codechef.com/problems/INVC_CNT
+36,2.8.1  QuickSort Algorithm,https://www.youtube.com/watch?v=7h1s2SojIRw,"https://www.hackerrank.com/challenges/quicksort1/problem
+https://www.hackerrank.com/challenges/quicksort2/problem","https://leetcode.com/problems/sort-an-array/
+https://leetcode.com/problems/kth-largest-element-in-an-array/",https://www.codechef.com/problems/TSORT
+37,2.8.2 QuickSort Analysis,https://www.youtube.com/watch?v=-qOVVRIZzao,"https://www.hackerrank.com/challenges/quicksort3/problem
+https://www.hackerrank.com/challenges/runningtime/problem",https://leetcode.com/problems/sort-an-array/,https://www.codechef.com/problems/TSORT
+38,2.9 Strassens Matrix Multiplication,https://www.youtube.com/watch?v=0oJyNmEbS4w,None,None,None
+39,3. Greedy Method -  Introduction,https://www.youtube.com/watch?v=ARvQcqJ_-NY,None,None,None
+40,3.1 Knapsack Problem - Greedy Method,https://www.youtube.com/watch?v=oTTzNMHM05I,None,https://leetcode.com/problems/maximum-units-on-a-truck/,None
+41,3.2 Job Sequencing with Deadlines - Greedy Method,https://www.youtube.com/watch?v=zPtI8q9gvX8,None,"https://leetcode.com/problems/course-schedule-iii/
+https://leetcode.com/problems/maximum-profit-in-job-scheduling/",None
+42,3.3 Optimal Merge Pattern - Greedy Method,https://www.youtube.com/watch?v=HHIc5JZyenI,https://www.hackerrank.com/challenges/jesse-and-cookies/problem,https://leetcode.com/problems/minimum-cost-to-connect-sticks/,None
+43,3.4 Huffman Coding - Greedy Method,https://www.youtube.com/watch?v=co4_ahEDCho,https://www.hackerrank.com/challenges/tree-huffman-decoding/problem,None,None
+44,3.5 Prims and Kruskals Algorithms - Greedy Method,https://www.youtube.com/watch?v=4ZlRH0eK-qQ,"https://www.hackerrank.com/challenges/primsmstsub/problem
+https://www.hackerrank.com/challenges/kruskalmstrsub/problem","https://leetcode.com/problems/min-cost-to-connect-all-points/
+https://leetcode.com/problems/connecting-cities-with-minimum-cost/",https://www.codechef.com/problems/MSTICK
+45,3.6 Dijkstra Algorithm - Single Source Shortest Path - Greedy Method,https://www.youtube.com/watch?v=XB4MIexjvY0,https://www.hackerrank.com/challenges/dijkstrashortreach/problem,"https://leetcode.com/problems/network-delay-time/
+https://leetcode.com/problems/path-with-maximum-probability/
+https://leetcode.com/problems/cheapest-flights-within-k-stops/",https://www.codechef.com/problems/SHPATH
+46,4 Principle  of Optimality  - Dynamic Programming introduction,https://www.youtube.com/watch?v=5dRGRueKU3M,None,None,None
+47,4.1 MultiStage Graph - Dynamic Programming,https://www.youtube.com/watch?v=9iE9Mj4m8jk,None,None,None
+48,4.1.1 MultiStage Graph (Program) - Dynamic Programming,https://www.youtube.com/watch?v=FcScLYJI42E,None,None,None
+49,4.2 All Pairs Shortest Path (Floyd-Warshall) - Dynamic Programming,https://www.youtube.com/watch?v=oNI0rf2P9gE,https://www.hackerrank.com/challenges/floyd-city-of-blinding-lights/problem,"https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/
+https://leetcode.com/problems/course-schedule-iv/",None
+50,4.3 Matrix Chain Multiplication - Dynamic Programming,https://www.youtube.com/watch?v=prx1psByp7U,None,"https://leetcode.com/problems/burst-balloons/
+https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/",None
+51,[New] Matrix Chain Multiplication using Dynamic Programming Formula,https://www.youtube.com/watch?v=_WncuhSJZyA,None,"https://leetcode.com/problems/burst-balloons/
+https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/",None
+52,4.3.1 Matrix Chain Multiplication (Program) - Dynamic Programming,https://www.youtube.com/watch?v=eKkXU3uu2zk,None,"https://leetcode.com/problems/burst-balloons/
+https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/",None
+53,4.4 Bellman Ford Algorithm - Single Source Shortest Path - Dynamic Programming,https://www.youtube.com/watch?v=FtN3BYH2Zes,None,"https://leetcode.com/problems/cheapest-flights-within-k-stops/
+https://leetcode.com/problems/network-delay-time/",None
+54,4.5 0/1 Knapsack - Two Methods - Dynamic Programming,https://www.youtube.com/watch?v=nLmhmB6NzcM,https://www.hackerrank.com/challenges/unbounded-knapsack/problem,"https://leetcode.com/problems/partition-equal-subset-sum/
+https://leetcode.com/problems/target-sum/
+https://leetcode.com/problems/ones-and-zeroes/",https://www.codechef.com/problems/PPTEST
+55,4.5.1 0/1 Knapsack Problem (Program) - Dynamic Programming,https://www.youtube.com/watch?v=zRza99HPvkQ,https://www.hackerrank.com/challenges/unbounded-knapsack/problem,"https://leetcode.com/problems/partition-equal-subset-sum/
+https://leetcode.com/problems/target-sum/
+https://leetcode.com/problems/ones-and-zeroes/",https://www.codechef.com/problems/PPTEST
+56,4.6 Optimal Binary Search Tree (Successful Search Only) - Dynamic Programming,https://www.youtube.com/watch?v=vLS-zRCHo-Y,None,None,None
+57,4.6.2 [New] Optimal Binary Search Tree Successful and Unsuccessful Probability - Dynamic Programming,https://www.youtube.com/watch?v=wAy6nDMPYAE,None,None,None
+58,4.7 [New] Traveling Salesman Problem - Dynamic Programming using Formula,https://www.youtube.com/watch?v=Q4zHb-Swzro,None,"https://leetcode.com/problems/shortest-path-visiting-all-nodes/
+https://leetcode.com/problems/find-the-shortest-superstring/",None
+59,4.8 Reliability Design - Dynamic Programming,https://www.youtube.com/watch?v=uJOmqBwENB8,None,None,None
+60,4.9 Longest Common Subsequence (LCS)  - Recursion and Dynamic Programming,https://www.youtube.com/watch?v=sSno9rV8Rhg,https://www.hackerrank.com/challenges/dynamic-programming-classics-the-longest-common-subsequence/problem,"https://leetcode.com/problems/longest-common-subsequence/
+https://leetcode.com/problems/shortest-common-supersequence/
+https://leetcode.com/problems/delete-operation-for-two-strings/",None
+61,5.1 Graph Traversals - BFS & DFS -Breadth First Search and Depth First Search,https://www.youtube.com/watch?v=pcKY4hjDrxk,"https://www.hackerrank.com/challenges/bfsshortreach/problem
+https://www.hackerrank.com/challenges/connected-cell-in-a-grid/problem","https://leetcode.com/problems/number-of-islands/
+https://leetcode.com/problems/clone-graph/
+https://leetcode.com/problems/rotting-oranges/",https://www.codechef.com/problems/FIRESC
+62,5.2 Articulation Point and Biconnected Components,https://www.youtube.com/watch?v=jFZsDDB0-vo,None,https://leetcode.com/problems/critical-connections-in-a-network/,https://www.codechef.com/problems/GRAFFDEF
+63,6 Introduction to Backtracking - Brute Force Approach,https://www.youtube.com/watch?v=DKCbsiDBN6c,None,None,None
+64,6.1 N Queens Problem using Backtracking,https://www.youtube.com/watch?v=xFv_Hl4B83A,None,"https://leetcode.com/problems/n-queens/
+https://leetcode.com/problems/n-queens-ii/",None
+65,6.2 Sum Of Subsets Problem - Backtracking,https://www.youtube.com/watch?v=kyLxTdsT8ws,https://www.hackerrank.com/challenges/recursive-digit-sum/problem,"https://leetcode.com/problems/subsets/
+https://leetcode.com/problems/subsets-ii/
+https://leetcode.com/problems/combination-sum/",None
+66,6.3 Graph Coloring Problem - Backtracking,https://www.youtube.com/watch?v=052VkKhIaQ4,None,"https://leetcode.com/problems/is-graph-bipartite/
+https://leetcode.com/problems/possible-bipartition/",None
+67,6.4 Hamiltonian Cycle - Backtracking,https://www.youtube.com/watch?v=dQr4wZCiJJ4,None,https://leetcode.com/problems/find-the-shortest-superstring/,None
+68,7 Branch and Bound Introduction,https://www.youtube.com/watch?v=3RBNPc0_Q6g,None,None,None
+69,7.1 Job Sequencing with Deadline - Branch and Bound,https://www.youtube.com/watch?v=M7Fl_z7_J2k,None,None,None
+70,7.2 0/1 Knapsack using Branch and Bound,https://www.youtube.com/watch?v=yV1d-b_NeK8,None,None,None
+71,7.3 Traveling Salesman Problem - Branch and Bound,https://www.youtube.com/watch?v=1FEP_sNb62k,None,None,None
+72,8. NP-Hard and NP-Complete Problems,https://www.youtube.com/watch?v=e2cF8a5aAhE,None,None,None
+73,8.1 NP-Hard Graph Problem - Clique Decision Problem,https://www.youtube.com/watch?v=qZs767KQcvE,None,None,None
+74,9.1 Knuth-Morris-Pratt KMP String Matching Algorithm,https://www.youtube.com/watch?v=V5-7GzOfADQ,https://www.hackerrank.com/challenges/kmp-fp/problem,"https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
+https://leetcode.com/problems/shortest-palindrome/
+https://leetcode.com/problems/repeated-substring-pattern/",None
+75,9.2 Rabin-Karp String Matching Algorithm,https://www.youtube.com/watch?v=qQ8vS2btsxI,None,"https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
+https://leetcode.com/problems/repeated-dna-sequences/
+https://leetcode.com/problems/longest-duplicate-substring/",None
+76,10.1 AVL Tree - Insertion and Rotations,https://www.youtube.com/watch?v=jDM6_TnYIqE,https://www.hackerrank.com/challenges/self-balancing-tree/problem,https://leetcode.com/problems/balanced-binary-tree/,None
+77,10.2  B Trees and B+ Trees. How they are useful in Databases,https://www.youtube.com/watch?v=aZjYr87r1b8,None,None,None
+78,Asymptotic Notations - Simplified,https://www.youtube.com/watch?v=ddsP7NecEBk,None,None,None
+79,Hashing Technique - Simplified,https://www.youtube.com/watch?v=mFY0J5W8Udk,None,"https://leetcode.com/problems/design-hashmap/
+https://leetcode.com/problems/design-hashset/
+https://leetcode.com/problems/contains-duplicate/",None
+80,Shortest Path Algorithms (Dijkstra and Bellman-Ford)  - Simplified,https://www.youtube.com/watch?v=2raV0H9KqY8,https://www.hackerrank.com/challenges/dijkstrashortreach/problem,"https://leetcode.com/problems/network-delay-time/
+https://leetcode.com/problems/cheapest-flights-within-k-stops/",https://www.codechef.com/problems/SHPATH
+81,BFS DFS - Simplified,https://www.youtube.com/watch?v=kyUpc_5705s,https://www.hackerrank.com/challenges/bfsshortreach/problem,"https://leetcode.com/problems/number-of-islands/
+https://leetcode.com/problems/clone-graph/",https://www.codechef.com/problems/FIRESC
+82,Tower of Hanoi Problem - Made Easy,https://www.youtube.com/watch?v=q6RicK1FCUs,https://www.hackerrank.com/challenges/tower-of-hanoi/problem,None,https://www.codechef.com/problems/HANOI
+83,Row-Major and Column-Major Mapping,https://www.youtube.com/watch?v=MJZd6uPi88E,None,https://leetcode.com/problems/reshape-the-matrix/,None
+84,Merge Sort Algorithm - Hindi,https://www.youtube.com/watch?v=zXhWPrMLXGo,https://www.hackerrank.com/challenges/ctci-merge-sort/problem,https://leetcode.com/problems/sort-an-array/,https://www.codechef.com/problems/MRGSRT
+85,Bresenham's Line Drawing Algorithm,https://www.youtube.com/watch?v=RGB-wlatStc,None,None,None
+86,DDA Line Drawing Algorithm - Computer Graphics,https://www.youtube.com/watch?v=W5P8GlaEOSI,None,None,None
+87,6. Everything about Variables in JAVA,https://www.youtube.com/watch?v=h1Sq8p2GL2g,https://www.hackerrank.com/challenges/java-stdin-and-stdout-1/problem,None,https://www.codechef.com/problems/START01
+88,5. Everything about JAVA Data Types,https://www.youtube.com/watch?v=MuALK4KcNMc,https://www.hackerrank.com/challenges/java-datatypes/problem,None,https://www.codechef.com/problems/FLOW001
+89,4. Why public static void main(String args[ ]) ? JAVA,https://www.youtube.com/watch?v=On9mzziI2pU,https://www.hackerrank.com/challenges/welcome-to-java/problem,None,https://www.codechef.com/problems/START01
+90,3. Why to Set Path ? JAVA,https://www.youtube.com/watch?v=OnbpCg96w0I,None,None,None
+91,2. Why and How Java is platform independent,https://www.youtube.com/watch?v=1xz7OxASXUc,None,None,None
+92,1. Why One should Learn Java - Introduction to Java,https://www.youtube.com/watch?v=-JYLuv7mmxM,https://www.hackerrank.com/challenges/welcome-to-java/problem,None,https://www.codechef.com/problems/START01
+93,4.7 Traveling Salesperson Problem - Dynamic Programming,https://www.youtube.com/watch?v=XaXsJJh-Q5Y,None,"https://leetcode.com/problems/shortest-path-visiting-all-nodes/
+https://leetcode.com/problems/find-the-shortest-superstring/",None
