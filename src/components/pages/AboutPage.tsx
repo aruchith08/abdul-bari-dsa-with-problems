@@ -8,10 +8,21 @@ interface AboutPageProps {
 
 export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
   const [copied, setCopied] = useState(false);
+  const [disclaimerCopied, setDisclaimerCopied] = useState(false);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, []);
+
+  const handleDisclaimerCopy = () => {
+    const email = 'aruchith32@gmail.com';
+    navigator.clipboard.writeText(email).then(() => {
+      setDisclaimerCopied(true);
+      setTimeout(() => setDisclaimerCopied(false), 2500);
+    }).catch(() => {
+      window.prompt('Copy email address:', email);
+    });
+  };
 
   const handleEmailAction = (type: 'gmail' | 'copy') => {
     const email = 'aruchith32@gmail.com';
@@ -223,19 +234,55 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
                 <p className="mt-2 text-white/90 leading-relaxed text-xs font-bold">
                   We strongly encourage community feedback! If you find any kind of mistake, an irrelevant problem, or a better challenge that should be linked:
                 </p>
-                <div className="mt-3 flex flex-wrap items-center gap-2">
-                  <span className="text-[11px] font-mono text-white/80">
-                    Please reach out to us at:
+                <div className="mt-3.5 flex flex-wrap items-center gap-2.5 pt-1">
+                  <span className="text-[11px] font-mono text-white/80 shrink-0">
+                    Reach out directly:
                   </span>
+                  
+                  {/* Direct Gmail Compose Webmail Button */}
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=aruchith32@gmail.com&su=Problem%20Correction%20Suggestion%20-%20Abdul%20Bari%20DSA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 border-2 border-[#FF5E1E] bg-[#FF5E1E] text-black font-mono font-black text-xs px-3 py-1.5 hover:bg-white hover:text-black transition-colors shadow-[2px_2px_0px_#000000] cursor-pointer"
+                    title="Open compose in Gmail directly in browser"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <rect width="20" height="16" x="2" y="4" rx="2"/>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                    <span>Open in Gmail (aruchith32@gmail.com)</span>
+                  </a>
+
+                  {/* Copy Email Button */}
+                  <button
+                    type="button"
+                    onClick={handleDisclaimerCopy}
+                    className={`inline-flex items-center gap-1.5 border-2 border-white/40 bg-[#1A1A1A] px-2.5 py-1.5 text-xs font-mono font-bold uppercase transition-colors cursor-pointer ${
+                      disclaimerCopied ? 'text-[#00EA64] border-[#00EA64]' : 'text-white/80 hover:text-white hover:border-white'
+                    }`}
+                  >
+                    {disclaimerCopied ? (
+                      <>
+                        <span>✓</span>
+                        <span>Copied Email!</span>
+                      </>
+                    ) : (
+                      <>
+                        <span>📋</span>
+                        <span>Copy Email</span>
+                      </>
+                    )}
+                  </button>
+
+                  {/* Desktop Mail Client Fallback */}
                   <a
                     href="mailto:aruchith32@gmail.com?subject=Problem%20Correction%20Suggestion%20-%20Abdul%20Bari%20DSA"
-                    className="border border-[#FF5E1E] bg-[#FF5E1E] text-black font-mono font-bold text-xs px-2.5 py-1 hover:bg-white hover:text-black transition-colors"
+                    className="text-[11px] font-mono text-white/50 hover:text-white underline ml-1"
+                    title="Open default system mail client"
                   >
-                    aruchith32@gmail.com
+                    or default mail app
                   </a>
-                  <span className="text-[11px] font-mono text-white/70">
-                    — we will review and fix it as soon as possible. Thank you!
-                  </span>
                 </div>
               </div>
             </div>
