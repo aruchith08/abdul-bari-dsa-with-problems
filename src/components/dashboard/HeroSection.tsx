@@ -44,9 +44,6 @@ export const HeroSection: React.FC = () => {
           <p className="text-xs font-black uppercase tracking-tight leading-snug">
             &ldquo;A LITTLE PROGRESS EACH DAY ADDS UP TO BIG RESULTS.&rdquo;
           </p>
-          <span className="mt-3 text-[10px] font-mono font-bold text-black/70 text-right">
-            — ARH
-          </span>
         </div>
 
         {/* Right: Architectural Graphic + Action Words */}
