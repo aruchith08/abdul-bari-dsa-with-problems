@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ABDUL_BARI_PROBLEMS } from '../../data/abdulBariData';
-import { ExternalLink, Play, Sparkles } from '../common/icons';
+import { ExternalLink, Play, Sparkles, AlertTriangle } from '../common/icons';
 
 interface AboutPageProps {
   onBackToRoadmap: () => void;
@@ -55,7 +55,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
             onClick={onBackToRoadmap}
             className="border-2 border-black bg-[#ECECEC] px-3 py-1.5 text-xs font-black uppercase text-black hover:bg-black hover:text-white transition-colors cursor-pointer"
           >
-            <span>VIEW {ABDUL_BARI_PROBLEMS.length} PROBLEMS</span>
+            <span>VIEW {ABDUL_BARI_PROBLEMS.length} LECTURES</span>
           </button>
         </div>
       </div>
@@ -139,7 +139,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
                   </li>
                 </ul>
                 <p>
-                  <strong>The ARH DSA Enhancement:</strong> While Sir provides unmatched conceptual intuition and mathematical proofs, true mastery requires hands-on execution. This platform curates and maps <strong>over 1,000 real-world practice challenges</strong> across <strong>LeetCode, HackerRank, and CodeChef</strong> directly to each lecture, allowing students to transition from video theory to top-tier coding execution seamlessly.
+                  <strong>The Practice Curation:</strong> While Sir provides unmatched conceptual intuition and mathematical proofs, true mastery requires hands-on execution. This platform curates and maps <strong>strictly relevant practice challenges</strong> across <strong>LeetCode, HackerRank, and CodeChef</strong> directly to the algorithms taught, allowing students to transition from video theory to practical coding execution.
                 </p>
               </div>
 
@@ -147,36 +147,108 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
               <div className="flex flex-col gap-2.5 justify-center">
                 <div className="border-2 border-black bg-white p-3 shadow-[2px_2px_0px_#000000]">
                   <div className="text-2xl font-black font-mono text-[#FF5E1E]">{ABDUL_BARI_PROBLEMS.length}</div>
-                  <div className="text-[11px] font-black uppercase text-black">Meticulous Video Lectures</div>
+                  <div className="text-[11px] font-black uppercase text-black">Total Video Lectures</div>
                   <div className="text-[10px] font-mono text-black/60">From foundations to NP-completeness</div>
                 </div>
                 <div className="border-2 border-black bg-white p-3 shadow-[2px_2px_0px_#000000]">
-                  <div className="text-2xl font-black font-mono text-black">600+</div>
-                  <div className="text-[11px] font-black uppercase text-black">Curated LeetCode Problems</div>
-                  <div className="text-[10px] font-mono text-black/60">Targeted for FAANG &amp; tech interviews</div>
+                  <div className="text-2xl font-black font-mono text-black">148</div>
+                  <div className="text-[11px] font-black uppercase text-black">Curated Practice Links</div>
+                  <div className="text-[10px] font-mono text-black/60">Strictly solvable post-lecture</div>
                 </div>
                 <div className="border-2 border-black bg-white p-3 shadow-[2px_2px_0px_#000000]">
-                  <div className="text-2xl font-black font-mono text-[#00EA64]">250+</div>
-                  <div className="text-[11px] font-black uppercase text-black">HackerRank Challenges</div>
-                  <div className="text-[10px] font-mono text-black/60">Foundational coding &amp; unit tests</div>
+                  <div className="text-2xl font-black font-mono text-[#00EA64]">49</div>
+                  <div className="text-[11px] font-black uppercase text-black">Hands-On Coding Topics</div>
+                  <div className="text-[10px] font-mono text-black/60">LeetCode, HackerRank &amp; CodeChef</div>
                 </div>
                 <div className="border-2 border-black bg-white p-3 shadow-[2px_2px_0px_#000000]">
-                  <div className="text-2xl font-black font-mono text-[#5B4638]">140+</div>
-                  <div className="text-[11px] font-black uppercase text-black">CodeChef Problems</div>
-                  <div className="text-[10px] font-mono text-black/60">Competitive programming drills</div>
+                  <div className="text-2xl font-black font-mono text-[#5B4638]">44</div>
+                  <div className="text-[11px] font-black uppercase text-black">Theory &amp; Math Lectures</div>
+                  <div className="text-[10px] font-mono text-black/60">Proofs &amp; pen-and-paper analysis</div>
                 </div>
               </div>
             </div>
           </div>
 
           {/* ========================================================================= */}
-          {/* PART 2: ABOUT PROF. ABDUL BARI */}
+          {/* PART 2: WHY SOME LECTURES HAVE NO/FEW PROBLEMS & AI RECOMMENDATION NOTICE */}
+          {/* ========================================================================= */}
+          <div className="border-2 border-black bg-[#FFFBEA] p-5 sm:p-6 shadow-[3px_3px_0px_#000000]">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b-2 border-black pb-4 mb-5">
+              <div className="flex items-center gap-3">
+                <span className="flex h-8 w-8 items-center justify-center border-2 border-black bg-black text-white font-mono font-black text-sm shadow-[2px_2px_0px_#FF5E1E]">
+                  02
+                </span>
+                <div>
+                  <span className="text-[10px] font-mono font-bold tracking-widest text-black/60 uppercase block">
+                    TRANSPARENCY &amp; CURATION
+                  </span>
+                  <h2 className="text-lg sm:text-xl font-black uppercase tracking-tight text-black">
+                    Why Some Lectures Have No / Few Problems &amp; AI Disclaimer
+                  </h2>
+                </div>
+              </div>
+              <div className="inline-flex items-center gap-1.5 border border-black bg-white px-2.5 py-1 text-[10px] font-mono font-bold uppercase text-black">
+                <AlertTriangle className="h-3.5 w-3.5 text-[#FF5E1E]" />
+                <span>AI-Assisted Curation</span>
+              </div>
+            </div>
+
+            <div className="space-y-4 text-xs sm:text-sm text-black/85 leading-relaxed font-sans">
+              <div className="border-l-4 border-black bg-white p-3.5 shadow-[2px_2px_0px_#000000]">
+                <h3 className="font-black uppercase text-black text-xs font-mono mb-1">
+                  1. Why are there &ldquo;No Problems&rdquo; (—) for certain videos?
+                </h3>
+                <p className="text-black/80">
+                  Abdul Bari Sir&apos;s masterclass includes 44 in-depth theoretical and mathematical lectures—such as formal definitions of asymptotic notations (Big-O, &Omega;, &Theta;), algebraic proofs, Master&apos;s Theorem derivations, recurrence relation expansions on paper, and computer graphics rasterization formulas. <strong>Because no actual coding problem can be solved directly by just watching these theoretical lectures</strong>, we intentionally leave them blank (<code>—</code>). We chose honesty over vanity: we never dump random, unrelated array questions just to inflate problem counts.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-[#FF5E1E] bg-white p-3.5 shadow-[2px_2px_0px_#000000]">
+                <h3 className="font-black uppercase text-black text-xs font-mono mb-1">
+                  2. Why do some videos only have a &ldquo;Few Problems&rdquo;?
+                </h3>
+                <p className="text-black/80">
+                  We believe in <strong>strict relevance over noisy clutter</strong>. When you watch an algorithmic video (like Prim&apos;s, Kruskal&apos;s, Dijkstra&apos;s, 0/1 Knapsack, or KMP String Matching), you need 1 to 3 high-yield problems that directly exercise the exact algorithm taught. Providing thousands of duplicates wastes your study time; targeted practice reinforces core patterns immediately.
+                </p>
+              </div>
+
+              <div className="border-2 border-black bg-black text-white p-4 shadow-[2px_2px_0px_#FF5E1E]">
+                <div className="flex items-center gap-2 mb-1.5 text-[#FF5E1E] font-mono font-bold text-xs uppercase">
+                  <AlertTriangle className="h-4 w-4" />
+                  <span>AI Recommendations Disclaimer &amp; Open Feedback Call</span>
+                </div>
+                <p className="text-white/90 leading-relaxed text-xs">
+                  Please note that the practice questions listed on this platform are <strong>AI-assisted recommendations</strong>. While we have meticulously reviewed and verified the problem links against each video&apos;s contents, automated curation can occasionally contain errors—such as a misjudged difficulty rating, an edge-case discrepancy, or a platform URL change.
+                </p>
+                <p className="mt-2 text-white/90 leading-relaxed text-xs font-bold">
+                  We strongly encourage community feedback! If you find any kind of mistake, an irrelevant problem, or a better challenge that should be linked:
+                </p>
+                <div className="mt-3 flex flex-wrap items-center gap-2">
+                  <span className="text-[11px] font-mono text-white/80">
+                    Please reach out to us at:
+                  </span>
+                  <a
+                    href="mailto:aruchith32@gmail.com?subject=Problem%20Correction%20Suggestion%20-%20Abdul%20Bari%20DSA"
+                    className="border border-[#FF5E1E] bg-[#FF5E1E] text-black font-mono font-bold text-xs px-2.5 py-1 hover:bg-white hover:text-black transition-colors"
+                  >
+                    aruchith32@gmail.com
+                  </a>
+                  <span className="text-[11px] font-mono text-white/70">
+                    — we will review and fix it as soon as possible. Thank you!
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ========================================================================= */}
+          {/* PART 3: ABOUT PROF. ABDUL BARI */}
           {/* ========================================================================= */}
           <div className="border-2 border-black bg-white p-5 sm:p-6 shadow-[3px_3px_0px_#000000]">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b-2 border-black pb-4 mb-5">
               <div className="flex items-center gap-3">
                 <span className="flex h-8 w-8 items-center justify-center border-2 border-black bg-[#FF5E1E] text-black font-mono font-black text-sm shadow-[2px_2px_0px_#000000]">
-                  02
+                  03
                 </span>
                 <div>
                   <span className="text-[10px] font-mono font-bold tracking-widest text-black/60 uppercase block">
@@ -267,13 +339,13 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
           </div>
 
           {/* ========================================================================= */}
-          {/* PART 3: ABOUT ME (ARH) & PLATFORM VISION */}
+          {/* PART 4: ABOUT ME (ARH) & PLATFORM VISION */}
           {/* ========================================================================= */}
           <div className="border-2 border-black bg-[#111111] text-white p-5 sm:p-6 shadow-[3px_3px_0px_#000000]">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b-2 border-[#333333] pb-4 mb-5">
               <div className="flex items-center gap-3">
                 <span className="flex h-8 w-8 items-center justify-center border-2 border-white bg-[#FF5E1E] text-black font-mono font-black text-sm shadow-[2px_2px_0px_#FFFFFF]">
-                  03
+                  04
                 </span>
                 <div>
                   <span className="text-[10px] font-mono font-bold tracking-widest text-[#888888] uppercase block">
@@ -400,7 +472,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-2 border-black bg-white p-4 shadow-[3px_3px_0px_#000000]">
         <div>
           <h3 className="text-sm font-black uppercase text-black">Ready to solve problems?</h3>
-          <p className="text-xs font-mono text-black/70">Hop right back into the {ABDUL_BARI_PROBLEMS.length}-problem curriculum.</p>
+          <p className="text-xs font-mono text-black/70">Hop right back into the {ABDUL_BARI_PROBLEMS.length}-lecture curriculum.</p>
         </div>
         <button
           onClick={onBackToRoadmap}
