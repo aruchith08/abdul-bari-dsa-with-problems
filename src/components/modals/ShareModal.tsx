@@ -26,16 +26,21 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
   // Use current website URL, or fallback to default
   const shareUrl = typeof window !== 'undefined' ? window.location.origin : 'https://arh-dsa.vercel.app';
 
+  // Calculate total curated practice problems dynamically
+  const totalPracticeProblems = ABDUL_BARI_PROBLEMS.reduce((acc, p) => {
+    return acc + (p.leetCode?.length || 0) + (p.hackerRank?.length || 0) + (p.codeChef?.length || 0);
+  }, 0);
+
   const shareTitle = 'Abdul Bari DSA with Problems — By ARH';
-  const shareSummary = 'Learn from the best mentor (Prof. Abdul Bari) and practice 1,000+ curated LeetCode, HackerRank & CodeChef problems alongside every lecture!';
+  const shareSummary = `Learn from the best mentor (Prof. Abdul Bari) and practice ${totalPracticeProblems}+ curated LeetCode, HackerRank & CodeChef problems alongside every lecture!`;
 
   const fullShareText = `🚀 Master Data Structures & Algorithms with Abdul Bari DSA + Problems!
 
-Stop just passively watching lectures—learn from the world's best algorithm mentor (Prof. Abdul Bari) and practice 1,000+ curated LeetCode, HackerRank, and CodeChef problems alongside every single lecture!
+Stop just passively watching lectures—learn from the world's best algorithm mentor (Prof. Abdul Bari) and practice ${totalPracticeProblems}+ curated LeetCode, HackerRank, and CodeChef problems alongside every single lecture!
 
 ✨ Why this platform:
 • ${ABDUL_BARI_PROBLEMS.length} lecture-by-lecture structured curriculum
-• 1,000+ hand-picked practice challenges
+• ${totalPracticeProblems}+ hand-picked practice challenges
 • LeetCode-style progress analytics & revision bookmarks
 • Multi-device cloud sync with Firebase
 • 100% free, developer-first Neo-Brutalist experience
@@ -162,7 +167,7 @@ KEEP SOLVING. KEEP BUILDING. — ARH`;
             </div>
             <div className="rounded-lg border border-black bg-[#FAFAFA] p-2 flex items-center gap-2 shadow-[1px_1px_0px_#000000]">
               <span className="text-emerald-600 font-black">✓</span>
-              <span className="font-bold">1,000+ Coding Drills</span>
+              <span className="font-bold">{totalPracticeProblems}+ Curated Drills</span>
             </div>
             <div className="rounded-lg border border-black bg-[#FAFAFA] p-2 flex items-center gap-2 shadow-[1px_1px_0px_#000000]">
               <span className="text-[#FFA116] font-black">★</span>
