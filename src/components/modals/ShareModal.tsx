@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ABDUL_BARI_PROBLEMS } from '../../data/abdulBariData';
-import { X, Copy, Check, Share2, Sparkles, CheckCircle2 } from '../common/icons';
+import { X, Copy, Check, Share2, Sparkles, CheckCircle2, WhatsAppIcon, TelegramIcon, LinkedInIcon, XIcon } from '../common/icons';
 
 interface ShareModalProps {
   isOpen: boolean;
@@ -112,7 +112,7 @@ KEEP SOLVING. KEEP BUILDING. — ARH`;
       onClick={onClose}
     >
       <div
-        className="w-full max-w-lg border-2 border-black bg-white shadow-[8px_8px_0px_#000000] transition-all overflow-hidden"
+        className="w-full max-w-lg rounded-xl border-2 border-black bg-white shadow-[8px_8px_0px_#000000] transition-all overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top Header Bar */}
@@ -131,7 +131,7 @@ KEEP SOLVING. KEEP BUILDING. — ARH`;
           <button
             type="button"
             onClick={onClose}
-            className="flex h-7 w-7 items-center justify-center border border-white/40 bg-black text-white hover:bg-[#FF5E1E] hover:text-black hover:border-black transition-colors cursor-pointer"
+            className="flex h-7 w-7 items-center justify-center rounded-md border border-white/40 bg-black text-white hover:bg-[#FF5E1E] hover:text-black hover:border-black transition-colors cursor-pointer"
             aria-label="Close"
           >
             <X className="h-4 w-4" />
@@ -142,7 +142,7 @@ KEEP SOLVING. KEEP BUILDING. — ARH`;
         <div className="p-5 sm:p-6 text-black space-y-5">
           {/* Header Banner */}
           <div>
-            <div className="inline-flex items-center gap-1.5 border border-black bg-[#FF5E1E] px-2 py-0.5 text-[10px] font-mono font-black uppercase text-black shadow-[2px_2px_0px_#000000] mb-2">
+            <div className="inline-flex items-center gap-1.5 rounded border border-black bg-[#FF5E1E] px-2 py-0.5 text-[10px] font-mono font-black uppercase text-black shadow-[2px_2px_0px_#000000] mb-2">
               <Sparkles className="h-3 w-3" />
               <span>SPREAD THE KNOWLEDGE</span>
             </div>
@@ -156,19 +156,19 @@ KEEP SOLVING. KEEP BUILDING. — ARH`;
 
           {/* Quick Value Points */}
           <div className="grid grid-cols-2 gap-2 text-[11px] font-mono">
-            <div className="border border-black bg-[#FAFAFA] p-2 flex items-center gap-2">
+            <div className="rounded-lg border border-black bg-[#FAFAFA] p-2 flex items-center gap-2 shadow-[1px_1px_0px_#000000]">
               <span className="text-[#FF5E1E] font-black">▶</span>
               <span className="font-bold">{ABDUL_BARI_PROBLEMS.length} Full Lectures</span>
             </div>
-            <div className="border border-black bg-[#FAFAFA] p-2 flex items-center gap-2">
+            <div className="rounded-lg border border-black bg-[#FAFAFA] p-2 flex items-center gap-2 shadow-[1px_1px_0px_#000000]">
               <span className="text-emerald-600 font-black">✓</span>
               <span className="font-bold">1,000+ Coding Drills</span>
             </div>
-            <div className="border border-black bg-[#FAFAFA] p-2 flex items-center gap-2">
+            <div className="rounded-lg border border-black bg-[#FAFAFA] p-2 flex items-center gap-2 shadow-[1px_1px_0px_#000000]">
               <span className="text-[#FFA116] font-black">★</span>
               <span className="font-bold">LeetCode Dashboard</span>
             </div>
-            <div className="border border-black bg-[#FAFAFA] p-2 flex items-center gap-2">
+            <div className="rounded-lg border border-black bg-[#FAFAFA] p-2 flex items-center gap-2 shadow-[1px_1px_0px_#000000]">
               <span className="text-blue-600 font-black">☁</span>
               <span className="font-bold">Cloud Sync &amp; Notes</span>
             </div>
@@ -179,7 +179,7 @@ KEEP SOLVING. KEEP BUILDING. — ARH`;
             <label className="block text-[11px] font-black uppercase tracking-wider text-black mb-1.5">
               Platform Link
             </label>
-            <div className="flex items-stretch border-2 border-black bg-[#F5F5F5] shadow-[2px_2px_0px_#000000]">
+            <div className="flex items-stretch rounded-lg border-2 border-black bg-[#F5F5F5] shadow-[2px_2px_0px_#000000] overflow-hidden">
               <input
                 type="text"
                 readOnly
@@ -212,7 +212,7 @@ KEEP SOLVING. KEEP BUILDING. — ARH`;
             <button
               type="button"
               onClick={handleCopyMessage}
-              className="w-full border-2 border-black bg-[#FF5E1E] p-3 text-xs sm:text-sm font-black uppercase text-black shadow-[3px_3px_0px_#000000] hover:bg-black hover:text-white active:translate-x-[1px] active:translate-y-[1px] transition-all flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full rounded-lg border-2 border-black bg-[#FF5E1E] p-3 text-xs sm:text-sm font-black uppercase text-black shadow-[3px_3px_0px_#000000] hover:bg-black hover:text-white active:translate-x-[1px] active:translate-y-[1px] transition-all flex items-center justify-center gap-2 cursor-pointer"
             >
               {copiedType === 'message' ? (
                 <>
@@ -232,7 +232,7 @@ KEEP SOLVING. KEEP BUILDING. — ARH`;
               <button
                 type="button"
                 onClick={handleNativeShare}
-                className="w-full border-2 border-black bg-white p-2.5 text-xs font-black uppercase text-black shadow-[2px_2px_0px_#000000] hover:bg-black hover:text-white transition-colors flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full rounded-lg border-2 border-black bg-white p-2.5 text-xs font-black uppercase text-black shadow-[2px_2px_0px_#000000] hover:bg-black hover:text-white transition-colors flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Share2 className="h-3.5 w-3.5" />
                 <span>SHARE VIA DEVICE / INSTALLED APPS</span>
@@ -250,8 +250,9 @@ KEEP SOLVING. KEEP BUILDING. — ARH`;
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-black bg-[#25D366]/10 p-2 text-center text-xs font-black uppercase hover:bg-[#25D366] hover:text-white transition-colors flex items-center justify-center gap-1.5 shadow-[1px_1px_0px_#000000]"
+                className="rounded-lg border-2 border-black bg-[#25D366]/10 p-2 text-center text-xs font-black uppercase hover:bg-[#25D366] hover:text-white transition-colors flex items-center justify-center gap-1.5 shadow-[2px_2px_0px_#000000] cursor-pointer"
               >
+                <WhatsAppIcon className="h-3.5 w-3.5 shrink-0" />
                 <span>WhatsApp</span>
               </a>
 
@@ -259,8 +260,9 @@ KEEP SOLVING. KEEP BUILDING. — ARH`;
                 href={telegramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-black bg-[#0088cc]/10 p-2 text-center text-xs font-black uppercase hover:bg-[#0088cc] hover:text-white transition-colors flex items-center justify-center gap-1.5 shadow-[1px_1px_0px_#000000]"
+                className="rounded-lg border-2 border-black bg-[#0088cc]/10 p-2 text-center text-xs font-black uppercase hover:bg-[#0088cc] hover:text-white transition-colors flex items-center justify-center gap-1.5 shadow-[2px_2px_0px_#000000] cursor-pointer"
               >
+                <TelegramIcon className="h-3.5 w-3.5 shrink-0" />
                 <span>Telegram</span>
               </a>
 
@@ -268,8 +270,9 @@ KEEP SOLVING. KEEP BUILDING. — ARH`;
                 href={linkedinUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-black bg-[#0077b5]/10 p-2 text-center text-xs font-black uppercase hover:bg-[#0077b5] hover:text-white transition-colors flex items-center justify-center gap-1.5 shadow-[1px_1px_0px_#000000]"
+                className="rounded-lg border-2 border-black bg-[#0077b5]/10 p-2 text-center text-xs font-black uppercase hover:bg-[#0077b5] hover:text-white transition-colors flex items-center justify-center gap-1.5 shadow-[2px_2px_0px_#000000] cursor-pointer"
               >
+                <LinkedInIcon className="h-3.5 w-3.5 shrink-0" />
                 <span>LinkedIn</span>
               </a>
 
@@ -277,8 +280,9 @@ KEEP SOLVING. KEEP BUILDING. — ARH`;
                 href={twitterUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-black bg-black/5 p-2 text-center text-xs font-black uppercase hover:bg-black hover:text-white transition-colors flex items-center justify-center gap-1.5 shadow-[1px_1px_0px_#000000]"
+                className="rounded-lg border-2 border-black bg-black/5 p-2 text-center text-xs font-black uppercase hover:bg-black hover:text-white transition-colors flex items-center justify-center gap-1.5 shadow-[2px_2px_0px_#000000] cursor-pointer"
               >
+                <XIcon className="h-3.5 w-3.5 shrink-0" />
                 <span>Twitter / X</span>
               </a>
             </div>
