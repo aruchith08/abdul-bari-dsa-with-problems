@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ABDUL_BARI_PROBLEMS } from '../../data/abdulBariData';
-import { ExternalLink, Play, Sparkles, AlertTriangle } from '../common/icons';
+import { ExternalLink, Play, Sparkles, AlertTriangle, GithubIcon, LinkedInIcon, XIcon, GlobeIcon } from '../common/icons';
 
 interface AboutPageProps {
   onBackToRoadmap: () => void;
@@ -408,8 +408,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-              {/* ARH Logo Showcase Card */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+              {/* ARH Logo Showcase Card & Social Links */}
               <div className="md:col-span-4 flex flex-col items-center">
                 <div className="border-2 border-white/80 bg-black p-5 shadow-[4px_4px_0px_#FF5E1E] w-full max-w-[280px] text-center flex flex-col items-center">
                   <div className="h-28 w-auto flex items-center justify-center my-2 p-2 bg-[#0A0A0A] border border-white/20">
@@ -428,11 +428,58 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
                     </span>
                   </div>
                 </div>
+
+                {/* Creator Links & Socials below ARH box */}
+                <div className="mt-3 w-full max-w-[280px] grid grid-cols-2 gap-2">
+                  <a
+                    href="https://github.com/aruchith08"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 border-2 border-white/30 bg-[#161616] hover:bg-[#FF5E1E] hover:text-black hover:border-[#FF5E1E] px-2 py-2 text-xs font-mono font-bold text-white uppercase transition-colors shadow-[2px_2px_0px_#000000] cursor-pointer"
+                    title="Visit GitHub: aruchith08"
+                  >
+                    <GithubIcon className="h-3.5 w-3.5 shrink-0" />
+                    <span>GitHub</span>
+                  </a>
+
+                  <a
+                    href="https://linkedin.com/in/ruchithalokam"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 border-2 border-white/30 bg-[#161616] hover:bg-[#0077B5] hover:text-white hover:border-[#0077B5] px-2 py-2 text-xs font-mono font-bold text-white uppercase transition-colors shadow-[2px_2px_0px_#000000] cursor-pointer"
+                    title="Visit LinkedIn: ruchithalokam"
+                  >
+                    <LinkedInIcon className="h-3.5 w-3.5 shrink-0" />
+                    <span>LinkedIn</span>
+                  </a>
+
+                  <a
+                    href="https://x.com/A_Ruchith"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 border-2 border-white/30 bg-[#161616] hover:bg-white hover:text-black hover:border-white px-2 py-2 text-xs font-mono font-bold text-white uppercase transition-colors shadow-[2px_2px_0px_#000000] cursor-pointer"
+                    title="Visit X: A_Ruchith"
+                  >
+                    <XIcon className="h-3.5 w-3.5 shrink-0" />
+                    <span>X.com</span>
+                  </a>
+
+                  <a
+                    href="https://alokam.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 border-2 border-white/30 bg-[#161616] hover:bg-[#00EA64] hover:text-black hover:border-[#00EA64] px-2 py-2 text-xs font-mono font-bold text-white uppercase transition-colors shadow-[2px_2px_0px_#000000] cursor-pointer"
+                    title="Visit Website: alokam.com"
+                  >
+                    <GlobeIcon className="h-3.5 w-3.5 shrink-0" />
+                    <span>alokam.com</span>
+                  </a>
+                </div>
               </div>
 
               {/* ARH Story & Platform Philosophy */}
               <div className="md:col-span-8 space-y-3.5 text-xs sm:text-sm text-[#DDDDDD] leading-relaxed font-sans">
-                <div className="flex flex-wrap gap-1.5 mb-2">
+                <div className="flex flex-wrap items-center gap-1.5 mb-2">
                   <span className="border border-white/30 bg-[#222222] px-2 py-0.5 text-[10px] font-mono font-bold uppercase text-white">
                     Developer First
                   </span>
@@ -445,6 +492,17 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToRoadmap }) => {
                   <span className="border border-white/30 bg-[#222222] px-2 py-0.5 text-[10px] font-mono font-bold uppercase text-[#FF5E1E]">
                     100% Free &amp; Open
                   </span>
+                  <a
+                    href="https://github.com/aruchith08/abdul-bari-dsa-with-problems"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 border border-white/40 bg-[#222222] hover:bg-[#FF5E1E] hover:text-black hover:border-black px-2 py-0.5 text-[10px] font-mono font-bold uppercase text-white transition-colors cursor-pointer"
+                    title="View GitHub Repository"
+                  >
+                    <GithubIcon className="h-3 w-3" />
+                    <span>GitHub</span>
+                    <ExternalLink className="h-2.5 w-2.5" />
+                  </a>
                 </div>
 
                 <p>
