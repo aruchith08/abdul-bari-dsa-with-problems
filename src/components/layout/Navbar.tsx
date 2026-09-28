@@ -121,7 +121,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 type="text"
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
-                placeholder="Search problems..."
+                placeholder="Search lectures..."
                 className="w-24 sm:w-40 md:w-52 bg-transparent text-xs text-white placeholder-[#777777] outline-none font-mono"
               />
               {searchQuery ? (

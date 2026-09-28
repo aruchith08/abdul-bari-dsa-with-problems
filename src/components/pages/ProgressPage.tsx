@@ -173,7 +173,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
             onClick={onBackToRoadmap}
             className="border-2 border-black bg-[#ECECEC] px-3 py-1.5 text-xs font-black uppercase text-black hover:bg-black hover:text-white transition-colors cursor-pointer"
           >
-            <span>VIEW {totalCount} PROBLEMS</span>
+            <span>VIEW {totalCount} LECTURES</span>
           </button>
           <button
             onClick={onResetClick}
@@ -198,7 +198,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
               ALGORITHM PROGRESS &amp; ANALYTICS
             </h1>
             <p className="mt-1 text-xs sm:text-sm text-black/70 font-sans">
-              Real-time analytics across all {totalCount} problems, {TOPIC_CATEGORIES.length} core algorithm paradigms, difficulty tiers, and revision tracking.
+              Real-time analytics across all {totalCount} lectures, {TOPIC_CATEGORIES.length} core algorithm paradigms, difficulty tiers, and revision tracking.
             </p>
           </div>
 
@@ -216,13 +216,13 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
         <div className="mt-6 border-2 border-black bg-[#FAFAFA] p-5 sm:p-7 shadow-[4px_4px_0px_#000000]">
           <div className="flex items-center justify-between border-b-2 border-black pb-4 mb-6">
             <div className="flex items-center gap-2">
-              <span className="text-sm sm:text-base font-black uppercase tracking-wide">Solved Problems</span>
+              <span className="text-sm sm:text-base font-black uppercase tracking-wide">Completed Lectures</span>
               <span className="border border-black bg-black text-white px-2 py-0.5 text-[10px] font-mono font-bold">
                 {completedCount} / {totalCount}
               </span>
             </div>
             <div className="text-xs font-mono font-bold text-black/60">
-              {remainingCount} problems remaining
+              {remainingCount} lectures remaining
             </div>
           </div>
 
@@ -435,7 +435,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
 
           <div className="border-2 border-black bg-[#E6F9F5] p-4 shadow-[3px_3px_0px_#000000]">
             <div className="flex items-center justify-between">
-              <span className="text-[11px] font-black uppercase tracking-wider text-black/70">PENDING PROBLEMS</span>
+              <span className="text-[11px] font-black uppercase tracking-wider text-black/70">PENDING LECTURES</span>
               <Clock className="h-4 w-4 text-black" />
             </div>
             <div className="mt-2 font-mono text-2xl sm:text-3xl font-black text-black">{remainingCount}</div>
@@ -466,7 +466,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
               onClick={() => (onSelectNotes ? onSelectNotes() : onBackToRoadmap())}
               className="mt-2 inline-flex items-center gap-1 text-[11px] font-black uppercase text-black hover:underline cursor-pointer"
             >
-              <span>View Problems With Notes →</span>
+              <span>View Lectures With Notes →</span>
             </button>
           </div>
         </div>

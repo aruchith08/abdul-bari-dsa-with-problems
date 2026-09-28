@@ -25,7 +25,7 @@ export const HeroSection: React.FC = () => {
           {/* Badges */}
           <div className="mt-4 flex flex-wrap gap-2">
             <span className="border border-white/60 bg-black px-2.5 py-1 text-[10px] font-mono font-semibold tracking-wider text-white uppercase">
-              {ABDUL_BARI_PROBLEMS.length} Problems
+              {ABDUL_BARI_PROBLEMS.length} Lectures
             </span>
             <span className="border border-white/60 bg-black px-2.5 py-1 text-[10px] font-mono font-semibold tracking-wider text-white uppercase">
               Structured Learning

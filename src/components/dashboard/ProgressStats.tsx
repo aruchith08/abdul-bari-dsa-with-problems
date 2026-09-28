@@ -20,7 +20,7 @@ export const ProgressStats: React.FC<ProgressStatsProps> = ({
       <div className="border-2 border-black bg-white p-3.5 shadow-[2px_2px_0px_#000000] flex flex-col justify-between">
         <div className="flex items-center justify-between mb-1">
           <span className="text-[11px] font-black tracking-wider text-black uppercase">
-            Total Problems
+            Total Lectures
           </span>
           <div className="flex h-7 w-7 items-center justify-center border-2 border-black bg-[#E5E5E5]">
             <FileText className="h-4 w-4 text-black" />

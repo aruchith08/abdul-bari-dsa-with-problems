@@ -155,7 +155,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   : 'text-black hover:bg-black/5'
               }`}
             >
-              <span>All Problems</span>
+              <span>All Lectures</span>
               <span className="font-mono">{totalProblemsCount}</span>
             </button>
 
