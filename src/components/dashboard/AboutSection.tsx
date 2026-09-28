@@ -381,7 +381,7 @@ export const AboutSection: React.FC = () => {
                   href="https://github.com/aruchith08"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1.5 border-2 border-white/30 bg-[#161616] hover:bg-[#FF5E1E] hover:text-black hover:border-[#FF5E1E] px-2 py-2 text-xs font-mono font-bold text-white uppercase transition-colors shadow-[2px_2px_0px_#000000] cursor-pointer"
+                  className="flex items-center justify-center gap-1.5 rounded-lg border-2 border-white/30 bg-[#161616] hover:bg-[#FF5E1E] hover:text-black hover:border-[#FF5E1E] px-2.5 py-2 text-xs font-mono font-bold text-white uppercase transition-colors shadow-[2px_2px_0px_#000000] cursor-pointer"
                   title="Visit GitHub: aruchith08"
                 >
                   <GithubIcon className="h-3.5 w-3.5 shrink-0" />
@@ -392,7 +392,7 @@ export const AboutSection: React.FC = () => {
                   href="https://linkedin.com/in/ruchithalokam"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1.5 border-2 border-white/30 bg-[#161616] hover:bg-[#0077B5] hover:text-white hover:border-[#0077B5] px-2 py-2 text-xs font-mono font-bold text-white uppercase transition-colors shadow-[2px_2px_0px_#000000] cursor-pointer"
+                  className="flex items-center justify-center gap-1.5 rounded-lg border-2 border-white/30 bg-[#161616] hover:bg-[#0077B5] hover:text-white hover:border-[#0077B5] px-2.5 py-2 text-xs font-mono font-bold text-white uppercase transition-colors shadow-[2px_2px_0px_#000000] cursor-pointer"
                   title="Visit LinkedIn: ruchithalokam"
                 >
                   <LinkedInIcon className="h-3.5 w-3.5 shrink-0" />
@@ -403,7 +403,7 @@ export const AboutSection: React.FC = () => {
                   href="https://x.com/A_Ruchith"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1.5 border-2 border-white/30 bg-[#161616] hover:bg-white hover:text-black hover:border-white px-2 py-2 text-xs font-mono font-bold text-white uppercase transition-colors shadow-[2px_2px_0px_#000000] cursor-pointer"
+                  className="flex items-center justify-center gap-1.5 rounded-lg border-2 border-white/30 bg-[#161616] hover:bg-white hover:text-black hover:border-white px-2.5 py-2 text-xs font-mono font-bold text-white uppercase transition-colors shadow-[2px_2px_0px_#000000] cursor-pointer"
                   title="Visit X: A_Ruchith"
                 >
                   <XIcon className="h-3.5 w-3.5 shrink-0" />
@@ -414,7 +414,7 @@ export const AboutSection: React.FC = () => {
                   href="https://alokam.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1.5 border-2 border-white/30 bg-[#161616] hover:bg-[#00EA64] hover:text-black hover:border-[#00EA64] px-2 py-2 text-xs font-mono font-bold text-white uppercase transition-colors shadow-[2px_2px_0px_#000000] cursor-pointer"
+                  className="flex items-center justify-center gap-1.5 rounded-lg border-2 border-white/30 bg-[#161616] hover:bg-[#00EA64] hover:text-black hover:border-[#00EA64] px-2.5 py-2 text-xs font-mono font-bold text-white uppercase transition-colors shadow-[2px_2px_0px_#000000] cursor-pointer"
                   title="Visit Website: alokam.com"
                 >
                   <GlobeIcon className="h-3.5 w-3.5 shrink-0" />
