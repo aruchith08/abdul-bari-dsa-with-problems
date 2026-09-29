@@ -121,7 +121,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   className="fixed inset-0 z-40"
                   onClick={() => setCustomizeMenuOpen(false)}
                 />
-                <div className="absolute right-0 top-full mt-1.5 z-50 w-64 border-2 border-black bg-white p-3 shadow-[4px_4px_0px_#000000]">
+                <div className="absolute left-0 sm:left-auto sm:right-0 top-full mt-1.5 z-50 w-60 sm:w-64 max-w-[calc(100vw-1.5rem)] border-2 border-black bg-white p-3 shadow-[4px_4px_0px_#000000]">
                   <div className="flex items-center justify-between pb-2 mb-2 border-b-2 border-black">
                     <div className="flex items-center gap-1.5">
                       <Palette className="h-3.5 w-3.5 text-[#FF5E1E]" />
