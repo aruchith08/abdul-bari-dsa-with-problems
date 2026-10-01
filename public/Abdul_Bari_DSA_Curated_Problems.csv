@@ -1,9 +1,10 @@
-ID,Title,Video URL,HackerRank,LeetCode,CodeChef
+﻿ID,Title,Video URL,HackerRank,LeetCode,CodeChef
 1,1. Introduction to Algorithms,https://www.youtube.com/watch?v=0IAPZzGSbME,None,None,None
 2,1.1 Priori Analysis and Posteriori Testing,https://www.youtube.com/watch?v=-JTq1BFBwmo,None,None,None
 3,1.2 Characteristics of Algorithm,https://www.youtube.com/watch?v=FbYzBWdhMb0,None,None,None
 4,1.3 How Write and Analyze Algorithm,https://www.youtube.com/watch?v=xGYsEqe9Vl0,https://www.hackerrank.com/challenges/simple-array-sum/problem,https://leetcode.com/problems/running-sum-of-1d-array/,https://www.codechef.com/problems/FLOW001
-5,1.4 Frequency Count Method,https://www.youtube.com/watch?v=1U3Uwct45IY,https://www.hackerrank.com/challenges/2d-array/problem,https://leetcode.com/problems/matrix-diagonal-sum/,None
+5,1.4 Frequency Count Method,https://www.youtube.com/watch?v=1U3Uwct45IY,"https://www.hackerrank.com/challenges/sock-merchant/problem
+https://www.hackerrank.com/challenges/sparse-arrays/problem",https://leetcode.com/problems/matrix-diagonal-sum/,None
 6,1.5.1 Time Complexity #1,https://www.youtube.com/watch?v=9TlHvipP5yA,https://www.hackerrank.com/challenges/30-running-time-and-complexity/problem,None,None
 7,1.5.2 Time Complexity Example #2,https://www.youtube.com/watch?v=9SgLBjXqwd4,https://www.hackerrank.com/challenges/30-running-time-and-complexity/problem,https://leetcode.com/problems/sqrtx/,None
 8,1.5.3 Time Complexity of While and if #3,https://www.youtube.com/watch?v=p1EnSvS3urU,None,None,None
@@ -41,8 +42,8 @@ https://leetcode.com/problems/first-bad-version/",https://www.codechef.com/probl
 https://www.hackerrank.com/challenges/jesse-and-cookies/problem","https://leetcode.com/problems/kth-largest-element-in-an-array/
 https://leetcode.com/problems/last-stone-weight/
 https://leetcode.com/problems/sort-an-array/",https://www.codechef.com/problems/IPCTRAIN
-33,2.7.1  Two Way MergeSort - Iterative method,https://www.youtube.com/watch?v=6pV2IF0fgKY,https://www.hackerrank.com/challenges/correctness-invariant/problem,https://leetcode.com/problems/merge-sorted-array/,https://www.codechef.com/problems/MRGSRT
-34,2.7.2.  Merge Sort Algorithm,https://www.youtube.com/watch?v=mB5HXBb_HY8,https://www.hackerrank.com/challenges/countingsort2/problem,"https://leetcode.com/problems/sort-an-array/
+33,2.7.1  Two Way MergeSort - Iterative method,https://www.youtube.com/watch?v=6pV2IF0fgKY,None,https://leetcode.com/problems/merge-sorted-array/,https://www.codechef.com/problems/MRGSRT
+34,2.7.2.  Merge Sort Algorithm,https://www.youtube.com/watch?v=mB5HXBb_HY8,https://www.hackerrank.com/challenges/ctci-merge-sort/problem,"https://leetcode.com/problems/sort-an-array/
 https://leetcode.com/problems/sort-list/",https://www.codechef.com/problems/MRGSRT
 35,2.7.3 MergeSort in-depth Analysis,https://www.youtube.com/watch?v=ak-pz7tS5DE,https://www.hackerrank.com/challenges/ctci-merge-sort/problem,https://leetcode.com/problems/reverse-pairs/,https://www.codechef.com/problems/INVC_CNT
 36,2.8.1  QuickSort Algorithm,https://www.youtube.com/watch?v=7h1s2SojIRw,"https://www.hackerrank.com/challenges/quicksort1/problem
@@ -51,7 +52,7 @@ https://leetcode.com/problems/kth-largest-element-in-an-array/",https://www.code
 37,2.8.2 QuickSort Analysis,https://www.youtube.com/watch?v=-qOVVRIZzao,"https://www.hackerrank.com/challenges/quicksort3/problem
 https://www.hackerrank.com/challenges/runningtime/problem",https://leetcode.com/problems/sort-an-array/,https://www.codechef.com/problems/TSORT
 38,2.9 Strassens Matrix Multiplication,https://www.youtube.com/watch?v=0oJyNmEbS4w,None,None,None
-39,3. Greedy Method -  Introduction,https://www.youtube.com/watch?v=ARvQcqJ_-NY,None,None,None
+39,3. Greedy Method -  Introduction,https://www.youtube.com/watch?v=ARvQcqJ_-NY,None,https://leetcode.com/problems/assign-cookies/,None
 40,3.1 Knapsack Problem - Greedy Method,https://www.youtube.com/watch?v=oTTzNMHM05I,None,https://leetcode.com/problems/maximum-units-on-a-truck/,None
 41,3.2 Job Sequencing with Deadlines - Greedy Method,https://www.youtube.com/watch?v=zPtI8q9gvX8,None,"https://leetcode.com/problems/course-schedule-iii/
 https://leetcode.com/problems/maximum-profit-in-job-scheduling/",None
@@ -59,7 +60,7 @@ https://leetcode.com/problems/maximum-profit-in-job-scheduling/",None
 43,3.4 Huffman Coding - Greedy Method,https://www.youtube.com/watch?v=co4_ahEDCho,https://www.hackerrank.com/challenges/tree-huffman-decoding/problem,None,None
 44,3.5 Prims and Kruskals Algorithms - Greedy Method,https://www.youtube.com/watch?v=4ZlRH0eK-qQ,"https://www.hackerrank.com/challenges/primsmstsub/problem
 https://www.hackerrank.com/challenges/kruskalmstrsub/problem","https://leetcode.com/problems/min-cost-to-connect-all-points/
-https://leetcode.com/problems/connecting-cities-with-minimum-cost/",https://www.codechef.com/problems/MSTICK
+https://leetcode.com/problems/connecting-cities-with-minimum-cost/",None
 45,3.6 Dijkstra Algorithm - Single Source Shortest Path - Greedy Method,https://www.youtube.com/watch?v=XB4MIexjvY0,https://www.hackerrank.com/challenges/dijkstrashortreach/problem,"https://leetcode.com/problems/network-delay-time/
 https://leetcode.com/problems/path-with-maximum-probability/
 https://leetcode.com/problems/cheapest-flights-within-k-stops/",https://www.codechef.com/problems/SHPATH
@@ -76,10 +77,10 @@ https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/",None
 https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/",None
 53,4.4 Bellman Ford Algorithm - Single Source Shortest Path - Dynamic Programming,https://www.youtube.com/watch?v=FtN3BYH2Zes,None,"https://leetcode.com/problems/cheapest-flights-within-k-stops/
 https://leetcode.com/problems/network-delay-time/",None
-54,4.5 0/1 Knapsack - Two Methods - Dynamic Programming,https://www.youtube.com/watch?v=nLmhmB6NzcM,https://www.hackerrank.com/challenges/unbounded-knapsack/problem,"https://leetcode.com/problems/partition-equal-subset-sum/
+54,4.5 0/1 Knapsack - Two Methods - Dynamic Programming,https://www.youtube.com/watch?v=nLmhmB6NzcM,None,"https://leetcode.com/problems/partition-equal-subset-sum/
 https://leetcode.com/problems/target-sum/
 https://leetcode.com/problems/ones-and-zeroes/",https://www.codechef.com/problems/PPTEST
-55,4.5.1 0/1 Knapsack Problem (Program) - Dynamic Programming,https://www.youtube.com/watch?v=zRza99HPvkQ,https://www.hackerrank.com/challenges/unbounded-knapsack/problem,"https://leetcode.com/problems/partition-equal-subset-sum/
+55,4.5.1 0/1 Knapsack Problem (Program) - Dynamic Programming,https://www.youtube.com/watch?v=zRza99HPvkQ,None,"https://leetcode.com/problems/partition-equal-subset-sum/
 https://leetcode.com/problems/target-sum/
 https://leetcode.com/problems/ones-and-zeroes/",https://www.codechef.com/problems/PPTEST
 56,4.6 Optimal Binary Search Tree (Successful Search Only) - Dynamic Programming,https://www.youtube.com/watch?v=vLS-zRCHo-Y,None,None,None
@@ -94,11 +95,11 @@ https://leetcode.com/problems/delete-operation-for-two-strings/",None
 https://www.hackerrank.com/challenges/connected-cell-in-a-grid/problem","https://leetcode.com/problems/number-of-islands/
 https://leetcode.com/problems/clone-graph/
 https://leetcode.com/problems/rotting-oranges/",https://www.codechef.com/problems/FIRESC
-62,5.2 Articulation Point and Biconnected Components,https://www.youtube.com/watch?v=jFZsDDB0-vo,None,https://leetcode.com/problems/critical-connections-in-a-network/,https://www.codechef.com/problems/GRAFFDEF
+62,5.2 Articulation Point and Biconnected Components,https://www.youtube.com/watch?v=jFZsDDB0-vo,None,https://leetcode.com/problems/critical-connections-in-a-network/,None
 63,6 Introduction to Backtracking - Brute Force Approach,https://www.youtube.com/watch?v=DKCbsiDBN6c,None,None,None
 64,6.1 N Queens Problem using Backtracking,https://www.youtube.com/watch?v=xFv_Hl4B83A,None,"https://leetcode.com/problems/n-queens/
 https://leetcode.com/problems/n-queens-ii/",None
-65,6.2 Sum Of Subsets Problem - Backtracking,https://www.youtube.com/watch?v=kyLxTdsT8ws,https://www.hackerrank.com/challenges/recursive-digit-sum/problem,"https://leetcode.com/problems/subsets/
+65,6.2 Sum Of Subsets Problem - Backtracking,https://www.youtube.com/watch?v=kyLxTdsT8ws,None,"https://leetcode.com/problems/subsets/
 https://leetcode.com/problems/subsets-ii/
 https://leetcode.com/problems/combination-sum/",None
 66,6.3 Graph Coloring Problem - Backtracking,https://www.youtube.com/watch?v=052VkKhIaQ4,None,"https://leetcode.com/problems/is-graph-bipartite/

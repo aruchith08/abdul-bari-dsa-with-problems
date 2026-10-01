@@ -62,7 +62,8 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "cleanTitle": "Frequency Count Method",
     "videoUrl": "https://www.youtube.com/watch?v=1U3Uwct45IY",
     "hackerRank": [
-      "https://www.hackerrank.com/challenges/2d-array/problem"
+      "https://www.hackerrank.com/challenges/sock-merchant/problem",
+      "https://www.hackerrank.com/challenges/sparse-arrays/problem"
     ],
     "leetCode": [
       "https://leetcode.com/problems/matrix-diagonal-sum/"
@@ -447,9 +448,7 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "title": "2.7.1  Two Way MergeSort - Iterative method",
     "cleanTitle": "Two Way MergeSort - Iterative method",
     "videoUrl": "https://www.youtube.com/watch?v=6pV2IF0fgKY",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/correctness-invariant/problem"
-    ],
+    "hackerRank": [],
     "leetCode": [
       "https://leetcode.com/problems/merge-sorted-array/"
     ],
@@ -466,7 +465,7 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "cleanTitle": "Merge Sort Algorithm",
     "videoUrl": "https://www.youtube.com/watch?v=mB5HXBb_HY8",
     "hackerRank": [
-      "https://www.hackerrank.com/challenges/countingsort2/problem"
+      "https://www.hackerrank.com/challenges/ctci-merge-sort/problem"
     ],
     "leetCode": [
       "https://leetcode.com/problems/sort-an-array/",
@@ -554,7 +553,9 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "cleanTitle": "Greedy Method -  Introduction",
     "videoUrl": "https://www.youtube.com/watch?v=ARvQcqJ_-NY",
     "hackerRank": [],
-    "leetCode": [],
+    "leetCode": [
+      "https://leetcode.com/problems/assign-cookies/"
+    ],
     "codeChef": [],
     "category": "Greedy",
     "difficulty": "Easy"
@@ -632,9 +633,7 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
       "https://leetcode.com/problems/min-cost-to-connect-all-points/",
       "https://leetcode.com/problems/connecting-cities-with-minimum-cost/"
     ],
-    "codeChef": [
-      "https://www.codechef.com/problems/MSTICK"
-    ],
+    "codeChef": [],
     "category": "Greedy",
     "difficulty": "Medium"
   },
@@ -777,9 +776,7 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "title": "4.5 0/1 Knapsack - Two Methods - Dynamic Programming",
     "cleanTitle": "0/1 Knapsack - Two Methods - Dynamic Programming",
     "videoUrl": "https://www.youtube.com/watch?v=nLmhmB6NzcM",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/unbounded-knapsack/problem"
-    ],
+    "hackerRank": [],
     "leetCode": [
       "https://leetcode.com/problems/partition-equal-subset-sum/",
       "https://leetcode.com/problems/target-sum/",
@@ -797,9 +794,7 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "title": "4.5.1 0/1 Knapsack Problem (Program) - Dynamic Programming",
     "cleanTitle": "0/1 Knapsack Problem (Program) - Dynamic Programming",
     "videoUrl": "https://www.youtube.com/watch?v=zRza99HPvkQ",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/unbounded-knapsack/problem"
-    ],
+    "hackerRank": [],
     "leetCode": [
       "https://leetcode.com/problems/partition-equal-subset-sum/",
       "https://leetcode.com/problems/target-sum/",
@@ -911,9 +906,7 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "leetCode": [
       "https://leetcode.com/problems/critical-connections-in-a-network/"
     ],
-    "codeChef": [
-      "https://www.codechef.com/problems/GRAFFDEF"
-    ],
+    "codeChef": [],
     "category": "Graphs",
     "difficulty": "Hard"
   },
@@ -950,9 +943,7 @@ export const ABDUL_BARI_PROBLEMS: DSAProblem[] = [
     "title": "6.2 Sum Of Subsets Problem - Backtracking",
     "cleanTitle": "Sum Of Subsets Problem - Backtracking",
     "videoUrl": "https://www.youtube.com/watch?v=kyLxTdsT8ws",
-    "hackerRank": [
-      "https://www.hackerrank.com/challenges/recursive-digit-sum/problem"
-    ],
+    "hackerRank": [],
     "leetCode": [
       "https://leetcode.com/problems/subsets/",
       "https://leetcode.com/problems/subsets-ii/",
