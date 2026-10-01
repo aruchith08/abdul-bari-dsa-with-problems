@@ -2,10 +2,10 @@
 
 <div align="center">
 
-<img src="src/assets/dashboard%20screenshot.jpg" alt="Abdul Bari DSA with Problems - Dashboard Preview" width="100%" />
+<img src="src/assets/abdul-bari-dashboard.png" alt="Abdul Bari DSA with Problems - Dashboard Preview" width="100%" />
 
 ### **The Ultimate Algorithms Mastery Command Center**
-*Mapping Prof. Abdul Bari's legendary 93 unique Algorithms Masterclass lectures to 800+ curated competitive programming challenges across LeetCode, HackerRank, and CodeChef.*
+*Mapping Prof. Abdul Bari's legendary 93 unique Algorithms Masterclass lectures to strictly curated competitive programming challenges across LeetCode, HackerRank, and CodeChef.*
 
 [![Vercel](https://img.shields.io/badge/Vercel-Deploy-black?style=for-the-badge&logo=vercel)](https://vercel.com)
 [![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
@@ -28,7 +28,7 @@
 While **Prof. Abdul Bari's** whiteboard lectures are universally acclaimed as the most lucid computer science explanations in existence, students frequently get stuck wondering:
 > *"What problems should I solve right now to reinforce what I just watched?"*
 
-This platform provides the answer. Every single one of the **93 unique lectures** (deduplicated from the YouTube series) is indexed, structured into topical modules, and augmented with **over 800 hand-picked practice challenges** across **LeetCode**, **HackerRank**, and **CodeChef**. Combined with **Firebase Cloud Sync**, local offline persistence, revision bookmarking, and markdown note-taking, it serves as a daily roadmap for technical interview preparation.
+This platform provides the answer. Every single one of the **93 unique lectures** (deduplicated from the YouTube series) is indexed, structured into topical modules, and augmented with **strictly curated, hand-picked practice challenges** across **LeetCode**, **HackerRank**, and **CodeChef**. Combined with **Firebase Cloud Sync**, local offline persistence, revision bookmarking, and markdown note-taking, it serves as a daily roadmap for technical interview preparation.
 
 ---
 
@@ -45,11 +45,13 @@ This platform provides the answer. Every single one of the **93 unique lectures*
   - **Branch & Bound** (15-Puzzle, 0/1 Knapsack LC-BB, Traveling Salesperson)
   - **NP-Completeness & Approximation** (P, NP, NP-Complete, NP-Hard, Cook's Theorem)
 
-### 2. 💻 1,000+ Curated Competitive Programming Challenges
-- **600+ LeetCode Problems**: Official LeetCode badge with single-click direct links and multi-problem popovers.
-- **250+ HackerRank Challenges**: Foundational coding drills with automated test verification.
-- **140+ CodeChef Problems**: Competitive programming challenges with custom chef badge.
-- Dynamic popovers let you select from multiple related questions per lecture topic.
+### 2. 💻 Strictly Curated Competitive Programming Challenges
+- **Strict Relevance over Clutter**: We link 1 to 3 high-yield problems that directly exercise the exact algorithm taught in each video (e.g., Prim's, Kruskal's, Dijkstra's, 0/1 Knapsack, KMP String Matching).
+- **Multi-Platform Coverage**:
+  - **LeetCode**: Official badge with single-click direct problem launches and multi-problem popovers.
+  - **HackerRank**: Classic interview questions and core data structure challenges.
+  - **CodeChef**: Competitive programming challenges with custom chef badge.
+- **Human-Verified Accuracy**: Every challenge is reviewed for strict alignment with the video topic.
 
 ### 3. ☁️ Firebase Authentication & Multi-Device Cloud Sync
 - **Authentication Providers**: One-click **Google Sign-In** popup and traditional **Email & Password** registration.
@@ -63,25 +65,30 @@ This platform provides the answer. Every single one of the **93 unique lectures*
 
 ### 5. 🎨 Neo-Brutalist Developer Design System
 - Hard **2px solid black borders**, **sharp drop shadows** (`shadow-[4px_4px_0px_#000000]`), jet-black panels, canvas `#ECECEC`, and high-visibility ARH orange accents (`#FF5E1E`).
+- **Sleek Curved Controls**: Interactive link boxes and social action cards feature modern `rounded-lg` curved edges paired with high-contrast tactile borders.
 - **Matching Custom Dropdowns**: Zero default OS dropdown styling; topic and difficulty selectors feature unified Neo-Brutalist popover menus with smooth chevron rotations and keyboard accessibility.
 - **Standardized Vector Icon System**: 100% SVG line icons with `strokeWidth="2.5"` and `strokeLinecap="square"`.
 
 ### 6. 📊 LeetCode-Style Progress Dashboard
 - **Radial Problem-Solving Gauge**: Circular SVG completion ring segmented dynamically across Easy (`#00B8A3`), Medium (`#FFA116`), and Hard (`#FF375F`) difficulty tiers.
 - **Difficulty Mastery Cards**: Real-time solved-versus-total tracking with custom Neo-Brutalist progress bars and completion percentages.
-- **Topic Breakdown**: In-depth progress bars and direct jump-to-practice buttons for all 8 algorithmic paradigms.
+- **Topic Breakdown**: In-depth progress bars and direct jump-to-practice buttons for all algorithmic paradigms.
 - **Study Metrics Grid**: Instant visibility into Starred revision problems, personal notes count, and remaining targets.
 
-### 7. 📄 Dedicated Standalone About Page
+### 7. 📢 Interactive Share & Open Feedback
+- **Multi-Platform Share Modal**: One-click sharing with pre-formatted invite messages for **WhatsApp**, **Telegram**, **LinkedIn**, and **X (Twitter)**, plus native mobile device sharing.
+- **Community Feedback & Suggestions**: Direct in-browser Gmail compose link and 1-click email copy action for reporting suggestions and corrections (`aruchith32@gmail.com`).
+
+### 8. 📄 Dedicated Standalone About Page
 - Deep dive into the curriculum, verified biographical overview of Prof. Abdul Bari (with portrait), and the developer vision behind ARH.
 
 ---
 
 ## 📊 Algorithmic Curriculum Breakdown
 
-| Category | Lectures | Sample Topics Covered | Practice Target |
+| Category | Lectures | Sample Topics Covered | Practice Focus |
 | :--- | :---: | :--- | :--- |
-| **Fundamentals** | 17 | Asymptotic Notations, Recurrences, Master Theorem | Array manipulation, time complexity analysis |
+| **Fundamentals** | 17 | Asymptotic Notations, Recurrences, Master Theorem | Array manipulation, complexity analysis |
 | **Dynamic Programming**| 14 | 0/1 Knapsack, Floyd-Warshall, Matrix Chain, TSP | State memoization, coin change, edit distance |
 | **Divide & Conquer** | 13 | Merge Sort, Quick Sort, Strassen's Matrix Mult. | Inversion count, median finding |
 | **Greedy Method** | 8 | Knapsack, Huffman Coding, Kruskal, Prim, Dijkstra | Interval scheduling, minimum spanning trees |
@@ -92,7 +99,7 @@ This platform provides the answer. Every single one of the **93 unique lectures*
 | **Branch & Bound** | 4 | 0/1 Knapsack, Job Sequencing, Traveling Salesman | State-space tree pruning |
 | **Binary Search** | 4 | Iterative & Recursive Binary Search | Search algorithms |
 | **Other Core Paradigms** | 11 | Trees, Strings (KMP/Rabin-Karp), NP-Completeness, Graphics | Specialized problem categories |
-| **Total** | **93** | **End-to-End Masterclass** | **800+ Curated Problems** |
+| **Total** | **93** | **End-to-End Masterclass** | **Curated Problem Sets** |
 
 ---
 
@@ -183,15 +190,17 @@ abdul-bari-dsa-with-problems/
 │   ├── leetcode-logo.png      # Official LeetCode brand badge
 │   └── favicon.ico            # Site favicon
 ├── src/
+│   ├── assets/
+│   │   ├── abdul-bari-dashboard.png # High-resolution dashboard screenshot
+│   │   └── arh-logo.png             # Vector brand asset
 │   ├── components/
 │   │   ├── common/
 │   │   │   ├── icons.tsx      # Neo-Brutalist SVG icon suite
 │   │   │   └── EmptyState.tsx # Filter empty-state renderer
 │   │   ├── dashboard/
-│   │   │   ├── AboutSection.tsx  # In-page about component
+│   │   │   ├── AboutSection.tsx  # In-page about component with creator profile
 │   │   │   ├── FilterBar.tsx     # Custom Neo-Brutalist filter & dropdowns
 │   │   │   ├── HeroSection.tsx   # Top banner & architecture graphic
-│   │   │   ├── ProgressBar.tsx   # Progress visualizer
 │   │   │   └── ProgressStats.tsx # Metric summary cards
 │   │   ├── layout/
 │   │   │   ├── Footer.tsx     # Brutalist footer bar
@@ -202,9 +211,11 @@ abdul-bari-dsa-with-problems/
 │   │   ├── modals/
 │   │   │   ├── AuthModal.tsx     # Firebase Google & Email login modal
 │   │   │   ├── ConfirmDialog.tsx # Progress reset confirmation dialog
-│   │   │   └── NoteModal.tsx     # Markdown note editor
+│   │   │   ├── NoteModal.tsx     # Markdown note editor
+│   │   │   └── ShareModal.tsx    # Multi-platform share & invite modal
 │   │   ├── pages/
-│   │   │   └── AboutPage.tsx     # Standalone full-page About view
+│   │   │   ├── AboutPage.tsx     # Standalone full-page About view
+│   │   │   └── ProgressPage.tsx  # Deep analytics & category breakdown
 │   │   └── table/
 │   │       ├── DifficultyBadge.tsx # Easy / Medium / Hard badges
 │   │       ├── PracticeLinks.tsx   # LeetCode / HackerRank / CodeChef popovers
@@ -214,7 +225,7 @@ abdul-bari-dsa-with-problems/
 │   ├── context/
 │   │   └── AuthContext.tsx    # Firebase authentication provider
 │   ├── data/
-│   │   ├── abdulBariData.ts   # 93 problems with 800+ practice links
+│   │   ├── abdulBariData.ts   # 93 lectures with curated practice problem links
 │   │   └── topicCategories.ts # Categories and lecture distributions
 │   ├── hooks/
 │   │   ├── useDSAProgress.ts     # Cloud Firestore sync & local state
@@ -248,6 +259,13 @@ abdul-bari-dsa-with-problems/
 
 ### ARH (Developer & Architect)
 **ARH** developed this platform with a singular philosophy: **"KEEP SOLVING. KEEP BUILDING."** Built out of deep appreciation for Prof. Abdul Bari's teaching, the platform eliminates friction, replaces distractions with crisp typography, and equips learners with the tools and accountability needed to become world-class software engineers.
+
+**Connect & Follow:**
+- 🐙 **GitHub**: [github.com/aruchith08](https://github.com/aruchith08)
+- 💼 **LinkedIn**: [linkedin.com/in/ruchithalokam](https://linkedin.com/in/ruchithalokam)
+- 𝕏 **X (Twitter)**: [x.com/A_Ruchith](https://x.com/A_Ruchith)
+- 🌐 **Website**: [alokam.com](https://alokam.com)
+- 📧 **Feedback & Corrections**: [aruchith32@gmail.com](mailto:aruchith32@gmail.com)
 
 ---
 
